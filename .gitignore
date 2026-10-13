@@ -2,6 +2,10 @@
 web.config
 location.xml
 
+# Archivos generados por GeneXus
+*.cs
+*.svc
+
 # Archivos de compilación y binarios
 bin/
 obj/

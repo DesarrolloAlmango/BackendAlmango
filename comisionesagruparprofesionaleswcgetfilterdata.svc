@@ -1,1 +1,0 @@
-<%@ServiceHost Service= "GeneXus.Programs.comisionesagruparprofesionaleswcgetfilterdata_services,comisionesagruparprofesionaleswcgetfilterdata" %>

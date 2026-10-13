@@ -1,1 +1,0 @@
-<%@ServiceHost Service= "GeneXus.Programs.mapeowwgetfilterdata_services,mapeowwgetfilterdata" %>

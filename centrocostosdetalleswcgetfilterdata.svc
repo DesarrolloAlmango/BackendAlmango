@@ -1,1 +1,0 @@
-<%@ServiceHost Service= "GeneXus.Programs.centrocostosdetalleswcgetfilterdata_services,centrocostosdetalleswcgetfilterdata" %>

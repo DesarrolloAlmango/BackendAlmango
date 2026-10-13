@@ -1,1 +1,0 @@
-<%@ServiceHost Service= "GeneXus.Programs.tipocuentawwgetfilterdata_services,tipocuentawwgetfilterdata" %>
