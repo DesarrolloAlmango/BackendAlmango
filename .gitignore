@@ -20,9 +20,11 @@ obj/
 *.log
 client.log
 
-# Archivos temporales de GeneXus
+# Carpetas temporales y recursos de GeneXus
 PrivateTempStorage/
 PublicTempStorage/
+CKEditor/
+Resources/
 gxCompressInfo.data
 
 # Visual Studio
