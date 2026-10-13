@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CallableObject guid="050ff294-b279-4834-a0ff-98a6c099e201" name="WWPBaseObjects.SecGetAdvancedSecurityWWPFunctionalities" description="Get Advanced Security WWP Functionalities" namespace="GeneXus.Programs">
+  <Signature name="parm">
+    <Parameter name="ReturnValue" accessor="out" collection="true">
+      <Field name="SecFunctionalitiesToLoad" description="Sec Functionalities To Load">
+        <Fields>
+          <Field name="SecObjectName" description="Object Name">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>VarChar</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>120</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="SecFunctionalityType" description="Sec Functionality Type">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>Numeric</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>2</Value>
+              </Property>
+              <Property>
+                <Name>Picture</Name>
+                <Value>Z9</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="SecParentFunctionalityKey" description="Sec Parent Functionality Key">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>VarChar</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>100</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="SecFunctionalityKeys" description="Sec Functionality Keys" collection="true">
+            <Fields>
+              <Field name="SecFunctionalityKey" description="Functionality Id">
+                <Properties>
+                  <Property>
+                    <Name>Type</Name>
+                    <Value>VarChar</Value>
+                  </Property>
+                  <Property>
+                    <Name>Length</Name>
+                    <Value>100</Value>
+                  </Property>
+                </Properties>
+              </Field>
+              <Field name="SecFunctionalityDsc" description="Sec Functionality Dsc">
+                <Properties>
+                  <Property>
+                    <Name>Type</Name>
+                    <Value>VarChar</Value>
+                  </Property>
+                  <Property>
+                    <Name>Length</Name>
+                    <Value>100</Value>
+                  </Property>
+                </Properties>
+              </Field>
+            </Fields>
+          </Field>
+        </Fields>
+      </Field>
+    </Parameter>
+  </Signature>
+</CallableObject>

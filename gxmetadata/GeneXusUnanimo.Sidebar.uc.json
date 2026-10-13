@@ -1,0 +1,102 @@
+{
+	"DefinitionVersion": "1.0",
+	"Name": "GeneXusUnanimo.Sidebar",
+	"Target": "ANGULAR",
+	"IsControlType": false,
+	"RenderMode": "component",
+	"Template": "{{=<% %>=}}<ch-sidebar  [class]=\"Class\"  [expandButtonExpandAccessibleName]=\"ExpandButtonExpandAccessibleName\"  [expandButtonCollapseAccessibleName]=\"ExpandButtonCollapseAccessibleName\"  [expandButtonExpandCaption]=\"ExpandButtonExpandCaption\"  [expandButtonCollapseCaption]=\"ExpandButtonCollapseCaption\"  [expanded]=\"Expanded\"  [showExpandButton]=\"ShowExpandButton\"  (expandedChange)=\"handleSidebarExpandedChange()\">  <div class=\"gx-sidebar-content\">    <slot name=\"content\" />  </div></ch-sidebar><style>  :host,  .gx-sidebar-content {    display: contents;  }</style>", 
+	"Subtemplates": [
+	],
+	"Events": [
+		{
+			"Name": "ExpandedChange",
+			"On": "expandedchange",
+			"Parameters": ""
+		} 
+	],
+	"Properties": [
+		{
+			"Id": "Class",
+			"Name": "Class",
+			"Type": "string",
+			"Collection": "false",
+			"Default": "sidebar"
+		} ,
+		{
+			"Id": "ExpandButtonExpandAccessibleName",
+			"Name": "ExpandButtonExpandAccessibleName",
+			"Type": "string",
+			"Collection": "false",
+			"Default": "Expand"
+		} ,
+		{
+			"Id": "ExpandButtonCollapseAccessibleName",
+			"Name": "ExpandButtonCollapseAccessibleName",
+			"Type": "string",
+			"Collection": "false",
+			"Default": "Collapse"
+		} ,
+		{
+			"Id": "ExpandButtonExpandCaption",
+			"Name": "ExpandButtonExpandCaption",
+			"Type": "string",
+			"Collection": "false",
+			"Default": ""
+		} ,
+		{
+			"Id": "ExpandButtonCollapseCaption",
+			"Name": "ExpandButtonCollapseCaption",
+			"Type": "string",
+			"Collection": "false",
+			"Default": ""
+		} ,
+		{
+			"Id": "Expanded",
+			"Name": "Expanded",
+			"Type": "boolean",
+			"Collection": "false",
+			"Default": "true"
+		} ,
+		{
+			"Id": "ShowExpandButton",
+			"Name": "ShowExpandButton",
+			"Type": "boolean",
+			"Collection": "false",
+			"Default": "true"
+		} 
+	],
+	"Methods": {
+		"Public": [
+		],
+		"Private": [
+		]
+	},
+	"Scripts": {
+		"AfterShow": [
+		],
+		"BeforeShow": [
+			{
+				"Name": "PrivateCode",
+				"Source": "    handleSidebarExpandedChange = () => {      this.Expanded = !this.Expanded;	 this.ExpandedChange();    }  ",
+				"AngularLocation": "ClassBody"
+			} 
+		]
+	},
+	"Dependencies": [
+		{
+			"Type": "",
+			"Name": "@genexus/chameleon-controls-library",
+			"Version": "6.20.1",
+			"Source": "",
+			"AngularSchematics": false,
+			"Metadata": {
+			}
+		} 
+	],
+	"Imports": [
+	],
+	"Styles": [
+	],
+	"Sources": [
+	]
+}

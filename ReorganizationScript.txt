@@ -1,0 +1,3 @@
+ALTER TABLE [Ticket] ADD [TicketEstado] BIT NOT NULL CONSTRAINT TicketEstadoTicket_DEFAULT DEFAULT convert(bit, 0);
+ALTER TABLE [Ticket] DROP CONSTRAINT TicketEstadoTicket_DEFAULT;
+

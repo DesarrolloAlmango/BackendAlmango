@@ -1,0 +1,130 @@
+{
+"openapi": "3.0.0",
+ "info": {
+  "title": "AlmangoServices",
+  "description": "Almango Services",
+  "version": "20261005180336"
+  },
+"servers":[
+    {
+        "url": "http://localhost/AlmangoXV1NETFramework/AlmangoServices"
+	}
+],
+"paths":{
+    "/GetCantSol": {"get": {"tags": [
+      	"AlmangoServices"
+         ] ,
+      "operationId": "AlmangoServices.GetCantSol",
+      "summary": "GetCantSol",
+      "parameters":[
+        { "name": "Userconect",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Key",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetCantSolOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/GetAllServices": {"get": {"tags": [
+      	"AlmangoServices"
+         ] ,
+      "operationId": "AlmangoServices.GetAllServices",
+      "summary": "GetAllServices",
+      "parameters":[
+        { "name": "Userconect",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Key",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Proveedorid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAllServicesOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  } 
+  },
+"components":{
+  "schemas": {
+    "GetCantSolOutput": {
+      "properties": {
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "RestMessage": {
+             "type": "string"}	 
+        }
+      }
+      ,
+    "GetAllServicesOutput": {
+      "properties": {
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "RestMessage": {
+             "type": "string"}	 ,
+           "Inventario": {
+             "type": "string"}	 
+        }
+      }
+      
+
+	}
+  }
+}

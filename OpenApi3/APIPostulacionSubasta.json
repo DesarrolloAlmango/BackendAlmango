@@ -1,0 +1,104 @@
+{
+"openapi": "3.0.0",
+ "info": {
+  "title": "APIPostulacionSubasta",
+  "description": "APIPostulacion Subasta",
+  "version": "20261005180336"
+  },
+"servers":[
+    {
+        "url": "http://localhost/AlmangoXV1NETFramework/APIPostulacionSubasta"
+	}
+],
+"paths":{
+    "/AltaPostulacionSubasta": {
+    "post": {"tags": [
+      	"APIPostulacionSubasta"
+         ] ,
+      "operationId": "APIPostulacionSubasta.AltaPostulacionSubasta",
+      "summary": "Da de alta una postulacion o Subasta",
+      "requestBody":{
+        "required": false,
+        "content":{
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/AltaPostulacionSubastaInput"
+        	  }
+        	}
+          }
+        },
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AltaPostulacionSubastaOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerServiciosCategorias": {"get": {"tags": [
+      	"APIPostulacionSubasta"
+         ] ,
+      "operationId": "APIPostulacionSubasta.ObtenerServiciosCategorias",
+      "summary": "ObtenerServiciosCategorias",
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "$ref": "#/components/schemas/ObtenerServiciosCategoriasOutput"
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  } 
+  },
+"components":{
+  "schemas": {
+    "AltaPostulacionSubastaOutput": {
+      "properties": {
+           "SolicitudesId": {
+             "type": "integer",
+             "format": "int64"}	 ,
+           "Mensaje": {
+             "type": "string"}	 
+        }
+      }
+      ,
+    "ObtenerServiciosCategoriasOutput": {
+      "properties": {
+           "ServiciosSDTJson": {
+             "type": "string"}	 
+        }
+      }
+      
+    ,
+
+    "AltaPostulacionSubastaInput": {
+      "properties": {
+         "SDTPostulacionesJson": {
+            "type": "string"}	  
+       }
+     }
+	}
+  }
+}

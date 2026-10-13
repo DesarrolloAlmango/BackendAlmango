@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CallableObject guid="5d0781ec-aaaf-4276-9e4b-39a6d87a83fe" name="ODatConexion" description="Obtener Datos de Conexion" namespace="GeneXus.Programs">
+  <Signature name="par">
+    <Parameter name="ConexionesID">
+      <Field>
+        <Properties>
+          <Property>
+            <Name>Type</Name>
+            <Value>Character</Value>
+          </Property>
+          <Property>
+            <Name>Length</Name>
+            <Value>9</Value>
+          </Property>
+        </Properties>
+      </Field>
+    </Parameter>
+    <Parameter name="ReturnValue" accessor="out">
+      <Field name="SDTConexiones" description="SDTConexiones">
+        <Fields>
+          <Field name="ConexionesID" description="Código de Conexión">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>Character</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>9</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="ConexionesNombre" description="Conexiones Nombre">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>Character</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>80</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="ConexionesHost" description="Host">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>Character</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>128</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="ConexionesBaseURL" description="Base URL">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>Character</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>128</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="ConexionesPort" description="Puerto">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>Numeric</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>9</Value>
+              </Property>
+              <Property>
+                <Name>Picture</Name>
+                <Value>ZZZZZZZZ9</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="ConexionesApiKey" description="Api Key">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>Character</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>128</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="ConexionesUsr" description="Usuario">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>Character</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>64</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="ConexionesAux1" description="Primer Auxiliar">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>Character</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>128</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="ConexionesAux2" description="Segundo Auxiliar">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>Character</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>128</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="ConexionesAux3" description="Tercer Auxiliar">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>Character</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>128</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="ConexionesEstado" description="Estado">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>Character</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>3</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="Datos" description="Datos" collection="true">
+            <Fields>
+              <Field name="ConexionesDatosId" description="Datos Id">
+                <Properties>
+                  <Property>
+                    <Name>Type</Name>
+                    <Value>Character</Value>
+                  </Property>
+                  <Property>
+                    <Name>Length</Name>
+                    <Value>25</Value>
+                  </Property>
+                </Properties>
+              </Field>
+              <Field name="ConexionesDatosInt" description="Interno">
+                <Properties>
+                  <Property>
+                    <Name>Type</Name>
+                    <Value>Character</Value>
+                  </Property>
+                  <Property>
+                    <Name>Length</Name>
+                    <Value>128</Value>
+                  </Property>
+                </Properties>
+              </Field>
+              <Field name="ConexionesDatosExt" description="Extarno">
+                <Properties>
+                  <Property>
+                    <Name>Type</Name>
+                    <Value>Character</Value>
+                  </Property>
+                  <Property>
+                    <Name>Length</Name>
+                    <Value>128</Value>
+                  </Property>
+                </Properties>
+              </Field>
+              <Field name="ConexionesDatosDetalle" description="Detalle">
+                <Properties>
+                  <Property>
+                    <Name>Type</Name>
+                    <Value>Character</Value>
+                  </Property>
+                  <Property>
+                    <Name>Length</Name>
+                    <Value>256</Value>
+                  </Property>
+                </Properties>
+              </Field>
+            </Fields>
+          </Field>
+        </Fields>
+      </Field>
+    </Parameter>
+  </Signature>
+</CallableObject>

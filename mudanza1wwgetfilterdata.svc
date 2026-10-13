@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "GeneXus.Programs.mudanza1wwgetfilterdata_services,mudanza1wwgetfilterdata" %>

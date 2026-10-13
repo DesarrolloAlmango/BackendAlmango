@@ -1,0 +1,330 @@
+{ 
+    "Resources" : [ { 
+        "IsDefault" : true,
+        "ResourceFile" : "Images_DEFAULT.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.UnanimoWeb",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_UnanimoWeb.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.UnanimoWeb",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_UnanimoWeb.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.UnanimoWeb",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_UnanimoWeb.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.Unanimo",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_Unanimo.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.Unanimo",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_Unanimo.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.Unanimo",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_Unanimo.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.UnanimoControls",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_UnanimoControls.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.UnanimoControls",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_UnanimoControls.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.UnanimoControls",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_UnanimoControls.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.UnanimoMobile",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_UnanimoMobile.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.UnanimoMobile",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_UnanimoMobile.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.UnanimoMobile",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_UnanimoMobile.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.UnanimoAngular",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_UnanimoAngular.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.UnanimoAngular",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_UnanimoAngular.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.UnanimoAngular",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_UnanimoAngular.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "AlmangoXV11",
+        "ResourceFile" : "Images_English_AlmangoXV11.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "AlmangoXV11",
+        "ResourceFile" : "Images_Spanish_AlmangoXV11.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "AlmangoXV11",
+        "ResourceFile" : "Images_Portuguese_AlmangoXV11.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "WorkWithPlusDS",
+        "ResourceFile" : "Images_English_WorkWithPlusDS.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "WorkWithPlusDS",
+        "ResourceFile" : "Images_Spanish_WorkWithPlusDS.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "WorkWithPlusDS",
+        "ResourceFile" : "Images_Portuguese_WorkWithPlusDS.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "WWPBaseObjects.WorkWithPlusBaseDS",
+        "ResourceFile" : "Images_English_WWPBaseObjects_WorkWithPlusBaseDS.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "WWPBaseObjects.WorkWithPlusBaseDS",
+        "ResourceFile" : "Images_Spanish_WWPBaseObjects_WorkWithPlusBaseDS.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "WWPBaseObjects.WorkWithPlusBaseDS",
+        "ResourceFile" : "Images_Portuguese_WWPBaseObjects_WorkWithPlusBaseDS.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.Dropdown_Legacy",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_Dropdown_Legacy.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.Dropdown_Legacy",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_Dropdown_Legacy.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.Dropdown_Legacy",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_Dropdown_Legacy.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.Slider",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_Slider.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.Slider",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_Slider.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.Slider",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_Slider.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.Switch",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_Switch.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.Switch",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_Switch.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.Switch",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_Switch.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.Alert",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_Alert.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.Alert",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_Alert.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.Alert",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_Alert.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.Select",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_Select.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.Select",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_Select.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.Select",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_Select.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.SidebarMenu",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_SidebarMenu.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.SidebarMenu",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_SidebarMenu.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.SidebarMenu",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_SidebarMenu.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.TreeView_Legacy",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_TreeView_Legacy.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.TreeView_Legacy",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_TreeView_Legacy.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.TreeView_Legacy",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_TreeView_Legacy.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.Step",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_Step.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.Step",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_Step.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.Step",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_Step.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.TabularGrid",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_TabularGrid.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.TabularGrid",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_TabularGrid.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.TabularGrid",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_TabularGrid.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.Icon",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_Icon.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.Icon",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_Icon.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.Icon",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_Icon.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.ProgressIndicator",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_ProgressIndicator.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.ProgressIndicator",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_ProgressIndicator.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.ProgressIndicator",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_ProgressIndicator.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.ActionGroup",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_ActionGroup.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.ActionGroup",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_ActionGroup.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.ActionGroup",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_ActionGroup.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.Dropdown",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_Dropdown.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.Dropdown",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_Dropdown.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.Dropdown",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_Dropdown.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.Sidebar",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_Sidebar.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.Sidebar",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_Sidebar.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.Sidebar",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_Sidebar.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.Chat",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_Chat.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.Chat",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_Chat.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.Chat",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_Chat.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.Markdown",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_Markdown.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.Markdown",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_Markdown.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.Markdown",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_Markdown.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.NavigationList",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_NavigationList.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.NavigationList",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_NavigationList.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.NavigationList",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_NavigationList.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.Dialog",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_Dialog.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.Dialog",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_Dialog.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.Dialog",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_Dialog.json"
+    }, { 
+        "Language" : "English",
+        "Theme" : "GeneXusUnanimo.Unanimo_LegacyTokens",
+        "ResourceFile" : "Images_English_GeneXusUnanimo_Unanimo_LegacyTokens.json"
+    }, { 
+        "Language" : "Spanish",
+        "Theme" : "GeneXusUnanimo.Unanimo_LegacyTokens",
+        "ResourceFile" : "Images_Spanish_GeneXusUnanimo_Unanimo_LegacyTokens.json"
+    }, { 
+        "Language" : "Portuguese",
+        "Theme" : "GeneXusUnanimo.Unanimo_LegacyTokens",
+        "ResourceFile" : "Images_Portuguese_GeneXusUnanimo_Unanimo_LegacyTokens.json"
+    } ]
+}

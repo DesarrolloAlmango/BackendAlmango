@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "GeneXus.Programs.departamentomunicipiowcgetfilterdata_services,departamentomunicipiowcgetfilterdata" %>

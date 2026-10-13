@@ -1,0 +1,69 @@
+{
+	"DefinitionVersion": "1.0",
+	"Name": "GeneXusUnanimo.StepAngular",
+	"Target": "ANGULAR",
+	"IsControlType": false,
+	"RenderMode": "component",
+	"Template": "{{=<% %>=}}<ch-step-list>	<ch-step-list-item *ngFor=\"let stepItem of StepItems\" class=\"{{Class}}\" (click)=\"SelectedItem=stepItem.id; ItemClick();\">		{{stepItem.text}}	</ch-step-list-item></ch-step-list>", 
+	"Subtemplates": [
+	],
+	"Events": [
+		{
+			"Name": "ItemClick",
+			"On": "itemclick",
+			"Parameters": ""
+		} 
+	],
+	"Properties": [
+		{
+			"Id": "Class",
+			"Name": "Class",
+			"Type": "string",
+			"Collection": "false",
+			"Default": "ch-step"
+		} ,
+		{
+			"Id": "StepItems",
+			"Name": "StepItems",
+			"Type": "sdt",
+			"Collection": "false",
+			"Default": ""
+		} ,
+		{
+			"Id": "SelectedItem",
+			"Name": "SelectedItem",
+			"Type": "string",
+			"Collection": "false",
+			"Default": ""
+		} 
+	],
+	"Methods": {
+		"Public": [
+		],
+		"Private": [
+		]
+	},
+	"Scripts": {
+		"AfterShow": [
+		],
+		"BeforeShow": [
+		]
+	},
+	"Dependencies": [
+		{
+			"Type": "",
+			"Name": "@genexus/chameleon-controls-library",
+			"Version": "6.20.1",
+			"Source": "",
+			"AngularSchematics": false,
+			"Metadata": {
+			}
+		} 
+	],
+	"Imports": [
+	],
+	"Styles": [
+	],
+	"Sources": [
+	]
+}

@@ -1,0 +1,214 @@
+{ 
+    "ResourcesLocation" : "Resources",
+    "Language" : "Portuguese",
+    "Theme" : "WorkWithPlusDS",
+    "Images" : [ { 
+        "Name" : "WallPaper",
+        "Type" : "I",
+        "Guid" : "001ce7d7-150f-423b-ba0b-b06f5e8d8c59",
+        "Location" : "WallPaper.png",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "BackgroundImage",
+        "Type" : "I",
+        "Guid" : "d35b0751-c891-4630-a4fa-dbae97994509",
+        "Location" : "BackgroundImage.png",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "LoadingResults",
+        "Type" : "I",
+        "Guid" : "d5b04b36-95ad-4b56-adb5-905e950f2966",
+        "Location" : "LoadingResults.gif",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "PanelCardGray_Expand",
+        "Type" : "I",
+        "Guid" : "7379fd0b-68ee-4027-a3ce-187f263a77dd",
+        "Location" : "PanelCardGray_Expand.png",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "ErrorIcon",
+        "Type" : "I",
+        "Guid" : "b63f5646-3a80-45fa-b28f-1940d496304c",
+        "Location" : "ErrorIcon.png",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "WarningIcon",
+        "Type" : "I",
+        "Guid" : "4041cec4-85fe-4bd8-aaa2-a8a2026c306c",
+        "Location" : "WarningIcon.png",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "PageFirst",
+        "Type" : "I",
+        "Guid" : "90274dae-49c6-47ae-98c4-7a8f5eb82c12",
+        "Location" : "PageFirst.png",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "PageLast",
+        "Type" : "I",
+        "Guid" : "eb16c005-5a7d-48a8-a16c-d7dcc1909b6e",
+        "Location" : "PageLast.png",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "PageNext",
+        "Type" : "I",
+        "Guid" : "ffebe689-f176-4a2f-914b-2ea1a59db803",
+        "Location" : "PageNext.png",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "PagePrevious",
+        "Type" : "I",
+        "Guid" : "cdf36de9-aae4-40c2-928b-5dd2f7589dc9",
+        "Location" : "PagePrevious.png",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "MultimediaClear",
+        "Type" : "I",
+        "Guid" : "86847ae1-e723-4118-9074-4de2951704cd",
+        "Location" : "MultimediaClear.png",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "MultimediaEdit",
+        "Type" : "I",
+        "Guid" : "089b589f-43ac-4175-a46d-144edf140711",
+        "Location" : "MultimediaEdit.png",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "PlaceHolderVideo",
+        "Type" : "I",
+        "Guid" : "e7d5ac60-0bae-4e08-9aef-f334eecf2e0a",
+        "Location" : "PlaceHolderVideo.png",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "PlaceHolderImage",
+        "Type" : "I",
+        "Guid" : "b7cc0db9-3d37-42c4-a79b-8635b1f2e135",
+        "Location" : "PlaceHolderImage.png",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "PlaceHolderAudio",
+        "Type" : "I",
+        "Guid" : "d576314b-960b-4f9b-adf0-373a7f287291",
+        "Location" : "PlaceHolderAudio.png",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "VideoDownload",
+        "Type" : "I",
+        "Guid" : "0c21d616-7754-482e-8fdd-db45c4cf1655",
+        "Location" : "VideoDownload.png",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "WizardStepChecked",
+        "Type" : "I",
+        "Guid" : "865df215-b0dc-43d2-9da0-5b72cef9880a",
+        "Location" : "WizardStepChecked.png",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "DDOSortedASC",
+        "Type" : "I",
+        "Guid" : "b9f89e2f-f9e1-4533-b84e-c591709915f9",
+        "Location" : "DDOSortedASC.png",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "DDOSortedDSC",
+        "Type" : "I",
+        "Guid" : "c9603047-0d43-4b43-98f8-9206148120d4",
+        "Location" : "DDOSortedDSC.png",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "ClosePrompt",
+        "Type" : "I",
+        "Guid" : "10b4b52b-f115-45cb-bb07-61218258d20b",
+        "Location" : "ClosePrompt.png",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "prompt",
+        "Type" : "I",
+        "Guid" : "f5b04895-0024-488b-8e3b-b687ca4598ee",
+        "Location" : "prompt.png",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.stop_ico",
+        "Type" : "I",
+        "Guid" : "7d137d20-9d47-4011-a547-6c0356564107",
+        "Location" : "GeneXusUnanimo.stop_ico.svg",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.upload_ico_light",
+        "Type" : "I",
+        "Guid" : "5553a437-95b0-4d1e-90d6-d099a18eb263",
+        "Location" : "GeneXusUnanimo.upload_ico_light.svg",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.upload_ico_disabled",
+        "Type" : "I",
+        "Guid" : "94c361d4-23e1-4bb5-b851-fdfcefa65e4a",
+        "Location" : "GeneXusUnanimo.upload_ico_disabled.svg",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.close_ico_destructive",
+        "Type" : "I",
+        "Guid" : "b7b3300c-5639-47f7-85f9-c0ff239d786b",
+        "Location" : "GeneXusUnanimo.close_ico_destructive.svg",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    }, { 
+        "Name" : "GeneXusUnanimo.search_light",
+        "Type" : "I",
+        "Guid" : "c6936b03-0afa-4314-824a-034e6a56a637",
+        "Location" : "GeneXusUnanimo.search_light.svg",
+        "Density" : 1,
+        "RenderingMode" : "automatic",
+        "FlipsForRTL" : false
+    } ]
+}

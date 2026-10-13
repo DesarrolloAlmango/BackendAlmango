@@ -1,0 +1,318 @@
+{
+"ObjectType":"ServiceGroup",
+"Name":"WebAPI",
+"BasePath":"WebAPI",
+"Mappings":
+[
+{
+"Name":"gettarjetasservicios",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_gettarjetasservicios",
+"Implementation":"APIs\\TarjetasServicios",
+"Verb":"GET",
+"PathRegexp":"gettarjetasservicios",
+"Path":"gettarjetasservicios"
+
+},
+{
+"Name":"gettarjetasservicios2",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_gettarjetasservicios2",
+"Implementation":"APIs\\TarjetasServicios2",
+"Verb":"GET",
+"PathRegexp":"gettarjetasservicios2",
+"Path":"gettarjetasservicios2"
+
+},
+{
+"Verb":"POST",
+"Name":"obtenercatalogo",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenercatalogo",
+"Implementation":"ObtenerCatalogoProductos",
+"PathRegexp":"obtenercatalogo",
+"Path":"obtenercatalogo"
+
+},
+{
+"Name":"obtenerimagenproducto",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerimagenproducto",
+"Implementation":"ObtenerImagenProducto",
+"Verb":"GET",
+"PathRegexp":"obtenerimagenproducto",
+"Path":"obtenerimagenproducto"
+
+},
+{
+"Name":"obtenernivel1",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenernivel1",
+"Implementation":"ObtenerNivel1",
+"Verb":"GET",
+"PathRegexp":"obtenernivel1",
+"Path":"obtenernivel1"
+
+},
+{
+"Name":"obtenernivel2",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenernivel2",
+"Implementation":"ObtenerNivel2",
+"Verb":"GET",
+"PathRegexp":"obtenernivel2",
+"Path":"obtenernivel2"
+
+},
+{
+"Name":"obtenerdepto",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerdepto",
+"Implementation":"ObtenerDepto",
+"Verb":"GET",
+"PathRegexp":"obtenerdepto",
+"Path":"obtenerdepto"
+
+},
+{
+"Name":"obtenerproveedor",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerproveedor",
+"Implementation":"ObtenerProveedor",
+"Verb":"GET",
+"PathRegexp":"obtenerproveedor",
+"Path":"obtenerproveedor"
+
+},
+{
+"Name":"obtenerproveedortodos",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerproveedortodos",
+"Implementation":"ObtenerProveedorTodos",
+"Verb":"GET",
+"PathRegexp":"obtenerproveedortodos",
+"Path":"obtenerproveedortodos"
+
+},
+{
+"Name":"obtenerproveedorpagodefault",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerproveedorpagodefault",
+"Implementation":"ObtenerProveedorPagoDefault",
+"Verb":"GET",
+"PathRegexp":"obtenerproveedorpagodefault",
+"Path":"obtenerproveedorpagodefault"
+
+},
+{
+"Name":"obtenermunicipio",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenermunicipio",
+"Implementation":"ObtenerMunicipio",
+"Verb":"GET",
+"PathRegexp":"obtenermunicipio",
+"Path":"obtenermunicipio"
+
+},
+{
+"Name":"obtenerzonas",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerzonas",
+"Implementation":"ObtenerZonas",
+"Verb":"GET",
+"PathRegexp":"obtenerzonas",
+"Path":"obtenerzonas"
+
+},
+{
+"Name":"obtenerprecio",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerprecio",
+"Implementation":"ObtenerPrecio",
+"Verb":"GET",
+"PathRegexp":"obtenerprecio",
+"Path":"obtenerprecio"
+
+},
+{
+"Name":"altasolicitud",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_altasolicitud",
+"Implementation":"AltaServicioWeb",
+"Verb":"GET",
+"PathRegexp":"altasolicitud",
+"Path":"altasolicitud"
+
+},
+{
+"Verb":"POST",
+"Name":"altasolicitudpost",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_altasolicitudpost",
+"Implementation":"AltaServicioWeb",
+"PathRegexp":"altasolicitudpost",
+"Path":"altasolicitudpost"
+
+},
+{
+"Name":"altasolicitudget",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_altasolicitudget",
+"Implementation":"AltaServicioWeb",
+"Verb":"GET",
+"PathRegexp":"altasolicitudget",
+"Path":"altasolicitudget"
+
+},
+{
+"Name":"obtenerdatoscupon",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerdatoscupon",
+"Implementation":"ObtenerDatosCupon",
+"Verb":"GET",
+"PathRegexp":"obtenerdatoscupon",
+"Path":"obtenerdatoscupon"
+
+},
+{
+"Name":"obtenertycproductos",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenertycproductos",
+"Implementation":"ObtenerTyCProductos",
+"Verb":"GET",
+"PathRegexp":"obtenertycproductos",
+"Path":"obtenertycproductos"
+
+},
+{
+"Name":"consultarpagopendiente",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_consultarpagopendiente",
+"Implementation":"ConsultarPagoPendiente",
+"Verb":"GET",
+"PathRegexp":"consultarpagopendiente",
+"Path":"consultarpagopendiente"
+
+},
+{
+"Name":"insertarfeedback",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_insertarfeedback",
+"Implementation":"APIs\\InsertarFeedBack",
+"Verb":"GET",
+"PathRegexp":"insertarfeedback",
+"Path":"insertarfeedback"
+
+},
+{
+"Name":"obtenernroservicio",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenernroservicio",
+"Implementation":"APIs\\ObtenerNroServicios",
+"Verb":"GET",
+"PathRegexp":"obtenernroservicio",
+"Path":"obtenernroservicio"
+
+},
+{
+"Name":"organizarmail",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_organizarmail",
+"Implementation":"OrganizarMail",
+"Verb":"GET",
+"PathRegexp":"organizarmail",
+"Path":"organizarmail"
+
+},
+{
+"Name":"orubroitemactivo",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_orubroitemactivo",
+"Implementation":"ORubroItemActivo",
+"Verb":"GET",
+"PathRegexp":"orubroitemactivo",
+"Path":"orubroitemactivo"
+
+},
+{
+"Name":"orubroitemactivobatch",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_orubroitemactivobatch",
+"Implementation":"ORubroItemActivoBatch",
+"Verb":"GET",
+"PathRegexp":"orubroitemactivobatch",
+"Path":"orubroitemactivobatch"
+
+},
+{
+"Name":"obtenerdatostoupdatesol",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerdatostoupdatesol",
+"Implementation":"ObtenerDatosToUpdateSol",
+"Verb":"GET",
+"PathRegexp":"obtenerdatostoupdatesol",
+"Path":"obtenerdatostoupdatesol"
+
+},
+{
+"Name":"comercioconveniociu",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_comercioconveniociu",
+"Implementation":"ComercioConvenioCIU",
+"Verb":"GET",
+"PathRegexp":"comercioconveniociu",
+"Path":"comercioconveniociu"
+
+}]}

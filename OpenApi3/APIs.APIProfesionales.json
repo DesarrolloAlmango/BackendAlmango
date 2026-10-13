@@ -1,0 +1,3378 @@
+{
+"openapi": "3.0.0",
+ "info": {
+  "title": "APIProfesionales",
+  "description": "APIProfesionales",
+  "version": "20261005180336"
+  },
+"servers":[
+    {
+        "url": "http://localhost/AlmangoXV1NETFramework/APIs/APIProfesionales"
+	}
+],
+"paths":{
+    "/Login": {
+    "post": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.Login",
+      "summary": "Login",
+      "requestBody":{
+        "required": false,
+        "content":{
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/LoginInput"
+        	  }
+        	}
+          }
+        },
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/Logout": {
+    "post": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.Logout",
+      "summary": "Logout",
+      "requestBody":{
+        "required": false,
+        "content":{
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/LogoutInput"
+        	  }
+        	}
+          }
+        },
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LogoutOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/AIncidenciaApi": {
+    "post": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.AIncidenciaApi",
+      "summary": "Ingresa incidencia de un profesional a la solicitud",
+      "requestBody":{
+        "required": false,
+        "content":{
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/AIncidenciaApiInput"
+        	  }
+        	}
+          }
+        },
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AIncidenciaApiOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ARubroPendienteProf": {
+    "post": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.ARubroPendienteProf",
+      "summary": "Crea una solicitud de habilitacion de rubro para el profesional",
+      "requestBody":{
+        "required": false,
+        "content":{
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/ARubroPendienteProfInput"
+        	  }
+        	}
+          }
+        },
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ARubroPendienteProfOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ARelacionSolProf": {
+    "post": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.ARelacionSolProf",
+      "summary": "Alta de la relacion prof/solicitud y cambio de estado solicitud",
+      "requestBody":{
+        "required": false,
+        "content":{
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/ARelacionSolProfInput"
+        	  }
+        	}
+          }
+        },
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ARelacionSolProfOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ARechazarSolProf": {
+    "post": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.ARechazarSolProf",
+      "summary": "Rechaza la solicitud que el profesional solicita",
+      "requestBody":{
+        "required": false,
+        "content":{
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/ARechazarSolProfInput"
+        	  }
+        	}
+          }
+        },
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ARechazarSolProfOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/AFinalizarSolProf": {
+    "post": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.AFinalizarSolProf",
+      "summary": "Finaliza la solicitud que el profesional solicita, cambiando estadosolid y estadosgid",
+      "requestBody":{
+        "required": false,
+        "content":{
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/AFinalizarSolProfInput"
+        	  }
+        	}
+          }
+        },
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AFinalizarSolProfOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/AltaUsuario": {
+    "post": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.AltaUsuario",
+      "summary": "Alta de usuario y cuenta de pfofesiona",
+      "requestBody":{
+        "required": false,
+        "content":{
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/AltaUsuarioInput"
+        	  }
+        	}
+          }
+        },
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AltaUsuarioOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ModificarPerfil": {
+    "post": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.ModificarPerfil",
+      "summary": "Modificar perfil de profesional",
+      "requestBody":{
+        "required": false,
+        "content":{
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/ModificarPerfilInput"
+        	  }
+        	}
+          }
+        },
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModificarPerfilOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/AContrasena": {
+    "post": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.AContrasena",
+      "summary": "Actualiza contraseña de profesional",
+      "requestBody":{
+        "required": false,
+        "content":{
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/AContrasenaInput"
+        	  }
+        	}
+          }
+        },
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AContrasenaOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/AZonaProfesional": {
+    "post": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.AZonaProfesional",
+      "summary": "Actualiza/Alta de zona de trabajo de profesional ",
+      "requestBody":{
+        "required": false,
+        "content":{
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/AZonaProfesionalInput"
+        	  }
+        	}
+          }
+        },
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AZonaProfesionalOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/AltaPostulacion": {
+    "post": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.AltaPostulacion",
+      "summary": "Alta de postulación de profesional a una solicitud",
+      "requestBody":{
+        "required": false,
+        "content":{
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/AltaPostulacionInput"
+        	  }
+        	}
+          }
+        },
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AltaPostulacionOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/OZonaProfesional": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.OZonaProfesional",
+      "summary": "Obtengo departamentos de trabajo de un profesional",
+      "parameters":[
+        { "name": "User",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Profesionalesid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OZonaProfesionalOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/OSolById": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.OSolById",
+      "summary": "Obtengo solicitud de un profesional por id",
+      "parameters":[
+        { "name": "User",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Solicitudesid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Profesionalid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OSolByIdOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/OSolDatDisponibles": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.OSolDatDisponibles",
+      "summary": "Solicitudes disponibles y por estado para un profesional, si no recibe prodId devuelve 1 solicitude de acuerdo a solId",
+      "parameters":[
+        { "name": "User",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Currentpage",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int32"
+      	}
+        },
+        { "name": "Pagesize",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int32"
+      	}
+        },
+        { "name": "Estadosolid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Profesionalid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Turno",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Departamentoid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Localidadid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Filtrorubro",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int32"
+      	}
+        },
+        { "name": "Filtroservicio",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Fechadesde",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string",
+          "format": "date"
+      	}
+        },
+        { "name": "Fechahasta",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string",
+          "format": "date"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OSolDatDisponiblesOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ODetalleItemsSol": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.ODetalleItemsSol",
+      "summary": "ODetalleItemsSol",
+      "parameters":[
+        { "name": "User",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Profesionalesid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Solicitudesid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ODetalleItemsSolOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/OSolDatProfAceptadas": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.OSolDatProfAceptadas",
+      "summary": "Solicitudes aceptadas para mostrar en calendario",
+      "parameters":[
+        { "name": "User",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Profesionalid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Mes",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int32"
+      	}
+        },
+        { "name": "Anio",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int32"
+      	}
+        },
+        { "name": "Estado",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OSolDatProfAceptadasOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/OEstadisticasProf": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.OEstadisticasProf",
+      "summary": "Estadisticas de trabajos por profesional",
+      "parameters":[
+        { "name": "User",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Profesionalesid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OEstadisticasProfOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/OUltSolCalificadasProf": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.OUltSolCalificadasProf",
+      "summary": "Ultimas 6 solicitudes calificadas para un profesional",
+      "parameters":[
+        { "name": "User",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Profesionalid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OUltSolCalificadasProfOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ORubrosPendientesProf": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.ORubrosPendientesProf",
+      "summary": "ORubrosPendientesProf",
+      "parameters":[
+        { "name": "User",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Profesionalesid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ORubrosPendientesProfOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/OListaRubro": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.OListaRubro",
+      "summary": "Obtengo listado de rubros habilitados para un profesional o general",
+      "parameters":[
+        { "name": "User",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Profesionalesid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OListaRubroOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/OPerfilProf": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.OPerfilProf",
+      "summary": "OPerfilProf",
+      "parameters":[
+        { "name": "User",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Profesionalesid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OPerfilProfOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerAvatar": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.ObtenerAvatar",
+      "summary": "ObtenerAvatar",
+      "parameters":[
+        { "name": "User",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Profesionalesid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ObtenerAvatarOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ModificarAvatar": {
+    "post": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.ModificarAvatar",
+      "summary": "Cambio de foto en el perfil del profesiona",
+      "requestBody":{
+        "required": false,
+        "content":{
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/ModificarAvatarInput"
+        	  }
+        	}
+          }
+        },
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModificarAvatarOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerJwt": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.ObtenerJwt",
+      "summary": "ObtenerJwt",
+      "parameters":[
+        { "name": "User",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Profesionalesid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ObtenerJwtOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/OMetodoPagos": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.OMetodoPagos",
+      "summary": "Obtiene id y nombre de metodo de pagos habilitados",
+      "parameters":[
+        { "name": "User",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Password",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OMetodoPagosOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/OMotivos": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.OMotivos",
+      "summary": "Obtiene id y nombre de metodo de pagos habilitados",
+      "parameters":[
+        { "name": "Motivotipo",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "type": "array",
+          		  "items": {
+          		    "$ref": "#/components/schemas/APIs.SDTMotivo"
+          			}  
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/OPaises": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.OPaises",
+      "summary": "OPaises",
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OPaisesOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/OBancos": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.OBancos",
+      "summary": "OBancos",
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OBancosOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/OParametro": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.OParametro",
+      "summary": "OParametro",
+      "parameters":[
+        { "name": "Codigo",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "$ref": "#/components/schemas/OParametroOutput"
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ODatosMudanza": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.ODatosMudanza",
+      "summary": "ODatosMudanza",
+      "parameters":[
+        { "name": "User",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Profesionalesid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Solicitudid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ODatosMudanzaOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerSolDatos": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.ObtenerSolDatos",
+      "summary": "Obtiene datos de postulaciones y subastas web",
+      "parameters":[
+        { "name": "Solicitudesid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Profesionalesid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Usuariosid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ObtenerSolDatosOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerReporteDEconomico": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.ObtenerReporteDEconomico",
+      "summary": "ObtenerReporteDEconomico",
+      "parameters":[
+        { "name": "User",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Profesionalesid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Desde",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string",
+          "format": "date"
+      	}
+        },
+        { "name": "Hasta",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string",
+          "format": "date"
+      	}
+        },
+        { "name": "Clasificaciones",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Solicitudservicioorigenpago",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ObtenerReporteDEconomicoOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/OServicios": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.OServicios",
+      "summary": "Obtiene servicios de trabajo",
+      "parameters":[
+        { "name": "User",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Profesionalesid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OServiciosOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/OServiciosPendientesProf": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.OServiciosPendientesProf",
+      "summary": "Obtiene servicios de trabajo pendientes para un profesional",
+      "parameters":[
+        { "name": "User",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Profesionalesid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OServiciosPendientesProfOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/OServiciosProf": {"get": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.OServiciosProf",
+      "summary": "Obtiene servicios de trabajo habilitados para un profesional",
+      "parameters":[
+        { "name": "User",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Profesionalesid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OServiciosProfOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/AServicioPendienteProf": {
+    "post": {"tags": [
+      	"APIs"
+         ] ,
+      "operationId": "APIs.APIProfesionales.AServicioPendienteProf",
+      "summary": "Activa servicio de trabajo para un profesional",
+      "requestBody":{
+        "required": false,
+        "content":{
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/AServicioPendienteProfInput"
+        	  }
+        	}
+          }
+        },
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AServicioPendienteProfOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  } 
+  },
+"components":{
+  "schemas": {
+    "LoginOutput": {
+      "properties": {
+           "mensaje": {
+             "type": "string"}	 ,
+           "LogInSuccessful": {
+             "type": "boolean"}	 ,
+           "SdtUser": {
+             "description": "SDTUser",
+             "$ref": "#/components/schemas/SDTUser"
+         	}	 ,
+           "Auth": {
+             "type": "string"}	 
+        }
+      }
+      ,
+    "LogoutOutput": {
+      "properties": {
+           "RestMessage": {
+             "type": "string"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "AIncidenciaApiOutput": {
+      "properties": {
+           "RestMessage": {
+             "type": "string"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "ARubroPendienteProfOutput": {
+      "properties": {
+           "IsOk": {
+             "type": "boolean"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "RestMessage": {
+             "type": "string"}	 
+        }
+      }
+      ,
+    "ARelacionSolProfOutput": {
+      "properties": {
+           "RestMessage": {
+             "type": "string"}	 ,
+           "RestCod": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "ARechazarSolProfOutput": {
+      "properties": {
+           "RestMessage": {
+             "type": "string"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "AFinalizarSolProfOutput": {
+      "properties": {
+           "RestMessage": {
+             "type": "string"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "AltaUsuarioOutput": {
+      "properties": {
+           "ok": {
+             "type": "boolean"}	 ,
+           "RestMessage": {
+             "type": "string"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "ModificarPerfilOutput": {
+      "properties": {
+           "RestMessage": {
+             "type": "string"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "AContrasenaOutput": {
+      "properties": {
+           "RestMessage": {
+             "type": "string"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "AZonaProfesionalOutput": {
+      "properties": {
+           "IsOk": {
+             "type": "boolean"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "RestMessage": {
+             "type": "string"}	 
+        }
+      }
+      ,
+    "AltaPostulacionOutput": {
+      "properties": {
+           "RestMessage": {
+             "type": "string"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "OZonaProfesionalOutput": {
+      "properties": {
+           "DepartamentosProf": {
+             "type": "array",
+             "items": {
+               "type": "integer",
+               "format": "int64"}
+         	}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "RestMessage": {
+             "type": "string"}	 
+        }
+      }
+      ,
+    "OSolByIdOutput": {
+      "properties": {
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "RestMessage": {
+             "type": "string"}	 ,
+           "Solicitud": {
+             "description": "SDTSolicitudes",
+             "$ref": "#/components/schemas/SDTSolicitudes"
+         	}	 
+        }
+      }
+      ,
+    "OSolDatDisponiblesOutput": {
+      "properties": {
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "RestMessage": {
+             "type": "string"}	 ,
+           "SdtSolicitudes": {
+             "description": "SDTSolicitudes",
+             "type": "array",
+             "items": {
+               "$ref": "#/components/schemas/SDTSolicitudes"
+         	}
+         	}	 ,
+           "HasMore": {
+             "type": "boolean"}	 
+        }
+      }
+      ,
+    "ODetalleItemsSolOutput": {
+      "properties": {
+           "SdtItems": {
+             "description": "Items",
+             "type": "array",
+             "items": {
+               "$ref": "#/components/schemas/SDTSolicitudes.Items_Items"
+         	}
+         	}	 ,
+           "TieneItems": {
+             "type": "boolean"}	 ,
+           "RestMessage": {
+             "type": "string"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "OSolDatProfAceptadasOutput": {
+      "properties": {
+           "RestMessage": {
+             "type": "string"}	 ,
+           "Solicitudes": {
+             "description": "SDTSolicitudes Aceptadas",
+             "type": "array",
+             "items": {
+               "$ref": "#/components/schemas/APIs.SDTSolicitudesAceptadas"
+         	}
+         	}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "OEstadisticasProfOutput": {
+      "properties": {
+           "SolDisponibles": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "SolAceptadas": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "SolCalificadas": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "SolFinalizadas": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "SolCanceladas": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "SolDelegadas": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "SolGarantias": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "FeedbackProm": {
+             "type": "number",
+             "format": "double"}	 ,
+           "SDTCantSolRubro": {
+             "description": "SDTCant Sol Rubro",
+             "type": "array",
+             "items": {
+               "$ref": "#/components/schemas/APIs.SDTCantSolRubro"
+         	}
+         	}	 ,
+           "RestMessage": {
+             "type": "string"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "OUltSolCalificadasProfOutput": {
+      "properties": {
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "RestMessage": {
+             "type": "string"}	 ,
+           "SdtSolicitudes": {
+             "description": "SDTSolicitudes",
+             "type": "array",
+             "items": {
+               "$ref": "#/components/schemas/SDTSolicitudes"
+         	}
+         	}	 
+        }
+      }
+      ,
+    "ORubrosPendientesProfOutput": {
+      "properties": {
+           "SDTRubros": {
+             "description": "SDTRubros",
+             "type": "array",
+             "items": {
+               "$ref": "#/components/schemas/APIs.SDTRubros"
+         	}
+         	}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "RestMessage": {
+             "type": "string"}	 
+        }
+      }
+      ,
+    "OListaRubroOutput": {
+      "properties": {
+           "SDTRubros": {
+             "description": "SDTRubros",
+             "type": "array",
+             "items": {
+               "$ref": "#/components/schemas/APIs.SDTRubros"
+         	}
+         	}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "RestMessage": {
+             "type": "string"}	 
+        }
+      }
+      ,
+    "OPerfilProfOutput": {
+      "properties": {
+           "SDTProfesionales": {
+             "description": "SDTProfesionales",
+             "$ref": "#/components/schemas/SDTProfesionales"
+         	}	 ,
+           "RestMessage": {
+             "type": "string"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "ObtenerAvatarOutput": {
+      "properties": {
+           "Avatar": {
+             "type": "string"}	 ,
+           "RestMessage": {
+             "type": "string"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "ModificarAvatarOutput": {
+      "properties": {
+           "RestMessage": {
+             "type": "string"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "ObtenerJwtOutput": {
+      "properties": {
+           "SDTGoogleDriveApiResponse": {
+             "description": "SDTGoogle Drive Api Response",
+             "$ref": "#/components/schemas/APIs.SDTGoogleDriveApiResponse"
+         	}	 ,
+           "RestMessage": {
+             "type": "string"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "OMetodoPagosOutput": {
+      "properties": {
+           "RestMessage": {
+             "type": "string"}	 ,
+           "SDTMetodoPagos": {
+             "description": "SDTMetodo Pagos",
+             "type": "array",
+             "items": {
+               "$ref": "#/components/schemas/APIs.SDTMetodoPagos"
+         	}
+         	}	 
+        }
+      }
+      ,
+    "OPaisesOutput": {
+      "properties": {
+           "SdtPais": {
+             "description": "SDTPais",
+             "type": "array",
+             "items": {
+               "$ref": "#/components/schemas/APIs.SDTPais"
+         	}
+         	}	 ,
+           "RestMessage": {
+             "type": "string"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "OBancosOutput": {
+      "properties": {
+           "SdtBancos": {
+             "description": "SDTBanco",
+             "type": "array",
+             "items": {
+               "$ref": "#/components/schemas/APIs.SDTBanco"
+         	}
+         	}	 ,
+           "RestMessage": {
+             "type": "string"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "OParametroOutput": {
+      "properties": {
+           "Valor": {
+             "type": "string"}	 
+        }
+      }
+      ,
+    "ODatosMudanzaOutput": {
+      "properties": {
+           "SDTMudanza": {
+             "description": "SDTMudanza",
+             "$ref": "#/components/schemas/SDTMudanza"
+         	}	 ,
+           "RestMessage": {
+             "type": "string"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "ObtenerSolDatosOutput": {
+      "properties": {
+           "SDTPostulaciones": {
+             "description": "SDTPostulaciones",
+             "$ref": "#/components/schemas/SDTPostulaciones"
+         	}	 ,
+           "RestMessage": {
+             "type": "string"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "ObtenerReporteDEconomicoOutput": {
+      "properties": {
+           "SDT_ReporteFinanciero": {
+             "description": "Sdt Reporte DEconomico",
+             "$ref": "#/components/schemas/APIs.SdtReporteDEconomico"
+         	}	 ,
+           "RestMessage": {
+             "type": "string"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "OServiciosOutput": {
+      "properties": {
+           "SdtServicios": {
+             "description": "SDTServicios",
+             "$ref": "#/components/schemas/SDTServicios_Item"
+         	}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "RestMessage": {
+             "type": "string"}	 
+        }
+      }
+      ,
+    "OServiciosPendientesProfOutput": {
+      "properties": {
+           "SdtServicios": {
+             "description": "SDTServicios",
+             "$ref": "#/components/schemas/SDTServicios_Item"
+         	}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "RestMessage": {
+             "type": "string"}	 
+        }
+      }
+      ,
+    "OServiciosProfOutput": {
+      "properties": {
+           "SdtServicios": {
+             "description": "SDTServicios",
+             "$ref": "#/components/schemas/SDTServicios_Item"
+         	}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "RestMessage": {
+             "type": "string"}	 
+        }
+      }
+      ,
+    "AServicioPendienteProfOutput": {
+      "properties": {
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 ,
+           "RestMessage": {
+             "type": "string"}	 
+        }
+      }
+      
+    ,
+
+    "LoginInput": {
+      "properties": {
+         "usuario": {
+            "type": "string"}	 ,
+         "Password": {
+            "type": "string"}	  
+       }
+     },
+    "LogoutInput": {
+      "properties": {
+         "usuariosId": {
+            "type": "string"}	 ,
+         "ProfesionalesId": {
+            "type": "string"}	  
+       }
+     },
+    "AIncidenciaApiInput": {
+      "properties": {
+         "IncidenciaCodRef": {
+            "type": "string"}	 ,
+         "Origen": {
+            "type": "string"}	 ,
+         "MotivoId": {
+            "type": "integer",
+            "format": "int64"}	 ,
+         "IncidenciaUsrAlta": {
+            "type": "string"}	 ,
+         "IncidenciaDetalleDesc": {
+            "type": "string"}	 ,
+         "ProfesionalesId": {
+            "type": "string"}	  
+       }
+     },
+    "ARubroPendienteProfInput": {
+      "properties": {
+         "User": {
+            "type": "string"}	 ,
+         "ProfesionalesId": {
+            "type": "string"}	 ,
+         "RubroIdSolicitado": {
+            "type": "integer",
+            "format": "int32"}	  
+       }
+     },
+    "ARelacionSolProfInput": {
+      "properties": {
+         "SolicitudesID": {
+            "type": "integer",
+            "format": "int64"}	 ,
+         "ProfesionalesId": {
+            "type": "string"}	 ,
+         "usuariosId": {
+            "type": "string"}	  
+       }
+     },
+    "ARechazarSolProfInput": {
+      "properties": {
+         "SolicitudesID": {
+            "type": "integer",
+            "format": "int64"}	 ,
+         "ProfesionalesId": {
+            "type": "string"}	 ,
+         "usuariosId": {
+            "type": "string"}	  
+       }
+     },
+    "AFinalizarSolProfInput": {
+      "properties": {
+         "SolicitudesID": {
+            "type": "integer",
+            "format": "int64"}	 ,
+         "ProfesionalesId": {
+            "type": "string"}	 ,
+         "usuariosId": {
+            "type": "string"}	 ,
+         "MetodoPagoId": {
+            "type": "integer",
+            "format": "int64"}	  
+       }
+     },
+    "AltaUsuarioInput": {
+      "properties": {
+         "usuariosId": {
+            "type": "string"}	 ,
+         "Password": {
+            "type": "string"}	 ,
+         "usuariosTipo": {
+            "type": "string"}	 ,
+         "SdtProfesionalesRegistro": {
+            "description": "SDTProfesionales",
+            "$ref": "#/components/schemas/SDTProfesionales"
+        	}	  
+       }
+     },
+    "ModificarPerfilInput": {
+      "properties": {
+         "ProfesionalesId": {
+            "type": "string"}	 ,
+         "usuariosId": {
+            "type": "string"}	 ,
+         "SDTProfesionales": {
+            "description": "SDTProfesionales",
+            "$ref": "#/components/schemas/SDTProfesionales"
+        	}	  
+       }
+     },
+    "AContrasenaInput": {
+      "properties": {
+         "usuariosId": {
+            "type": "string"}	 ,
+         "ProfesionalesId": {
+            "type": "string"}	 ,
+         "PasswordAnterior": {
+            "type": "string"}	 ,
+         "NuevoPassword": {
+            "type": "string"}	 ,
+         "ConfirmarPassword": {
+            "type": "string"}	  
+       }
+     },
+    "AZonaProfesionalInput": {
+      "properties": {
+         "User": {
+            "type": "string"}	 ,
+         "ProfesionalesId": {
+            "type": "string"}	 ,
+         "Departamentos": {
+            "description": "SDTDepartamento",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SDTDepartamento"
+        	}
+        	}	  
+       }
+     },
+    "AltaPostulacionInput": {
+      "properties": {
+         "SdtAltaPostulacion": {
+            "description": "Sdt Alta Postulacion",
+            "$ref": "#/components/schemas/APIs.SdtAltaPostulacion"
+        	}	  
+       }
+     },
+    "ModificarAvatarInput": {
+      "properties": {
+         "User": {
+            "type": "string"}	 ,
+         "ProfesionalesId": {
+            "type": "string"}	 ,
+         "AvatarStr": {
+            "type": "string"}	  
+       }
+     },
+    "AServicioPendienteProfInput": {
+      "properties": {
+         "User": {
+            "type": "string"}	 ,
+         "ProfesionalesId": {
+            "type": "string"}	 ,
+         "ServicioIdSolicitado": {
+            "type": "integer",
+            "format": "int64"}	  
+       }
+     },
+
+    "SDTUser": {
+
+      "properties": {
+          "UsuariosID": {
+            "description": "NickName",
+            "type": "string"}	  ,
+          "UsuariosPassw": {
+            "description": "Usuarios Passw",
+            "type": "string"}	  ,
+          "usuariosNombre": {
+            "description": "Nombre",
+            "type": "string"}	  ,
+          "PaisId": {
+            "description": "PaisId",
+            "type": "string"}	  ,
+          "tipoUsuario": {
+            "description": "tipo Usuario",
+            "type": "string"}	  ,
+          "ProfesionalesId": {
+            "description": "Identidad",
+            "type": "string"}	  ,
+          "usuariosCorreo": {
+            "description": "Correo",
+            "type": "string"}	  ,
+          "usuariosDireccion": {
+            "description": "usuarios Direccion",
+            "type": "string"}	  ,
+          "usuariosCPostal": {
+            "description": "Codigo Postal",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "usuariosTelefono": {
+            "description": "usuarios Telefono",
+            "type": "string"}	  ,
+          "usuariosImagen": {
+            "description": "Imagen",
+            "type": "string"}	  ,
+          "usuariosUrl": {
+            "description": "usuarios Url",
+            "type": "string"}	  ,
+          "usuariosEstado": {
+            "description": "usuarios Estado",
+            "type": "string"}	  ,
+          "SdtRoles": {
+            "description": "SDTRoles",
+            "$ref": "#/components/schemas/SDTRoles"
+        	}	  ,
+          "secUserId": {
+            "description": "Usuario Nro.",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "UsuarioTieneRubro": {
+            "description": "Usuario Tiene Rubro",
+            "type": "boolean"}	  ,
+          "NotificarPostulacion": {
+            "description": "Notificar Postulacion enestado asignada",
+            "type": "boolean"}	  
+      }
+    ,"x-gx-sdt-type":"SDTUser" }
+     ,"SDTProfesionales": {
+
+      "properties": {
+          "DocIdentidad": {
+            "description": "Doc Identidad",
+            "type": "string"}	  ,
+          "EsRUT": {
+            "description": "Es RUT",
+            "type": "boolean"}	  ,
+          "PrimerNombre": {
+            "description": "Primer Nombre",
+            "type": "string"}	  ,
+          "SegundoNombre": {
+            "description": "Segundo Nombre",
+            "type": "string"}	  ,
+          "ApellidoPrimero": {
+            "description": "Primero Apellido ",
+            "type": "string"}	  ,
+          "ApellidoSegundo": {
+            "description": "Segundo Apellido ",
+            "type": "string"}	  ,
+          "ImagenBase64": {
+            "description": "Imagen",
+            "type": "string"}	  ,
+          "Telefono": {
+            "description": "Teléfono",
+            "type": "string"}	  ,
+          "Email": {
+            "description": "Email",
+            "type": "string"}	  ,
+          "Direccion": {
+            "description": "Dirección",
+            "type": "string"}	  ,
+          "PaisISO2": {
+            "description": "Pais ISO2",
+            "type": "string"}	  ,
+          "Ciudad": {
+            "description": "Ciudad",
+            "type": "string"}	  ,
+          "AceptoTerminos": {
+            "description": "Acepto Terminos",
+            "type": "boolean"}	  ,
+          "DeclaroDatosV": {
+            "description": "Declaro Datos son Verdaderos",
+            "type": "boolean"}	  ,
+          "CuentaBancaria": {
+            "description": "Cuenta Bancaria",
+            "type": "string"}	  ,
+          "BancoId": {
+            "description": "Nro",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "Experiencia": {
+            "description": "Experiencia",
+            "type": "string"}	  ,
+          "FechaNacimiento": {
+            "description": "Fecha Nacimiento",
+            "type": "string",
+            "format": "date"}	  ,
+          "RUTEmpresa": {
+            "description": "RUTEmpresa",
+            "type": "string"}	  ,
+          "TipoEmpresa": {
+            "description": "Tipo Empresa",
+            "type": "integer",
+            "format": "int32"}	  
+      }
+    ,"x-gx-sdt-type":"SDTProfesionales" }
+     ,"SDTDepartamento": {
+
+      "properties": {
+          "DepartamentoId": {
+            "description": "Departamento",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "PaisID": {
+            "description": "PaisId",
+            "type": "string"}	  ,
+          "DepartamentoDepartamento": {
+            "description": "Departamento",
+            "type": "string"}	  ,
+          "DepartamentoAutEnuMuni": {
+            "description": "Departamento Aut Enu Muni",
+            "type": "integer",
+            "format": "int32"}	  
+      }
+    ,"x-gx-sdt-type":"SDTDepartamento" }
+     ,"APIs.SdtAltaPostulacion": {
+
+      "properties": {
+          "User": {
+            "description": "NickName",
+            "type": "string"}	  ,
+          "ProfesionalesId": {
+            "description": "Identidad",
+            "type": "string"}	  ,
+          "SolicitudesId": {
+            "description": "Solicitudes Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "FechaTrabajo": {
+            "description": "Fecha Trabajo",
+            "type": "string",
+            "format": "date"}	  ,
+          "Turno": {
+            "description": "HoraServicio",
+            "type": "string"}	  ,
+          "Precio": {
+            "description": "Precio",
+            "type": "number",
+            "format": "double"}	  ,
+          "PlazoEjecucion": {
+            "description": "Plazo Ejecucion",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "PlazoEjecucionUnidad": {
+            "description": "Plazo Ejecucion Unidad",
+            "type": "string"}	  ,
+          "PlazoGarantia": {
+            "description": "Plazo Garantia",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "PlazoGarantiaUnidad": {
+            "description": "Plazo Garantia Unidad",
+            "type": "string"}	  ,
+          "Aclaraciones": {
+            "description": "Aclaraciones",
+            "type": "string"}	  
+      }
+    ,"x-gx-sdt-type":"APIs.SdtAltaPostulacion" }
+     ,"SDTSolicitudes": {
+
+      "properties": {
+          "SolicitudesID": {
+            "description": "Solicitud No:",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "SolicitudesNombre": {
+            "description": "Nombre de la persona",
+            "type": "string"}	  ,
+          "ProveedorNombre": {
+            "description": "Proveedor Nombre",
+            "type": "string"}	  ,
+          "SolicitudesTelefono": {
+            "description": "Teléfono",
+            "type": "string"}	  ,
+          "SolicitudesMail": {
+            "description": "Solicitudes Mail",
+            "type": "string"}	  ,
+          "PaisID": {
+            "description": "PaisId",
+            "type": "string"}	  ,
+          "DepartamentoId": {
+            "description": "Departamento",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "DepartamentoNombre": {
+            "description": "Departamento",
+            "type": "string"}	  ,
+          "DepartamentoMunicipioId": {
+            "description": "Identificador",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "MunicipioNombre": {
+            "description": "Municipio",
+            "type": "string"}	  ,
+          "ZonasID": {
+            "description": "Código de la Zona",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "SolicitudesDireccion": {
+            "description": "Dirección",
+            "type": "string"}	  ,
+          "SolicitudesAutoEnumerar": {
+            "description": "Solicitudes Auto Enumerar",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "ProfesionalPostulado": {
+            "description": "Profesional Postulado",
+            "type": "boolean"}	  ,
+          "PostulacionFechaCierre": {
+            "description": "Postulacion Fecha Cierre",
+            "type": "string",
+            "format": "date"}	  ,
+          "PostulacionHoraCierre": {
+            "description": "Postulacion Hora Cierre",
+            "type": "string"}	  ,
+          "PostulacionTipoFecha": {
+            "description": "Postulaciones Tipo Fecha",
+            "type": "string"}	  ,
+          "ServiciosNombre": {
+            "description": "Servicios Nombre",
+            "type": "string"}	  ,
+          "SolicitudesNotificacion": {
+            "description": "¿Se notifico al cliente?",
+            "type": "string"}	  ,
+          "SolicitudesNota": {
+            "description": "NOTA:",
+            "type": "string"}	  ,
+          "MetodoPagosNombre": {
+            "description": "Metodo",
+            "type": "string"}	  ,
+          "MetodoPagosID": {
+            "description": "Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "SolicitudesComentario": {
+            "description": "Comentario",
+            "type": "string"}	  ,
+          "SolicitudesHoraInstalacion": {
+            "description": "Hora",
+            "type": "string"}	  ,
+          "SolicitudesFechaInstalacion": {
+            "description": "Programar la instalación para la fecha",
+            "type": "string",
+            "format": "date"}	  ,
+          "SolicitudesFechaActualizacion": {
+            "description": "Actualizado",
+            "type": "string",
+            "format": "date-time"}	  ,
+          "SolicitudesFechaAlta": {
+            "description": "Fecha de Alta",
+            "type": "string",
+            "format": "date"}	  ,
+          "SolicitudesOtros3": {
+            "description": "Otros",
+            "type": "string"}	  ,
+          "SolicitudesOtros2": {
+            "description": "Solicitar:",
+            "type": "string"}	  ,
+          "SolicitudesOtros1": {
+            "description": "Solicitudes Otros1",
+            "type": "string"}	  ,
+          "EstadosSolNombre": {
+            "description": "Estados Sol Nombre",
+            "type": "string"}	  ,
+          "EstadosSolId": {
+            "description": "Estados Sol Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "EstadosSolTipo": {
+            "description": "Estados Sol Tipo",
+            "type": "string"}	  ,
+          "SolicitudServicioPFinal": {
+            "description": "Precio Final",
+            "type": "number",
+            "format": "double"}	  ,
+          "SolicitudServicioSolCoti": {
+            "description": "Solicitar cotización ",
+            "type": "string"}	  ,
+          "SolicitudesTotal": {
+            "description": "Total",
+            "type": "number",
+            "format": "double"}	  ,
+          "SolicitudesCotizacion": {
+            "description": "Cotización:",
+            "type": "number",
+            "format": "double"}	  ,
+          "ModoPago": {
+            "description": "Modo Pago",
+            "type": "string"}	  ,
+          "Ganancia": {
+            "description": "Ganancia",
+            "type": "string"}	  ,
+          "Deduccion": {
+            "description": "Deduccion",
+            "type": "string"}	  ,
+          "FeedBackId": {
+            "description": "Feed Back Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "FeedBackNum": {
+            "description": "Feed Back Num",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "FeedBackComentario": {
+            "description": "Comentario",
+            "type": "string"}	  ,
+          "FeedBackFechaAlta": {
+            "description": "Feed Back Fecha Alta",
+            "type": "string",
+            "format": "date"}	  ,
+          "SolicitudesSubTipo": {
+            "description": "Sub Tipo",
+            "type": "string"}	  ,
+          "SolicitudesSubTipoDesc": {
+            "description": "Solicitudes Sub Tipo Descipcion",
+            "type": "string"}	  ,
+          "MudanzaId": {
+            "description": "Mudanza Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "SolicitudServicioOrigenPago": {
+            "description": "Origen del Pago",
+            "type": "string"}	  ,
+          "STComerciosNombre": {
+            "description": "STComercios Nombre",
+            "type": "string"}	  ,
+          "SolicitudesComisionMetodoPago": {
+            "description": "Comisión del Metodo de Pago",
+            "type": "number",
+            "format": "double"}	  ,
+          "Items": {
+            "type": "array",
+            "items": {
+              "description": "Items",
+              "$ref": "#/components/schemas/SDTSolicitudes.Items_Items"
+        	  } 
+        	}  ,
+          "Archivo": {
+            "type": "array",
+            "items": {
+              "description": "ArchivoItem",
+              "$ref": "#/components/schemas/SDTSolicitudes.Archivo_ArchivoItem"
+        	  } 
+        	}  
+      }
+    ,"x-gx-sdt-type":"SDTSolicitudes" }
+    ,
+    "SDTSolicitudes.Items_Items": {
+
+      "properties": {
+          "SolicitudesItemsID": {
+            "description": "No.",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "RubrosId": {
+            "description": "Rubros Identificador ",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "RubrosImagen": {
+            "description": "",
+            "type": "string"}	  ,
+          "MedidasNombre": {
+            "description": "Nombre de la Característica",
+            "type": "string"}	  ,
+          "RubrosNombre": {
+            "description": "Rubro",
+            "type": "string"}	  ,
+          "MedidasID": {
+            "description": "Medidas ID",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "InventarioId": {
+            "description": "Producto",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "InventarioNombre": {
+            "description": "",
+            "type": "string"}	  ,
+          "InventarioImagen": {
+            "description": "",
+            "type": "string"}	  ,
+          "InventarioPrecioFinal": {
+            "description": "Armado",
+            "type": "number",
+            "format": "double"}	  ,
+          "SolicitudesItemsCantidad": {
+            "description": "Cantidad",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "SolicitudesItemsPrecioInstalacion": {
+            "description": "Instalación",
+            "type": "number",
+            "format": "double"}	  ,
+          "TextosId": {
+            "description": "Textos Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "TextosTitulo": {
+            "description": "Titulo",
+            "type": "string"}	  ,
+          "TextosDescripcion": {
+            "description": "Textos Descripcion",
+            "type": "string"}	  ,
+          "InventarioTextosId": {
+            "description": "Textos Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "InventarioTextosDescripcion": {
+            "description": "Inventario Textos Descripcion",
+            "type": "string"}	  ,
+          "InventarioTextosTitulo": {
+            "description": "Titulo",
+            "type": "string"}	  ,
+          "MonedaId": {
+            "description": "Moneda",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "MonedaISOSimbolo": {
+            "description": "Simbolo ISO",
+            "type": "string"}	  
+      }
+    ,"x-gx-level": "SDTSolicitudes","x-gx-sdt-type":"SDTSolicitudes" }
+     },
+    ,
+    "SDTSolicitudes.Archivo_ArchivoItem": {
+
+      "properties": {
+          "ArchivoId": {
+            "description": "Archivo Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "ArchivoTipo": {
+            "description": "Archivo Tipo",
+            "type": "string"}	  ,
+          "ArchivoDireccion": {
+            "description": "Archivo Direccion",
+            "type": "string"}	  ,
+          "ArchivoDescripcion": {
+            "description": "Archivo Descripcion",
+            "type": "string"}	  
+      }
+    ,"x-gx-level": "SDTSolicitudes","x-gx-sdt-type":"SDTSolicitudes" }
+     
+     ,"APIs.SDTSolicitudesAceptadas": {
+
+      "properties": {
+          "Id": {
+            "description": "Solicitudes Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "Cliente": {
+            "description": "Solicitudes Nombre",
+            "type": "string"}	  ,
+          "Direccion": {
+            "description": "Dirección",
+            "type": "string"}	  ,
+          "TurnoDsc": {
+            "description": "Turno Dsc",
+            "type": "string"}	  ,
+          "Turno": {
+            "description": "HoraServicio",
+            "type": "string"}	  ,
+          "RubroId": {
+            "description": "Rubros Identificador ",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "RubroNombre": {
+            "description": "Rubro",
+            "type": "string"}	  ,
+          "FechaInstalacion": {
+            "description": "Fecha de instalación",
+            "type": "string",
+            "format": "date"}	  
+      }
+    ,"x-gx-sdt-type":"APIs.SDTSolicitudesAceptadas" }
+     ,"APIs.SDTCantSolRubro": {
+
+      "properties": {
+          "Cantidad": {
+            "description": "Cantidad",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "RubrosId": {
+            "description": "Rubros Identificador ",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "RubrosNombre": {
+            "description": "Rubro",
+            "type": "string"}	  
+      }
+    ,"x-gx-sdt-type":"APIs.SDTCantSolRubro" }
+     ,"APIs.SDTRubros": {
+
+      "properties": {
+          "RubrosId": {
+            "description": "Rubros Identificador ",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "RubrosNombre": {
+            "description": "Rubro",
+            "type": "string"}	  
+      }
+    ,"x-gx-sdt-type":"APIs.SDTRubros" }
+     ,"APIs.SDTGoogleDriveApiResponse": {
+
+      "properties": {
+          "client_email": {
+            "description": "client_email",
+            "type": "string"}	  ,
+          "private_key": {
+            "description": "private_key",
+            "type": "string"}	  ,
+          "scope": {
+            "description": "256",
+            "type": "string"}	  ,
+          "aud": {
+            "description": "aud",
+            "type": "string"}	  
+      }
+    ,"x-gx-sdt-type":"APIs.SDTGoogleDriveApiResponse" }
+     ,"APIs.SDTMetodoPagos": {
+
+      "properties": {
+          "MetodoPagosID": {
+            "description": "Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "MetodoPagosNombre": {
+            "description": "Metodo",
+            "type": "string"}	  
+      }
+    ,"x-gx-sdt-type":"APIs.SDTMetodoPagos" }
+     ,"APIs.SDTMotivo": {
+
+      "properties": {
+          "MotivoId": {
+            "description": "Motivo Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "MotivoTipo": {
+            "description": "Motivo Tipo",
+            "type": "string"}	  ,
+          "MotivoNombre": {
+            "description": "Motivo Nombre",
+            "type": "string"}	  
+      }
+    ,"x-gx-sdt-type":"APIs.SDTMotivo" }
+     ,"APIs.SDTPais": {
+
+      "properties": {
+          "PaisId": {
+            "description": "PaisId",
+            "type": "string"}	  ,
+          "PaisNombre": {
+            "description": "Pais",
+            "type": "string"}	  
+      }
+    ,"x-gx-sdt-type":"APIs.SDTPais" }
+     ,"APIs.SDTBanco": {
+
+      "properties": {
+          "BancoId": {
+            "description": "Nro",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "BancoNombre": {
+            "description": "Nombre del Banco",
+            "type": "string"}	  
+      }
+    ,"x-gx-sdt-type":"APIs.SDTBanco" }
+     ,"SDTMudanza": {
+
+      "properties": {
+          "MudanzaId": {
+            "description": "Mudanza Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "MudanzaAsesor": {
+            "description": "Mudanza Asesor",
+            "type": "string"}	  ,
+          "MudanzaApellidoNombre": {
+            "description": "Mudanza Apellido Nombre",
+            "type": "string"}	  ,
+          "MudanzaMail": {
+            "description": "Mudanza Mail",
+            "type": "string"}	  ,
+          "MudanzaPhone": {
+            "description": "Mudanza Phone",
+            "type": "string"}	  ,
+          "MudanzaFechaAlta": {
+            "description": "Mudanza Fecha Alta",
+            "type": "string",
+            "format": "date"}	  ,
+          "MudanzaFechaUpdate": {
+            "description": "Mudanza Fecha Update",
+            "type": "string",
+            "format": "date"}	  ,
+          "MudanzaFechaServicio": {
+            "description": "Mudanza Fecha Servicio",
+            "type": "string",
+            "format": "date"}	  ,
+          "MudanzaHoraServicio": {
+            "description": "Mudanza Hora Servicio",
+            "type": "string"}	  ,
+          "MudanzaRgoHoraservicio": {
+            "description": "Mudanza Rgo Horaservicio",
+            "type": "string"}	  ,
+          "MudanzaDireccionOrigen": {
+            "description": "Mudanza Direccion Origen",
+            "type": "string"}	  ,
+          "MudanzaLocalidadOrigen": {
+            "description": "Mudanza Localidad Origen",
+            "type": "string"}	  ,
+          "MudanzaPisoDptoOrigen": {
+            "description": "Mudanza Piso Dpto Origen",
+            "type": "string"}	  ,
+          "MudanzaDireccionDestino": {
+            "description": "Mudanza Direccion Destino",
+            "type": "string"}	  ,
+          "MudanzaLocalidadDestino": {
+            "description": "Mudanza Localidad Destino",
+            "type": "string"}	  ,
+          "MudanzaPisoDptoDestino": {
+            "description": "Mudanza Piso Dpto Destino",
+            "type": "string"}	  ,
+          "MudanzaCoordenadasOrigen": {
+            "description": "Mudanza Coordenada Origen",
+            "type": "string"}	  ,
+          "MudanzaCoordenadasDestino": {
+            "description": "Mudanza Coordenada Destino",
+            "type": "string"}	  ,
+          "MudanzaDistancia": {
+            "description": "Mudanza Distancia",
+            "type": "number",
+            "format": "double"}	  ,
+          "MudanzaVehiculoSugerido": {
+            "description": "Mudanza Vehiculo Sugerido",
+            "type": "string"}	  ,
+          "MudanzaPrecioBasexHora": {
+            "description": "Mudanza Precio Basex Hora",
+            "type": "number",
+            "format": "double"}	  ,
+          "MudanzaPeajeCantidad": {
+            "description": "Mudanza Peaje Cantidad",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "MudanzaComentario": {
+            "description": "Mudanza Comentario",
+            "type": "string"}	  ,
+          "MudanzaPeajevalor": {
+            "description": "Mudanza Peajevalor",
+            "type": "number",
+            "format": "double"}	  ,
+          "TipoInmuebleOrigenId": {
+            "description": "Tipo Inmueble Origen Id",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "TipoInmuebleOrigenNombre": {
+            "description": "Tipo Inmueble Origen Nombre",
+            "type": "string"}	  ,
+          "TipoInmuebleOrigenValor": {
+            "description": "Tipo Inmueble Origen Valor",
+            "type": "number",
+            "format": "double"}	  ,
+          "MudanzaOrigenMetodo": {
+            "description": "Mudanza Origen Metodo",
+            "type": "string"}	  ,
+          "TipoInmuebleDestinoId": {
+            "description": "Tipo Inmueble Destino Id",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "TipoInmuebleDestinoNombre": {
+            "description": "Tipo Inmueble Destino Nombre",
+            "type": "string"}	  ,
+          "TipoInmuebleDestinoValor": {
+            "description": "Tipo Inmueble Destino Valor",
+            "type": "number",
+            "format": "double"}	  ,
+          "TipoEstacionamOrigenId": {
+            "description": "Tipo Estacionam Origen Id",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "TipoEstacionamOrigenNombre": {
+            "description": "Tipo Estacionam Origen Nombre",
+            "type": "string"}	  ,
+          "TipoEstacionamOrigenValor": {
+            "description": "Tipo Estacionam Origen Valor",
+            "type": "number",
+            "format": "double"}	  ,
+          "TipoEstacionamDestinoId": {
+            "description": "Tipo Estacionam Destino Id",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "TipoEstacionamDestinoNombre": {
+            "description": "Tipo Estacionam Destino Nombre",
+            "type": "string"}	  ,
+          "MudanzaDestinoMetodo": {
+            "description": "Mudanza Destino Metodo",
+            "type": "string"}	  ,
+          "TipoEstacionamDestinoValor": {
+            "description": "Tipo Estacionam Destino Valor",
+            "type": "number",
+            "format": "double"}	  ,
+          "MudanzaTiempoMaximo": {
+            "description": "Mudanza Tiempo Maximo",
+            "type": "number",
+            "format": "double"}	  ,
+          "MudanzaCargaVolumenEstimado": {
+            "description": "Mudanza Carga Volumen Estimado",
+            "type": "number",
+            "format": "double"}	  ,
+          "MudanzaAdicionalPrecio": {
+            "description": "Mudanza Adicional Precio",
+            "type": "number",
+            "format": "double"}	  ,
+          "MudanzaCantidadPeones": {
+            "description": "Mudanza Cantidad Peones",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "MudanzaElevacion": {
+            "description": "Mudanza Elevacion",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "MudanzaDescenso": {
+            "description": "Mudanza Descenso",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "MudanzaEmbalaje": {
+            "description": "Mudanza Embalaje",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "MudanzaPrecioFinal": {
+            "description": "Mudanza Precio Final",
+            "type": "number",
+            "format": "double"}	  ,
+          "MudanzaFormaPago": {
+            "description": "Mudanza Forma Pago",
+            "type": "string"}	  ,
+          "MudanzaOperacionId": {
+            "description": "Mudanza Operacion Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "MudanzaProveedorId": {
+            "description": "Mudanza Proveedor Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "MudanzaSecUserId": {
+            "description": "Mudanza Sec User Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "Carga": {
+            "type": "array",
+            "items": {
+              "description": "CargaItem",
+              "$ref": "#/components/schemas/SDTMudanza.Carga_CargaItem"
+        	  } 
+        	}  ,
+          "Adicional": {
+            "type": "array",
+            "items": {
+              "description": "AdicionalItem",
+              "$ref": "#/components/schemas/SDTMudanza.Adicional_AdicionalItem"
+        	  } 
+        	}  
+      }
+    ,"x-gx-sdt-type":"SDTMudanza" }
+    ,
+    "SDTMudanza.Carga_CargaItem": {
+
+      "properties": {
+          "ItemCargaId": {
+            "description": "Item Carga Id",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "ItemCargaNombre": {
+            "description": "Item Carga Nombre",
+            "type": "string"}	  ,
+          "ItemCargaDescripcion": {
+            "description": "Item Carga Descripcion",
+            "type": "string"}	  ,
+          "ItemCargaCantidad": {
+            "description": "Item Carga Cantidad",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "ItemCargaEmbCant": {
+            "description": "Item Carga Emb Cant",
+            "type": "integer",
+            "format": "int32"}	  
+      }
+    ,"x-gx-level": "SDTMudanza","x-gx-sdt-type":"SDTMudanza" }
+     },
+    ,
+    "SDTMudanza.Adicional_AdicionalItem": {
+
+      "properties": {
+          "ItemAdicionalId": {
+            "description": "Item Adicional Id",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "ItemAdicionalNombre": {
+            "description": "Item Adicional Nombre",
+            "type": "string"}	  ,
+          "ItemAdicionalCantidad": {
+            "description": "Item Adicional Cantidad",
+            "type": "integer",
+            "format": "int32"}	  
+      }
+    ,"x-gx-level": "SDTMudanza","x-gx-sdt-type":"SDTMudanza" }
+     
+     ,"SDTPostulaciones": {
+
+      "properties": {
+          "PostulacionesId": {
+            "description": "Postulaciones Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "ServiciosId": {
+            "description": "Servicios Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "ServiciosNombre": {
+            "description": "Servicios Nombre",
+            "type": "string"}	  ,
+          "PostulacionesProveedorId": {
+            "description": "Postulaciones Proveedor Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "PostulacionesProvNombreAux": {
+            "description": "Postulaciones Prov Nombre Aux",
+            "type": "string"}	  ,
+          "PostulacionesPrecio": {
+            "description": "Postulaciones Precio",
+            "type": "number",
+            "format": "double"}	  ,
+          "PostulacionesDescripcion": {
+            "description": "Postulaciones Descripcion",
+            "type": "string"}	  ,
+          "PostulacionesReqSuministros": {
+            "description": "Postulaciones Req Suministros",
+            "type": "boolean"}	  ,
+          "PostulacionesSuministrosDescripcion": {
+            "description": "Postulaciones Suministros Descripcion",
+            "type": "string"}	  ,
+          "PostulacionesFechaTrabajo": {
+            "description": "Postulaciones Fecha Trabajo",
+            "type": "string",
+            "format": "date"}	  ,
+          "PostulacionesFechaCierre": {
+            "description": "Postulaciones Fecha Cierre",
+            "type": "string",
+            "format": "date"}	  ,
+          "PostulacionesHoraCierre": {
+            "description": "Postulaciones Hora Cierre",
+            "type": "string"}	  ,
+          "PostulacionesTipoFecha": {
+            "description": "Postulaciones Tipo Fecha",
+            "type": "string"}	  ,
+          "PostulacionesRgoHoraservicio": {
+            "description": "Postulaciones Rgo Horaservicio",
+            "type": "string"}	  ,
+          "PostulacionesApellidoNombre": {
+            "description": "Postulaciones Apellido Nombre",
+            "type": "string"}	  ,
+          "PostulacionesMail": {
+            "description": "Postulaciones Mail",
+            "type": "string"}	  ,
+          "PostulacionesTelefono": {
+            "description": "Postulaciones Telefono",
+            "type": "string"}	  ,
+          "PostulacionesDepartamentoId": {
+            "description": "Postulaciones Departamento Id",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "PostulacionesDepartamentoMunicipioId": {
+            "description": "Postulaciones Departamento Municipio Id",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "PostulacionesZonasID": {
+            "description": "Postulaciones Zonas ID",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "PostulacionesDireccion": {
+            "description": "Postulaciones Direccion",
+            "type": "string"}	  ,
+          "PostulacionesFechaAlta": {
+            "description": "Fecha",
+            "type": "string",
+            "format": "date-time"}	  ,
+          "PostulacionesEstado": {
+            "description": "Estado",
+            "type": "string"}	  ,
+          "PostulacionesSecUserId": {
+            "description": "Postulaciones Sec User Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "Categorias": {
+            "type": "array",
+            "items": {
+              "description": "CategoriasItem",
+              "$ref": "#/components/schemas/SDTPostulaciones.Categorias_CategoriasItem"
+        	  } 
+        	}  ,
+          "Multimedia": {
+            "type": "array",
+            "items": {
+              "description": "MultimediaItem",
+              "$ref": "#/components/schemas/SDTPostulaciones.Multimedia_MultimediaItem"
+        	  } 
+        	}  ,
+          "Profesionales": {
+            "type": "array",
+            "items": {
+              "description": "ProfesionalesItem",
+              "$ref": "#/components/schemas/SDTPostulaciones.Profesionales_ProfesionalesItem"
+        	  } 
+        	}  
+      }
+    ,"x-gx-sdt-type":"SDTPostulaciones" }
+    ,
+    "SDTPostulaciones.Categorias_CategoriasItem": {
+
+      "properties": {
+          "CategoriasId": {
+            "description": "Categorias Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "CategoriasNombre": {
+            "description": "Categorias Nombre",
+            "type": "string"}	  
+      }
+    ,"x-gx-level": "SDTPostulaciones","x-gx-sdt-type":"SDTPostulaciones" }
+     },
+    ,
+    "SDTPostulaciones.Multimedia_MultimediaItem": {
+
+      "properties": {
+          "MultimediaId": {
+            "description": "Multimedia Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "MultimediaDireccion": {
+            "description": "Multimedia Direccion",
+            "type": "string"}	  ,
+          "MultimediaDescripcion": {
+            "description": "Multimedia Descripcion",
+            "type": "string"}	  ,
+          "MultimediaTipo": {
+            "description": "Multimedia Tipo",
+            "type": "string"}	  
+      }
+    ,"x-gx-level": "SDTPostulaciones","x-gx-sdt-type":"SDTPostulaciones" }
+     },
+    ,
+    "SDTPostulaciones.Profesionales_ProfesionalesItem": {
+
+      "properties": {
+          "ProfesionalesId": {
+            "description": "Identidad",
+            "type": "string"}	  
+      }
+    ,"x-gx-level": "SDTPostulaciones","x-gx-sdt-type":"SDTPostulaciones" }
+     
+     ,"APIs.SdtReporteDEconomico": {
+
+      "properties": {
+          "Cabezal": {
+            "$ref": "#/components/schemas/APIs.SdtReporteDEconomico.Cabezal"
+        	}  ,
+          "Solicitudes": {
+            "type": "array",
+            "items": {
+              "description": "SolicitudesItem",
+              "$ref": "#/components/schemas/APIs.SdtReporteDEconomico.Solicitudes_SolicitudesItem"
+        	  } 
+        	}  ,
+          "Totales": {
+            "$ref": "#/components/schemas/APIs.SdtReporteDEconomico.Totales"
+        	}  
+      }
+    ,"x-gx-sdt-type":"APIs.SdtReporteDEconomico" }
+    ,
+    "APIs.SdtReporteDEconomico.Cabezal": {
+
+      "properties": {
+          "RangoFechas": {
+            "description": "Rango Fechas",
+            "type": "string"}	  ,
+          "FechaReporte": {
+            "description": "Fecha Reporte",
+            "type": "string",
+            "format": "date"}	  
+      }
+    ,"x-gx-level": "SdtReporteDEconomico","x-gx-sdt-type":"APIs.SdtReporteDEconomico" }
+     },
+    ,
+    "APIs.SdtReporteDEconomico.Solicitudes_SolicitudesItem": {
+
+      "properties": {
+          "SolicitudesId": {
+            "description": "Solicitudes Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "NombreCliente": {
+            "description": "Nombre Cliente",
+            "type": "string"}	  ,
+          "Estado": {
+            "description": "Estados Sol Nombre",
+            "type": "string"}	  ,
+          "ImporteCobrado": {
+            "description": "Importe Cobrado",
+            "type": "number",
+            "format": "double"}	  ,
+          "ComisionAlmango": {
+            "description": "Comision Almango",
+            "type": "number",
+            "format": "double"}	  ,
+          "PagoProfesional": {
+            "description": "Pago Profesional",
+            "type": "number",
+            "format": "double"}	  ,
+          "EsCobroDirecto": {
+            "description": "Es Cobro Directo",
+            "type": "boolean"}	  ,
+          "OrigenPago": {
+            "description": "Origen Pago",
+            "type": "string"}	  
+      }
+    ,"x-gx-level": "SdtReporteDEconomico","x-gx-sdt-type":"APIs.SdtReporteDEconomico" }
+     },
+    ,
+    "APIs.SdtReporteDEconomico.Totales": {
+
+      "properties": {
+          "TotalCobrado": {
+            "description": "Total Cobrado",
+            "type": "number",
+            "format": "double"}	  ,
+          "TotalAlmango": {
+            "description": "Total Almango",
+            "type": "number",
+            "format": "double"}	  ,
+          "TotalProfesional": {
+            "description": "Total Profesional",
+            "type": "number",
+            "format": "double"}	  ,
+          "TotalProfNoCDirecto": {
+            "description": "Total Prof No CDirecto",
+            "type": "number",
+            "format": "double"}	  ,
+          "ResultadoNeto": {
+            "description": "Resultado Neto",
+            "type": "number",
+            "format": "double"}	  
+      }
+    ,"x-gx-level": "SdtReporteDEconomico","x-gx-sdt-type":"APIs.SdtReporteDEconomico" }
+     
+     ,"SDTServicios": {
+
+      "properties": {
+          "SDTServicios": {
+            "type": "array",
+            "items": {
+              "description": "Item",
+              "$ref": "#/components/schemas/SDTServicios_Item"
+        	  } 
+        	}  
+      }
+    ,"x-gx-sdt-type":"SDTServicios" }
+    ,
+    "SDTServicios_Item": {
+
+      "properties": {
+          "ServiciosId": {
+            "description": "Identificador ",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "ServiciosNombre": {
+            "description": "Servicios",
+            "type": "string"}	  ,
+          "Imagen": {
+            "description": "Imagen",
+            "type": "string"}	  
+      }
+    ,"x-gx-sdt-type":"SDTServicios" }
+     
+     ,"SDTRoles": {
+
+      "properties": {
+          "SecUserId": {
+            "description": "User Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "usuariosNombre": {
+            "description": "Nombre",
+            "type": "string"}	  ,
+          "Roles": {
+            "type": "array",
+            "items": {
+              "description": "Id",
+              "$ref": "#/components/schemas/SDTRoles.Roles_Id"
+        	  } 
+        	}  
+      }
+    ,"x-gx-sdt-type":"SDTRoles" }
+    ,
+    "SDTRoles.Roles_Id": {
+
+      "properties": {
+          "SecRoleId": {
+            "description": "Role Id",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "SecRoleName": {
+            "description": "Role Name",
+            "type": "string"}	  
+      }
+    ,"x-gx-level": "SDTRoles","x-gx-sdt-type":"SDTRoles" }
+     
+     
+	}
+  }
+}

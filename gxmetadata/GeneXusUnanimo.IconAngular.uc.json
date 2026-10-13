@@ -1,0 +1,74 @@
+{
+	"DefinitionVersion": "1.0",
+	"Name": "GeneXusUnanimo.IconAngular",
+	"Target": "ANGULAR",
+	"IsControlType": false,
+	"RenderMode": "component",
+	"Template": "<ch-icon src=\"{{source}}\" class=\"{{class}}\" style=\"--icon-size:{{size}}; --icon-color:{{color}}\" {{#autoColor}}auto-color{{/autoColor}} {{Click}}></ch-icon>", 
+	"Subtemplates": [
+	],
+	"Events": [
+		{
+			"Name": "Click",
+			"On": "click",
+			"Parameters": ""
+		} 
+	],
+	"Properties": [
+		{
+			"Id": "source",
+			"Name": "source",
+			"Type": "string",
+			"Collection": "false",
+			"Default": ""
+		} ,
+		{
+			"Id": "size",
+			"Name": "size",
+			"Type": "string",
+			"Collection": "false",
+			"Default": ""
+		} ,
+		{
+			"Id": "color",
+			"Name": "color",
+			"Type": "string",
+			"Collection": "false",
+			"Default": ""
+		} ,
+		{
+			"Id": "autoColor",
+			"Name": "autoColor",
+			"Type": "boolean",
+			"Collection": "false",
+			"Default": "false"
+		} ,
+		{
+			"Id": "class",
+			"Name": "class",
+			"Type": "string",
+			"Collection": "false",
+			"Default": "ch-icon"
+		} 
+	],
+	"Methods": {
+		"Public": [
+		],
+		"Private": [
+		]
+	},
+	"Scripts": {
+		"AfterShow": [
+		],
+		"BeforeShow": [
+		]
+	},
+	"Dependencies": [
+	],
+	"Imports": [
+	],
+	"Styles": [
+	],
+	"Sources": [
+	]
+}

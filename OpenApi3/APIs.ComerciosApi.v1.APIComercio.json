@@ -1,0 +1,459 @@
+{
+"openapi": "3.0.0",
+ "info": {
+  "title": "APIComercio",
+  "description": "APIComercio integracion externa",
+  "version": "20261005180336"
+  },
+"servers":[
+    {
+        "url": "http://localhost/AlmangoXV1NETFramework/v1/comercios"
+	}
+],
+"paths":{
+    "/compras": {
+    "post": {"tags": [
+      	"APIs.ComerciosApi.v1"
+         ] ,
+      "operationId": "APIs.ComerciosApi.v1.APIComercio.RecibirCompra",
+      "summary": "RecibirCompra",
+      "requestBody":{
+        "required": false,
+        "content":{
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/RecibirCompraInput"
+        	  }
+        	}
+          }
+        },
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RecibirCompraOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/servicios": {"get": {"tags": [
+      	"APIs.ComerciosApi.v1"
+         ] ,
+      "operationId": "APIs.ComerciosApi.v1.APIComercio.ObtenerTodosServicios",
+      "summary": "ObtenerTodosServicios",
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ObtenerTodosServiciosOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/servicios/{SKU}": {"get": {"tags": [
+      	"APIs.ComerciosApi.v1"
+         ] ,
+      "operationId": "APIs.ComerciosApi.v1.APIComercio.ObtenerServicio",
+      "summary": "ObtenerServicio",
+      "parameters":[
+        { "name": "SKU",
+          "in": "path",
+          "required": true,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ObtenerServicioOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/zonas": {"get": {"tags": [
+      	"APIs.ComerciosApi.v1"
+         ] ,
+      "operationId": "APIs.ComerciosApi.v1.APIComercio.PObtenerZonas",
+      "summary": "PObtenerZonas",
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PObtenerZonasOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/presupuesto": {"get": {"tags": [
+      	"APIs.ComerciosApi.v1"
+         ] ,
+      "operationId": "APIs.ComerciosApi.v1.APIComercio.PObtenerPresupuesto",
+      "summary": "PObtenerPresupuesto",
+      "parameters":[
+        { "name": "Solicitudid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Email",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PObtenerPresupuestoOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  } 
+  },
+"components":{
+  "schemas": {
+    "RecibirCompraOutput": {
+      "properties": {
+           "Error": {
+             "type": "boolean"}	 ,
+           "Msj": {
+             "type": "string"}	 ,
+           "TrackingId": {
+             "type": "integer",
+             "format": "int64"}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "ObtenerTodosServiciosOutput": {
+      "properties": {
+           "Error": {
+             "type": "boolean"}	 ,
+           "Msj": {
+             "type": "string"}	 ,
+           "ListaServicios": {
+             "description": "SDT_Servicio",
+             "type": "array",
+             "items": {
+               "$ref": "#/components/schemas/APIs.ComerciosApi.v1.SDT_Servicio"
+         	}
+         	}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "ObtenerServicioOutput": {
+      "properties": {
+           "Error": {
+             "type": "boolean"}	 ,
+           "Msj": {
+             "type": "string"}	 ,
+           "Servicio": {
+             "description": "SDT_Servicio",
+             "$ref": "#/components/schemas/APIs.ComerciosApi.v1.SDT_Servicio"
+         	}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "PObtenerZonasOutput": {
+      "properties": {
+           "Error": {
+             "type": "boolean"}	 ,
+           "Msj": {
+             "type": "string"}	 ,
+           "Departamentos": {
+             "description": "Departamentos",
+             "type": "array",
+             "items": {
+               "$ref": "#/components/schemas/APIs.ComerciosApi.v1.SDT_ApiZonas.Departamentos_DepartamentosItem"
+         	}
+         	}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      ,
+    "PObtenerPresupuestoOutput": {
+      "properties": {
+           "Error": {
+             "type": "boolean"}	 ,
+           "Msj": {
+             "type": "string"}	 ,
+           "Presupuesto": {
+             "description": "SDT_Presupuesto Respuesta",
+             "$ref": "#/components/schemas/APIs.ComerciosApi.v1.SDT_PresupuestoRespuesta"
+         	}	 ,
+           "RestCode": {
+             "type": "integer",
+             "format": "int32"}	 
+        }
+      }
+      
+    ,
+
+    "RecibirCompraInput": {
+      "properties": {
+         "EntradaSDT": {
+            "description": "SDT_Nueva Solicitud Externa",
+            "$ref": "#/components/schemas/APIs.ComerciosApi.v1.SDT_NuevaSolicitudExterna"
+        	}	  
+       }
+     },
+
+    "APIs.ComerciosApi.v1.SDT_NuevaSolicitudExterna": {
+
+      "properties": {
+          "ComercioTicketId": {
+            "description": "Comercio Ticket Id unico",
+            "type": "string"}	  ,
+          "FechaCompra": {
+            "description": "Fecha Compra",
+            "type": "string",
+            "format": "date"}	  ,
+          "SucursalId": {
+            "description": "Sucursal Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "NotasAdicionales": {
+            "description": "Notas Adicionales",
+            "type": "string"}	  ,
+          "Moneda": {
+            "description": "Moneda",
+            "type": "string"}	  ,
+          "Cliente": {
+            "$ref": "#/components/schemas/APIs.ComerciosApi.v1.SDT_NuevaSolicitudExterna.Cliente"
+        	}  ,
+          "Servicios": {
+            "type": "array",
+            "items": {
+              "description": "Item",
+              "$ref": "#/components/schemas/APIs.ComerciosApi.v1.SDT_NuevaSolicitudExterna.Servicios_Item"
+        	  } 
+        	}  
+      }
+    ,"x-gx-sdt-type":"APIs.ComerciosApi.v1.SDT_NuevaSolicitudExterna" }
+    ,
+    "APIs.ComerciosApi.v1.SDT_NuevaSolicitudExterna.Cliente": {
+
+      "properties": {
+          "Nombre": {
+            "description": "Nombre",
+            "type": "string"}	  ,
+          "Email": {
+            "description": "Email",
+            "type": "string"}	  ,
+          "Telefono": {
+            "description": "Telefono",
+            "type": "string"}	  ,
+          "Direccion": {
+            "$ref": "#/components/schemas/APIs.ComerciosApi.v1.SDT_NuevaSolicitudExterna.Cliente.Direccion"
+        	}  
+      }
+    ,"x-gx-level": "SDT_NuevaSolicitudExterna","x-gx-sdt-type":"APIs.ComerciosApi.v1.SDT_NuevaSolicitudExterna" }
+    ,
+    "APIs.ComerciosApi.v1.SDT_NuevaSolicitudExterna.Cliente.Direccion": {
+
+      "properties": {
+          "CalleYNumero": {
+            "description": "Calle YNumero",
+            "type": "string"}	  ,
+          "CodigoPais": {
+            "description": "Codigo Pais",
+            "type": "string"}	  ,
+          "Departamento": {
+            "description": "Departamento",
+            "type": "string"}	  ,
+          "Municipio": {
+            "description": "Municipio",
+            "type": "string"}	  
+      }
+    ,"x-gx-level": "SDT_NuevaSolicitudExterna.Cliente","x-gx-sdt-type":"APIs.ComerciosApi.v1.SDT_NuevaSolicitudExterna" }
+
+     },
+    ,
+    "APIs.ComerciosApi.v1.SDT_NuevaSolicitudExterna.Servicios_Item": {
+
+      "properties": {
+          "CodigoServicioComercio": {
+            "description": "Codigo Servicio Comercio",
+            "type": "string"}	  ,
+          "CodigoServicioAlmango": {
+            "description": "Codigo Servicio Almango",
+            "type": "string"}	  ,
+          "Cantidad": {
+            "description": "Cantidad",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "ImagenServicioUrl": {
+            "description": "Imagen Servicio Url",
+            "type": "string"}	  ,
+          "MontoAbonado": {
+            "description": "Monto Abonado",
+            "type": "number",
+            "format": "double"}	  ,
+          "SolicitudIdRef": {
+            "description": "Solicitudes Id",
+            "type": "integer",
+            "format": "int64"}	  
+      }
+    ,"x-gx-level": "SDT_NuevaSolicitudExterna","x-gx-sdt-type":"APIs.ComerciosApi.v1.SDT_NuevaSolicitudExterna" }
+     
+     ,"APIs.ComerciosApi.v1.SDT_Servicio": {
+
+      "properties": {
+          "CodigoServicio": {
+            "description": "Codigo Servicio",
+            "type": "string"}	  ,
+          "Nombre": {
+            "description": "Nombre",
+            "type": "string"}	  ,
+          "Moneda": {
+            "description": "ISO",
+            "type": "string"}	  ,
+          "Precio": {
+            "description": "Precio",
+            "type": "number",
+            "format": "double"}	  ,
+          "Estado": {
+            "description": "Estado",
+            "type": "string"}	  
+      }
+    ,"x-gx-sdt-type":"APIs.ComerciosApi.v1.SDT_Servicio" }
+     ,"APIs.ComerciosApi.v1.SDT_ApiZonas.Departamentos": {
+
+      "properties": {
+          "Departamentos": {
+            "type": "array",
+            "items": {
+              "description": "DepartamentosItem",
+              "$ref": "#/components/schemas/APIs.ComerciosApi.v1.SDT_ApiZonas.Departamentos_DepartamentosItem"
+        	  } 
+        	}  
+      }
+    ,"x-gx-sdt-type":"APIs.ComerciosApi.v1.SDT_ApiZonas.Departamentos" }
+    ,
+    "APIs.ComerciosApi.v1.SDT_ApiZonas.Departamentos_DepartamentosItem": {
+
+      "properties": {
+          "Id": {
+            "description": "Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "Nombre": {
+            "description": "Nombre",
+            "type": "string"}	  ,
+          "Municipios": {
+            "type": "array",
+            "items": {
+              "description": "MunicipiosItem",
+              "$ref": "#/components/schemas/APIs.ComerciosApi.v1.SDT_ApiZonas.Departamentos.Municipios_MunicipiosItem"
+        	  } 
+        	}  
+      }
+    ,"x-gx-sdt-type":"APIs.ComerciosApi.v1.SDT_ApiZonas.Departamentos" }
+    ,
+    "APIs.ComerciosApi.v1.SDT_ApiZonas.Departamentos.Municipios_MunicipiosItem": {
+
+      "properties": {
+          "Id": {
+            "description": "Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "Nombre": {
+            "description": "Nombre",
+            "type": "string"}	  ,
+          "CostoAdicional": {
+            "description": "Departamento Municipio Costo",
+            "type": "number",
+            "format": "double"}	  
+      }
+    ,"x-gx-level": "SDT_ApiZonas.Departamentos","x-gx-sdt-type":"APIs.ComerciosApi.v1.SDT_ApiZonas.Departamentos" }
+
+     
+     ,"APIs.ComerciosApi.v1.SDT_PresupuestoRespuesta": {
+
+      "properties": {
+          "SolicitudId": {
+            "description": "Solicitudes Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "CostoPresupuesto": {
+            "description": "Solicitudes Costo Presupuesto",
+            "type": "number",
+            "format": "double"}	  ,
+          "Moneda": {
+            "description": "ISO",
+            "type": "string"}	  
+      }
+    ,"x-gx-sdt-type":"APIs.ComerciosApi.v1.SDT_PresupuestoRespuesta" }
+     
+	}
+  }
+}

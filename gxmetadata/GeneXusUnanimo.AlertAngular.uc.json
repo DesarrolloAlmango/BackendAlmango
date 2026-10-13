@@ -1,0 +1,81 @@
+{
+	"DefinitionVersion": "1.0",
+	"Name": "GeneXusUnanimo.AlertAngular",
+	"Target": "ANGULAR",
+	"IsControlType": false,
+	"RenderMode": "component",
+	"Template": "{{=<% %>=}}<div class=\"alert alert-<%Type:info|warning|success|error%>\" [ngClass]=\"{\'alert-fixed\': Position==\'Fixed to bottom\', \'alert-multiple\':ShowMultiple}\">	<div class=\"inline-left-xxxl inline-right-xxl\" style=\"flex-grow: 1\">		<div class=\"row\"> <span class=\"alert-title\">{{Title}}</span> </div>		<div class=\"row\"> <span class=\"alert-message\">{{Message}}</span> </div>	</div>	<div class=\"inline-left-xl inline-right-xl\" style=\"flex-grow: 0\">		<button type=\"button\" class=\"alert-close\" data-dismiss=\"alert\" aria-label=\"Close\" <%Close%>><span aria-hidden=\"true\">&times;</span></button>	</div>	<div *ngIf=\"ShowMultiple\" class=\"alert-badge\">		<span class=\"alert-badge-text\">{{Count}}</span>	</div></div>", 
+	"Subtemplates": [
+	],
+	"Events": [
+		{
+			"Name": "Close",
+			"On": "click",
+			"Parameters": ""
+		} 
+	],
+	"Properties": [
+		{
+			"Id": "Type",
+			"Name": "Type",
+			"Type": "enum",
+			"Collection": "false",
+			"Default": "info"
+		} ,
+		{
+			"Id": "Title",
+			"Name": "Title",
+			"Type": "string",
+			"Collection": "false",
+			"Default": ""
+		} ,
+		{
+			"Id": "Message",
+			"Name": "Message",
+			"Type": "string",
+			"Collection": "false",
+			"Default": ""
+		} ,
+		{
+			"Id": "Position",
+			"Name": "Position",
+			"Type": "enum",
+			"Collection": "false",
+			"Default": ""
+		} ,
+		{
+			"Id": "ShowMultiple",
+			"Name": "ShowMultiple",
+			"Type": "boolean",
+			"Collection": "false",
+			"Default": "false"
+		} ,
+		{
+			"Id": "Count",
+			"Name": "Count",
+			"Type": "numeric",
+			"Collection": "false",
+			"Default": "0"
+		} 
+	],
+	"Methods": {
+		"Public": [
+		],
+		"Private": [
+		]
+	},
+	"Scripts": {
+		"AfterShow": [
+		],
+		"BeforeShow": [
+		]
+	},
+	"Dependencies": [
+	],
+	"Imports": [
+	],
+	"Styles": [
+	],
+	"Sources": [
+	]
+}

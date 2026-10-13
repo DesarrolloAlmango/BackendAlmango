@@ -1,0 +1,30 @@
+{
+"ObjectType":"ServiceGroup",
+"Name":"SubastasAPI",
+"BasePath":"SubastasAPI",
+"Mappings":
+[
+{
+"Name":"altapublicaciones",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_altapublicaciones",
+"Implementation":"AltaPublicaciones",
+"Verb":"GET",
+"PathRegexp":"altapublicaciones",
+"Path":"altapublicaciones"
+
+},
+{
+"Name":"obtenerpaismoneda",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerpaismoneda",
+"Implementation":"ObtenerPaisMoneda",
+"Verb":"GET",
+"PathRegexp":"obtenerpaismoneda",
+"Path":"obtenerpaismoneda"
+
+}]}

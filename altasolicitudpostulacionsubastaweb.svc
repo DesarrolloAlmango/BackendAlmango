@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "GeneXus.Programs.altasolicitudpostulacionsubastaweb_services,aaltasolicitudpostulacionsubastaweb" %>

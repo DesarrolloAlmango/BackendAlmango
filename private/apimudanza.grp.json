@@ -1,0 +1,150 @@
+{
+"ObjectType":"ServiceGroup",
+"Name":"APIMudanza",
+"BasePath":"APIMudanza",
+"Mappings":
+[
+{
+"Name":"obtenerdirecciones",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerdirecciones",
+"Implementation":"ObtenerDirecciones",
+"Verb":"GET",
+"PathRegexp":"obtenerdirecciones",
+"Path":"obtenerdirecciones"
+
+},
+{
+"Name":"obtenercoordenadas",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenercoordenadas",
+"Implementation":"ObtenerCoordenadas",
+"Verb":"GET",
+"PathRegexp":"obtenercoordenadas",
+"Path":"obtenercoordenadas"
+
+},
+{
+"Name":"obtenerurlmapa",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerurlmapa",
+"Implementation":"ObtenerURLMapa",
+"Verb":"GET",
+"PathRegexp":"obtenerurlmapa",
+"Path":"obtenerurlmapa"
+
+},
+{
+"Name":"requestgoogleplace",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_requestgoogleplace",
+"Implementation":"RequestGooglePlace",
+"Verb":"GET",
+"PathRegexp":"requestgoogleplace",
+"Path":"requestgoogleplace"
+
+},
+{
+"Name":"obteneridbycoordenadas",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obteneridbycoordenadas",
+"Implementation":"ObtenerIdByCoordenadas",
+"Verb":"GET",
+"PathRegexp":"obteneridbycoordenadas",
+"Path":"obteneridbycoordenadas"
+
+},
+{
+"Name":"obtenerparametrosmudanza",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerparametrosmudanza",
+"Implementation":"ObtenerParametrosMudanza",
+"Verb":"GET",
+"PathRegexp":"obtenerparametrosmudanza",
+"Path":"obtenerparametrosmudanza"
+
+},
+{
+"Name":"altamudanzaweb",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_altamudanzaweb",
+"Implementation":"AltaMudanzaWeb",
+"Verb":"GET",
+"PathRegexp":"altamudanzaweb",
+"Path":"altamudanzaweb"
+
+},
+{
+"Name":"updatemudanzaweb",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_updatemudanzaweb",
+"Implementation":"UpdateMudanzaWeb",
+"Verb":"GET",
+"PathRegexp":"updatemudanzaweb",
+"Path":"updatemudanzaweb"
+
+},
+{
+"Name":"obtenerurlmp",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerurlmp",
+"Implementation":"ObtenerURLPagoMudanza",
+"Verb":"GET",
+"PathRegexp":"obtenerurlmp",
+"Path":"obtenerurlmp"
+
+},
+{
+"Name":"consultarpago",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_consultarpago",
+"Implementation":"ConsultarPagoPendienteMudanza",
+"Verb":"GET",
+"PathRegexp":"consultarpago",
+"Path":"consultarpago"
+
+},
+{
+"Name":"obtenerdatostoupdate",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerdatostoupdate",
+"Implementation":"ObtenerDatosToUpdateMudanza",
+"Verb":"GET",
+"PathRegexp":"obtenerdatostoupdate",
+"Path":"obtenerdatostoupdate"
+
+},
+{
+"Name":"obtenerpermisosolicitud",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerpermisosolicitud",
+"Implementation":"ObtenerPermisoSolicitud",
+"Verb":"GET",
+"PathRegexp":"obtenerpermisosolicitud",
+"Path":"obtenerpermisosolicitud"
+
+}]}

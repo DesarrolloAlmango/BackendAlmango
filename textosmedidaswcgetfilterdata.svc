@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "GeneXus.Programs.textosmedidaswcgetfilterdata_services,textosmedidaswcgetfilterdata" %>

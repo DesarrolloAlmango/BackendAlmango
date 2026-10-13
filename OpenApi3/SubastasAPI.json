@@ -1,0 +1,120 @@
+{
+"openapi": "3.0.0",
+ "info": {
+  "title": "SubastasAPI",
+  "description": "Subastas API",
+  "version": "20261005180336"
+  },
+"servers":[
+    {
+        "url": "http://localhost/AlmangoXV1NETFramework/SubastasAPI"
+	}
+],
+"paths":{
+    "/AltaPublicaciones": {"get": {"tags": [
+      	"SubastasAPI"
+         ] ,
+      "operationId": "SubastasAPI.AltaPublicaciones",
+      "summary": "AltaPublicaciones",
+      "parameters":[
+        { "name": "Jsonpublicaciones",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "$ref": "#/components/schemas/AltaPublicacionesOutput"
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerPaisMoneda": {"get": {"tags": [
+      	"SubastasAPI"
+         ] ,
+      "operationId": "SubastasAPI.ObtenerPaisMoneda",
+      "summary": "ObtenerPaisMoneda",
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "$ref": "#/components/schemas/SDTPaisMoneda"  
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  } 
+  },
+"components":{
+  "schemas": {
+    "AltaPublicacionesOutput": {
+      "properties": {
+           "JsonMessages": {
+             "type": "string"}	 
+        }
+      }
+      
+,
+
+    "SDTPaisMoneda": {
+
+      "properties": {
+          "SDTPaisMoneda": {
+            "type": "array",
+            "items": {
+              "description": "SDTPaisMonedaItem",
+              "$ref": "#/components/schemas/SDTPaisMoneda_SDTPaisMonedaItem"
+        	  } 
+        	}  
+      }
+    ,"x-gx-sdt-type":"SDTPaisMoneda" }
+    ,
+    "SDTPaisMoneda_SDTPaisMonedaItem": {
+
+      "properties": {
+          "PaisId": {
+            "description": "PaisId",
+            "type": "string"}	  ,
+          "PaisNombre": {
+            "description": "Pais",
+            "type": "string"}	  ,
+          "MonedaId": {
+            "description": "Moneda",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "MonedaNombre": {
+            "description": "Moneda",
+            "type": "string"}	  
+      }
+    ,"x-gx-sdt-type":"SDTPaisMoneda" }
+     
+     
+	}
+  }
+}

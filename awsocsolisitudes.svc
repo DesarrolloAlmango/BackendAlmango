@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "GeneXus.Programs.awsocsolisitudes_services,awsocsolisitudes" %>

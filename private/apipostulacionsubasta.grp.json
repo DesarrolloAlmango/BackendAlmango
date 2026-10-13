@@ -1,0 +1,30 @@
+{
+"ObjectType":"ServiceGroup",
+"Name":"APIPostulacionSubasta",
+"BasePath":"APIPostulacionSubasta",
+"Mappings":
+[
+{
+"Verb":"POST",
+"Name":"altapostulacionsubasta",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_altapostulacionsubasta",
+"Implementation":"AltaSolicitudPostulacionSubastaWeb",
+"PathRegexp":"altapostulacionsubasta",
+"Path":"altapostulacionsubasta"
+
+},
+{
+"Name":"obtenerservicioscategorias",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerservicioscategorias",
+"Implementation":"ObtenerServiciosCategorias",
+"Verb":"GET",
+"PathRegexp":"obtenerservicioscategorias",
+"Path":"obtenerservicioscategorias"
+
+}]}

@@ -1,0 +1,869 @@
+<configuration>
+   <configSections>
+      <section  name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net" requirePermission="false"/>
+      <sectionGroup  name="languages" type="System.Configuration.NameValueSectionHandler">
+         <section  name="English" type="System.Configuration.SingleTagSectionHandler" requirePermission="false"/>
+         <section  name="Spanish" type="System.Configuration.SingleTagSectionHandler" requirePermission="false"/>
+         <section  name="Portuguese" type="System.Configuration.SingleTagSectionHandler" requirePermission="false"/>
+      </sectionGroup>
+   </configSections>
+   <appSettings>
+      <add  key="AppMainNamespace" value="GeneXus.Programs"/>
+      <add  key="DataStore1" value="DataStore1"/>
+      <add  key="DataStore2" value="Default"/>
+      <add  key="DataStore-Count" value="2"/>
+      <add  key="DataStore-Default" value="Default"/>
+      <add  key="Connection-DataStore1-DBMS" value="sqlserver"/>
+      <add  key="Connection-DataStore1-Port" value=""/>
+      <add  key="Connection-DataStore1-LockTimeout" value="0"/>
+      <add  key="Connection-DataStore1-LockRetryCount" value="10"/>
+      <add  key="Connection-DataStore1-IsolationLevel" value="CR"/>
+      <add  key="Connection-DataStore1-Datasource" value="8GKdZ/wzrAxeinlWQRFSZGHTtDdADyLuNbpIQ5W4P2i="/>
+      <add  key="Connection-DataStore1-User" value="Elj20MqY44RPdvT8FEpDD0=="/>
+      <add  key="Connection-DataStore1-Password" value="wgkzMHC4svrLrkZPsQpFHA=="/>
+      <add  key="Connection-DataStore1-DB" value="AlmangoXV2_09082024"/>
+      <add  key="Connection-DataStore1-Schema" value="82sPNmMP8O3TlpdEZk1r8E=="/>
+      <add  key="Connection-DataStore1-Opts" value=";Integrated Security=no;"/>
+      <add  key="Connection-DataStore1-TrnInt" value="1"/>
+      <add  key="Connection-Default-DBMS" value="sqlserver"/>
+      <add  key="Connection-Default-Port" value=""/>
+      <add  key="Connection-Default-LockTimeout" value="0"/>
+      <add  key="Connection-Default-LockRetryCount" value="10"/>
+      <add  key="Connection-Default-IsolationLevel" value="CR"/>
+      <add  key="Connection-Default-Datasource" value="8GKdZ/wzrAxeinlWQRFSZGHTtDdADyLuNbpIQ5W4P2i="/>
+      <add  key="Connection-Default-User" value="Elj20MqY44RPdvT8FEpDD0=="/>
+      <add  key="Connection-Default-Password" value="wgkzMHC4svrLrkZPsQpFHA=="/>
+      <add  key="Connection-Default-DB" value="AlmangoXV2_09082024"/>
+      <add  key="Connection-Default-Schema" value="82sPNmMP8O3TlpdEZk1r8E=="/>
+      <add  key="Connection-Default-Opts" value=";Integrated Security=no;"/>
+      <add  key="Connection-Default-TrnInt" value="1"/>
+      <add  key="DateFormat" value="DMY"/>
+      <add  key="YearLimit" value="1940"/>
+      <add  key="TimeAmPmFormat" value="24"/>
+      <add  key="VER_STAMP" value="20261002.202400"/>
+      <add  key="CS_BLOB_PATH" value="PublicTempStorage"/>
+      <add  key="TMPMEDIA_DIR" value="PrivateTempStorage"/>
+      <add  key="PRINT_LAYOUT_METADATA_DIR" value="LayoutMetadata"/>
+      <add  key="StorageTimeZone" value="2"/>
+      <add  key="LOGIN_AS_USERID" value="0"/>
+      <add  key="LANGUAGE" value="spa"/>
+      <add  key="LANG_NAME" value="Spanish"/>
+      <add  key="DECIMAL_POINT" value=","/>
+      <add  key="DATE_FMT" value="DMY"/>
+      <add  key="CTOD_DATE_FMT" value="L"/>
+      <add  key="Culture" value="es-ES"/>
+      <add  key="Theme" value="WorkWithPlusDS"/>
+      <add  key="UseNamedParameters" value="1"/>
+      <add  key="USE_ENCRYPTION" value="SITE"/>
+      <add  key="EnableIntegratedSecurity" value="0"/>
+      <add  key="MAX_CURSOR" value="100"/>
+      <add  key="STATIC_CONTENT" value=""/>
+      <add  key="GX_BUILD_NUMBER" value="74760"/>
+      <add  key="CACHE_CONTENT_EXPIRATION" value="36"/>
+      <add  key="FTP_DEFAULT_USER" value="Zd8hx1OPJaolo5nN5s4nmc=="/>
+      <add  key="FTP_DEFAULT_PASSWORD" value="kvwmxbHzjMA66dQNAHRlhn=="/>
+      <add  key="ENABLE_MANAGEMENT" value="0"/>
+      <add  key="COMPRESS_HTML" value="1"/>
+      <add  key="IE_COMPATIBILITY_VIEW" value="EmulateIE7"/>
+      <add  key="DocumentType" value="HTML5"/>
+      <add  key="EXPOSE_METADATA" value="0"/>
+      <add  key="SMART_CACHING" value="0"/>
+      <add  key="wcf:serviceHostingEnvironment:useClassicReadEntityBodyMode" value="true"/>
+      <add  key="CACHE_INVALIDATION_TOKEN" value="20261061523845"/>
+      <add  key="CORS_ALLOW_ORIGIN" value=""/>
+   </appSettings>
+   <languages >
+      <English  code="eng" time_fmt="12" decimal_point="." thousand_sep="," date_fmt="MDY" culture="en-US" rtl="false"/>
+      <Spanish  code="spa" time_fmt="24" decimal_point="," thousand_sep="." date_fmt="DMY" culture="es-ES" rtl="false"/>
+      <Portuguese  code="por" time_fmt="24" decimal_point="," thousand_sep="." date_fmt="DMY" culture="pt-BR" rtl="false"/>
+   </languages>
+   <log4net  configSource="log.config"/>
+   <system.web>
+      <trace  enabled="false"/>
+      <httpRuntime  requestValidationMode="2.0" targetFramework="4.6.2" requestPathInvalidCharacters=""/>
+      <compilation  optimizeCompilations="true">
+         <assemblies>
+            <remove  assembly="GxClasses_16.0.7"/>
+         </assemblies>
+      </compilation>
+      <httpCookies  sameSite="Lax"/>
+      <sessionState  cookieSameSite="Lax"/>
+   </system.web>
+   <system.serviceModel>
+      <client>
+      </client>
+      <serviceHostingEnvironment  aspNetCompatibilityEnabled="true"/>
+      <services>
+         <service  name="GeneXus.Programs.awwpbaseobjects.notifications.common.wwp_notification_bc_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awwpbaseobjects.notifications.common.wwp_notification_bc_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.postulacionesprofesionaleswcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.postulacionesprofesionaleswcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.postulacionesprofesionaleswcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.profesionalesrestriccionwwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.profesionalesrestriccionwwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.profesionalesrestriccionwwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.postulacioneswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.postulacioneswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.postulacioneswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.servicioswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.servicioswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.servicioswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.altasolicitudpostulacionsubastaweb_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.altasolicitudpostulacionsubastaweb_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.altasolicitudpostulacionsubastaweb_services"/>
+         </service>
+         <service  name="GeneXus.Programs.solicitudesreportewwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.solicitudesreportewwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.solicitudesreportewwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.mapeowwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.mapeowwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.mapeowwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.his_solicitudeswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.his_solicitudeswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.his_solicitudeswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.cierreswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.cierreswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.cierreswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.awsosoldatospersonales_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awsosoldatospersonales_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.dashboard12loaddvcombo_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.dashboard12loaddvcombo_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.dashboard12loaddvcombo_services"/>
+         </service>
+         <service  name="GeneXus.Programs.dashboard.dashboard1loaddvcombo_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.dashboard.dashboard1loaddvcombo_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.dashboard.dashboard1loaddvcombo_services"/>
+         </service>
+         <service  name="GeneXus.Programs.resttestsvc_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.resttestsvc_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.resttestsvc_services"/>
+         </service>
+         <service  name="GeneXus.Programs.awsomodopago_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awsomodopago_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.awsosolicitudestadompago_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awsosolicitudestadompago_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.awsosolicitudesmpago_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awsosolicitudesmpago_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.awsomail_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awsomail_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.aaltamudanzasolicitud_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.aaltamudanzasolicitud_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.mudanza1wwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.mudanza1wwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.mudanza1wwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.mudanzaloaddvcombo_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.mudanzaloaddvcombo_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.mudanzaloaddvcombo_services"/>
+         </service>
+         <service  name="GeneXus.Programs.presupuestomudanzaloaddvcombo_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.presupuestomudanzaloaddvcombo_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.presupuestomudanzaloaddvcombo_services"/>
+         </service>
+         <service  name="GeneXus.Programs.parametromudanzawwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.parametromudanzawwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.parametromudanzawwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.mudanzawwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.mudanzawwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.mudanzawwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.operacioneswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.operacioneswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.operacioneswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.walletpromptgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.walletpromptgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.walletpromptgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.tipocuentawwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.tipocuentawwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.tipocuentawwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.comercioprompt1getfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.comercioprompt1getfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.comercioprompt1getfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.operacionesidpromptgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.operacionesidpromptgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.operacionesidpromptgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.awsoserviciosdetall_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awsoserviciosdetall_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.cantsolicitudes_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.cantsolicitudes_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.cantsolicitudes_services"/>
+         </service>
+         <service  name="GeneXus.Programs.awsconfirmaroperacion_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awsconfirmaroperacion_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.estadosnotificacionwwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.estadosnotificacionwwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.estadosnotificacionwwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.estadoswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.estadoswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.estadoswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.awsosolicitudcobrar_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awsosolicitudcobrar_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.comerciowwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.comerciowwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.comerciowwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.mailsettingwwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.mailsettingwwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.mailsettingwwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.usuarioswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.usuarioswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.usuarioswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.bancowwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.bancowwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.bancowwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.awsausuarios_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awsausuarios_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.awsafeedback_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awsafeedback_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.maildesignwwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.maildesignwwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.maildesignwwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.profesionalesfullnamepromptgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.profesionalesfullnamepromptgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.profesionalesfullnamepromptgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.walletwwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.walletwwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.walletwwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.historicosolicitudeswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.historicosolicitudeswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.historicosolicitudeswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.parametroswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.parametroswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.parametroswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.incidenciawwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.incidenciawwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.incidenciawwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.motivowwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.motivowwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.motivowwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.textospromptgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.textospromptgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.textospromptgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.ciudadwwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.ciudadwwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.ciudadwwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.wwpbaseobjects.discussions.wwp_getusersfordiscussionmentions_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.wwpbaseobjects.discussions.wwp_getusersfordiscussionmentions_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.wwpbaseobjects.discussions.wwp_getusersfordiscussionmentions_services"/>
+         </service>
+         <service  name="GeneXus.Programs.wwpbaseobjects.secrolefunroleassociationwwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.wwpbaseobjects.secrolefunroleassociationwwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.wwpbaseobjects.secrolefunroleassociationwwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.awsosoldat_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awsosoldat_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.awsozonas_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awsozonas_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.awsosolicitud_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awsosolicitud_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.awsoserviciosmasdat_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awsoserviciosmasdat_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.awsoserviciosdet_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awsoserviciosdet_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.awsoservicios_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awsoservicios_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.awsoproveedores_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awsoproveedores_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.awsocsolisitudes_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awsocsolisitudes_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awsocsolisitudes_services"/>
+         </service>
+         <service  name="GeneXus.Programs.awslogin_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awslogin_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.awscpago_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awscpago_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.awsasolicitudser_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.awsasolicitudser_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+         </service>
+         <service  name="GeneXus.Programs.listaagrupacionwwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.listaagrupacionwwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.listaagrupacionwwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.profesionaleswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.profesionaleswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.profesionaleswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.zonaswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.zonaswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.zonaswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.listawwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.listawwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.listawwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.conexioneswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.conexioneswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.conexioneswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.configgenwwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.configgenwwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.configgenwwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.proveedorwwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.proveedorwwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.proveedorwwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.solicitudeswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.solicitudeswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.solicitudeswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.feedbackwwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.feedbackwwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.feedbackwwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.comisionesagruparprofesionaleswcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.comisionesagruparprofesionaleswcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.comisionesagruparprofesionaleswcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.comisionesagruparproveedoreswcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.comisionesagruparproveedoreswcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.comisionesagruparproveedoreswcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.comisionesagruparwwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.comisionesagruparwwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.comisionesagruparwwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.comisionesrubroswcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.comisionesrubroswcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.comisionesrubroswcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.comisionesprofesionaleswcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.comisionesprofesionaleswcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.comisionesprofesionaleswcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.comisionesproveedoreswcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.comisionesproveedoreswcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.comisionesproveedoreswcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.comisioneswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.comisioneswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.comisioneswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.vinculartrnwwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.vinculartrnwwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.vinculartrnwwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.documentacionproveedorsolicitudeswcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.documentacionproveedorsolicitudeswcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.documentacionproveedorsolicitudeswcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.documentacionproveedordashboardwcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.documentacionproveedordashboardwcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.documentacionproveedordashboardwcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.documentacionproveedorwcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.documentacionproveedorwcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.documentacionproveedorwcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.documentacionwwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.documentacionwwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.documentacionwwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.listacostosdetalles1wcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.listacostosdetalles1wcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.listacostosdetalles1wcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.listacostosdetalleswcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.listacostosdetalleswcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.listacostosdetalleswcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.listacostoswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.listacostoswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.listacostoswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.centrocostosdetalleswcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.centrocostosdetalleswcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.centrocostosdetalleswcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.centrocostoswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.centrocostoswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.centrocostoswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.profcomisionesrubroswcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.profcomisionesrubroswcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.profcomisionesrubroswcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.profcomisioneswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.profcomisioneswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.profcomisioneswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.clienteswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.clienteswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.clienteswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.textoslistawcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.textoslistawcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.textoslistawcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.textosmedidaswcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.textosmedidaswcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.textosmedidaswcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.textosinventariowcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.textosinventariowcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.textosinventariowcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.textoswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.textoswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.textoswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.historicorelacionesitemswcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.historicorelacionesitemswcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.historicorelacionesitemswcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.historicorelacionesrelacioneswcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.historicorelacionesrelacioneswcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.historicorelacionesrelacioneswcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.historicosolicitudesrelacioneswcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.historicosolicitudesrelacioneswcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.historicosolicitudesrelacioneswcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.historicosolicitudesitemswcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.historicosolicitudesitemswcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.historicosolicitudesitemswcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.metodopagossolicitudesrelacionwcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.metodopagossolicitudesrelacionwcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.metodopagossolicitudesrelacionwcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.metodopagossolicitudeswcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.metodopagossolicitudeswcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.metodopagossolicitudeswcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.metodopagoswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.metodopagoswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.metodopagoswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.rubrosmedidasrubroswcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.rubrosmedidasrubroswcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.rubrosmedidasrubroswcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.rubrosmedidasmedidaswcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.rubrosmedidasmedidaswcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.rubrosmedidasmedidaswcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.rubrosmedidaswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.rubrosmedidaswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.rubrosmedidaswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.rubrosinventariowcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.rubrosinventariowcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.rubrosinventariowcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.rubrosmedidaswcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.rubrosmedidaswcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.rubrosmedidaswcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.rubrosrubroswcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.rubrosrubroswcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.rubrosrubroswcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.rubroswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.rubroswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.rubroswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.inventariowwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.inventariowwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.inventariowwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.departamentomunicipiowcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.departamentomunicipiowcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.departamentomunicipiowcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.departamentowwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.departamentowwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.departamentowwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.paiswwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.paiswwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.paiswwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.wwpbaseobjects.secuserwwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.wwpbaseobjects.secuserwwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.wwpbaseobjects.secuserwwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.wwpbaseobjects.secrolewwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.wwpbaseobjects.secrolewwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.wwpbaseobjects.secrolewwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.wwpbaseobjects.secrolesecfunctionalityrolewcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.wwpbaseobjects.secrolesecfunctionalityrolewcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.wwpbaseobjects.secrolesecfunctionalityrolewcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.wwpbaseobjects.secfunctionalitywwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.wwpbaseobjects.secfunctionalitywwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.wwpbaseobjects.secfunctionalitywwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.wwpbaseobjects.secfunctionalitysecfunctionalityrolewcgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.wwpbaseobjects.secfunctionalitysecfunctionalityrolewcgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.wwpbaseobjects.secfunctionalitysecfunctionalityrolewcgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.wwpbaseobjects.secfunctionalityfilterparentwwgetfilterdata_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.wwpbaseobjects.secfunctionalityfilterparentwwgetfilterdata_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.wwpbaseobjects.secfunctionalityfilterparentwwgetfilterdata_services"/>
+         </service>
+         <service  name="GeneXus.Programs.apis.comerciosapi.v1.apicomercio_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.apis.comerciosapi.v1.apicomercio_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.apis.comerciosapi.v1.apicomercio_services"/>
+         </service>
+         <service  name="GeneXus.Programs.apipostulacionsubasta_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.apipostulacionsubasta_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.apipostulacionsubasta_services"/>
+         </service>
+         <service  name="GeneXus.Programs.apis.apiprofesionales_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.apis.apiprofesionales_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.apis.apiprofesionales_services"/>
+         </service>
+         <service  name="GeneXus.Programs.subastasapi_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.subastasapi_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.subastasapi_services"/>
+         </service>
+         <service  name="GeneXus.Programs.apimudanza_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.apimudanza_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.apimudanza_services"/>
+         </service>
+         <service  name="GeneXus.Programs.apis.apicomercio_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.apis.apicomercio_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.apis.apicomercio_services"/>
+         </service>
+         <service  name="GeneXus.Programs.webapi_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.webapi_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.webapi_services"/>
+         </service>
+         <service  name="GeneXus.Programs.almangoservices_services" behaviorConfiguration="gxCustomServiceBehaviorConfig">
+            <endpoint  address="" binding="basicHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.almangoservices_services"/>
+            <endpoint  address="mex" binding="mexHttpBinding" contract="IMetadataExchange"/>
+            <endpoint  address="rest" behaviorConfiguration="ServiceRestBehavior" binding="webHttpBinding" bindingConfiguration="CustomBinding" contract="GeneXus.Programs.almangoservices_services"/>
+         </service>
+      </services>
+      <extensions>
+         <behaviorExtensions>
+            <add  name="customWebHttp" type="GeneXus.Utils.CustomHttpBehaviorExtensionElement, GxClasses, Version=11.0.0.0, Culture=neutral, PublicKeyToken=6f5bf81c27b6b8aa"/>
+            <add  name="GxBehaviorExtension" type="GeneXus.Programs.GxBehaviorExtensionElement, GeneXus.Programs.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"/>
+            <add  name="GxServiceBehaviorExtension" type="GeneXus.Programs.GxServiceBehaviorExtensionElement, GeneXus.Programs.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"/>
+         </behaviorExtensions>
+      </extensions>
+      <behaviors>
+         <endpointBehaviors>
+            <behavior  name="ServiceRestBehavior">
+               <customWebHttp />
+            </behavior>
+            <behavior  name="gxCustomBehaviorConfig">
+               <GxBehaviorExtension />
+            </behavior>
+         </endpointBehaviors>
+         <serviceBehaviors>
+            <behavior  name="ServiceDefaultBehavior">
+               <serviceMetadata  httpGetEnabled="true"/>
+               <dataContractSerializer  maxItemsInObjectGraph="2147483647"/>
+            </behavior>
+            <behavior  name="gxCustomServiceBehaviorConfig">
+               <GxServiceBehaviorExtension />
+               <serviceMetadata  httpGetEnabled="true"/>
+            </behavior>
+         </serviceBehaviors>
+      </behaviors>
+      <bindings>
+         <webHttpBinding>
+            <binding  name="CustomBinding" maxReceivedMessageSize="10485760">
+               <security  mode="None">
+                  <transport  clientCredentialType="None"/>
+               </security>
+               <readerQuotas  maxStringContentLength="10485760"/>
+            </binding>
+         </webHttpBinding>
+         <basicHttpBinding>
+            <binding  name="CustomBinding" maxReceivedMessageSize="10485760">
+               <security  mode="None">
+                  <transport  clientCredentialType="None"/>
+               </security>
+               <readerQuotas  maxStringContentLength="10485760"/>
+            </binding>
+            <binding  name="BasicMtomBinding" messageEncoding="Mtom">
+               <security  mode="None">
+                  <transport  clientCredentialType="None"/>
+               </security>
+            </binding>
+         </basicHttpBinding>
+         <customBinding >
+            <binding  name="gxWsSoapBinding">
+               <textMessageEncoding  messageVersion="Soap12WSAddressing10" writeEncoding="utf-8"/>
+               <httpTransport />
+            </binding>
+         </customBinding>
+      </bindings>
+   </system.serviceModel>
+   <system.webServer>
+      <rewrite>
+         <rules>
+            <rule  name="GXObject" stopProcessing="true">
+               <match  url="^rest/(.*)/gxobject$"/>
+               <action  type="Rewrite" url="{R:1}.svc/rest/gxobject"/>
+            </rule>
+            <rule  name="gx_valid_service" stopProcessing="true">
+               <match  url="^gx_valid_service(.*)$"/>
+               <action  type="Rewrite" url="gx_valid_service.aspx{R:1}"/>
+            </rule>
+            <rule  name="gxmulticall" stopProcessing="true">
+               <match  url="^gxmulticall(.*)$"/>
+               <action  type="Rewrite" url="gxmulticall.aspx{R:1}"/>
+            </rule>
+            <rule  name="metadata" stopProcessing="true">
+               <match  url="^rest/metadata/(.*).json$"/>
+               <action  type="Rewrite" url="gxmetadata/{R:1}.json"/>
+            </rule>
+            <rule  name="metadataList" stopProcessing="true">
+               <match  url="^rest/metadata$"/>
+               <action  type="Rewrite" url="gxmetadata/gx_entity_list.json"/>
+            </rule>
+            <rule  name="metadataImg" stopProcessing="true">
+               <match  url="^rest/metadata/images/(.*)$"/>
+               <action  type="Rewrite" url="gxmetadata/images/{R:1}"/>
+            </rule>
+            <rule  name="metadataJson" stopProcessing="true">
+               <match  url="^rest/metadata/(.*)$"/>
+               <action  type="Rewrite" url="gxmetadata/{R:1}.json"/>
+            </rule>
+            <rule  name="GX REST Services" stopProcessing="true">
+               <match  url="^rest/((?:/?[\w \.-]+)+)/?(.*)$"/>
+               <action  type="Rewrite" url="{R:1}.svc/rest/{R:2}"/>
+            </rule>
+         </rules>
+      </rewrite>
+      <httpErrors  errorMode="Detailed"/>
+      <staticContent>
+         <remove  fileExtension=".json"/>
+         <remove  fileExtension=".woff"/>
+         <remove  fileExtension=".woff2"/>
+         <remove  fileExtension=".tmp"/>
+         <remove  fileExtension=".otf"/>
+         <remove  fileExtension=".apk"/>
+         <remove  fileExtension=".properties"/>
+         <remove  fileExtension=".ini"/>
+         <mimeMap  fileExtension=".json" mimeType="application/json"/>
+         <mimeMap  fileExtension=".woff" mimeType="font/woff"/>
+         <mimeMap  fileExtension=".woff2" mimeType="font/woff2"/>
+         <mimeMap  fileExtension=".tmp" mimeType="image/jpeg"/>
+         <mimeMap  fileExtension=".otf" mimeType="font/opentype"/>
+         <mimeMap  fileExtension=".gxsd" mimeType="application/zip"/>
+         <mimeMap  fileExtension=".apk" mimeType="application/vnd.android.package-archive"/>
+         <mimeMap  fileExtension=".properties" mimeType="text/plain"/>
+         <mimeMap  fileExtension=".ini" mimeType="text/plain"/>
+         <remove  fileExtension=".cod"/>
+         <mimeMap  fileExtension=".cod" mimeType="application/vnd.rim.cod"/>
+         <mimeMap  fileExtension=".jad" mimeType="text/vnd.sun.j2me.app-descriptor"/>
+         <mimeMap  fileExtension=".caf" mimeType="audio/x-caf"/>
+         <mimeMap  fileExtension=".yaml" mimeType="text/yaml"/>
+         <mimeMap  fileExtension=".usdz" mimeType="model/vnd.pixar.usd"/>
+         <mimeMap  fileExtension=".sfb" mimeType="model/sfb"/>
+         <mimeMap  fileExtension=".gltf" mimeType="model/gltf+json"/>
+      </staticContent>
+      <handlers>
+         <add  name="GX WebSocket Handler" verb="*" path="gxwebsocket*" type="GeneXus.Http.WSHttpHandler,gxwebsocket"/>
+         <add  name="GeneXus.HttpHandlerFactory.HandlerFactory" verb="*" path="*.aspx" type="GeneXus.HttpHandlerFactory.HandlerFactory,gxclasses"/>
+         <remove  name="WebDAV"/>
+      </handlers>
+      <modules>
+         <add  name="GXStaticContentCache" type="GeneXus.Http.HttpModules.GXStaticCacheModule,gxclasses"/>
+         <add  name="GXAPIServices" type="GeneXus.Http.HttpModules.GXAPIModule,gxclasses"/>
+         <add  name="GXRewriter" type="GeneXus.Http.HttpModules.GXRewriter,gxclasses"/>
+         <add  name="GXSessionModule" type="GeneXus.Http.HttpModules.GXSessionModule,gxclasses"/>
+         <remove  name="WebDAVModule"/>
+      </modules>
+      <validation  validateIntegratedModeConfiguration="false"/>
+      <urlCompression  doStaticCompression="true"/>
+      <security>
+         <requestFiltering  allowDoubleEscaping="true">
+            <hiddenSegments>
+               <add  segment="PrivateTempStorage"/>
+               <add  segment="private"/>
+            </hiddenSegments>
+         </requestFiltering>
+      </security>
+   </system.webServer>
+   <location  path="PublicTempStorage">
+      <system.webServer>
+         <handlers>
+            <clear />
+            <add  name="StaticFile" path="*" verb="*" modules="StaticFileModule,DefaultDocumentModule,DirectoryListingModule" resourceType="Either" requireAccess="Read"/>
+         </handlers>
+      </system.webServer>
+   </location>
+</configuration>

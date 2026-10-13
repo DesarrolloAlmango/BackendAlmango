@@ -1,0 +1,149 @@
+{
+"ObjectType":"ServiceGroup",
+"Name":"APIs\\APIComercio",
+"BasePath":"APIs/APIComercio",
+"Mappings":
+[
+{
+"Name":"obtenerlogin",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerlogin",
+"Implementation":"APIs\\ObtenerLogin",
+"Verb":"GET",
+"PathRegexp":"obtenerlogin",
+"Path":"obtenerlogin"
+
+},
+{
+"Name":"obtenercomerciodatos",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenercomerciodatos",
+"Implementation":"APIs\\ObtenerComercioDatos",
+"Verb":"GET",
+"PathRegexp":"obtenercomerciodatos",
+"Path":"obtenercomerciodatos"
+
+},
+{
+"Name":"obtenercomercioforanea",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenercomercioforanea",
+"Implementation":"APIs\\ObtenerComercioForanea",
+"Verb":"GET",
+"PathRegexp":"obtenercomercioforanea",
+"Path":"obtenercomercioforanea"
+
+},
+{
+"Name":"insertarcomercio",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_insertarcomercio",
+"Implementation":"APIs\\InsertarComercio",
+"Verb":"GET",
+"PathRegexp":"insertarcomercio",
+"Path":"insertarcomercio"
+
+},
+{
+"Name":"obtenersolicitudecommerce",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenersolicitudecommerce",
+"Implementation":"APIs\\ODatosSol",
+"Verb":"GET",
+"PathRegexp":"obtenersolicitudecommerce",
+"Path":"obtenersolicitudecommerce"
+
+},
+{
+"Name":"obtenerdptosecommerce",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerdptosecommerce",
+"Implementation":"APIs\\ObtenerDptosEcommerce",
+"Verb":"GET",
+"PathRegexp":"obtenerdptosecommerce",
+"Path":"obtenerdptosecommerce"
+
+},
+{
+"Name":"obtenermuniecommerce",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenermuniecommerce",
+"Implementation":"APIs\\ObtenerMuniEcommerce",
+"Verb":"GET",
+"PathRegexp":"obtenermuniecommerce",
+"Path":"obtenermuniecommerce"
+
+},
+{
+"Verb":"GET",
+"Name":"obtenerpostulados",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerpostulados",
+"Implementation":"APIs\\OPostulados",
+"PathRegexp":"obtenerpostulados",
+"Path":"obtenerpostulados"
+
+},
+{
+"Verb":"POST",
+"Name":"actualizarsolicitudecommerce",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_actualizarsolicitudecommerce",
+"Implementation":"APIs\\ActualizarSolicitudEcommerce",
+"PathRegexp":"actualizarsolicitudecommerce",
+"Path":"actualizarsolicitudecommerce"
+
+},
+{
+"Verb":"POST",
+"Name":"asignarpostulacion",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_asignarpostulacion",
+"Implementation":"APIs\\AProfPostulacion",
+"PathRegexp":"asignarpostulacion",
+"Path":"asignarpostulacion"
+
+},
+{
+"Verb":"POST",
+"Name":"afeedback",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_afeedback",
+"Implementation":"APIs\\AFeedback",
+"PathRegexp":"afeedback",
+"Path":"afeedback"
+
+},
+{
+"Name":"gxobject",
+"Verb":"POST",
+"Bodystyle":"Wrapped",
+"ServiceMethod":"gxobject",
+"HeaderVariables": [],
+"VariableAlias": [],
+"Implementation":"gxobject",
+"PathRegexp":"gxobject",
+"Path":"gxobject"
+}]}

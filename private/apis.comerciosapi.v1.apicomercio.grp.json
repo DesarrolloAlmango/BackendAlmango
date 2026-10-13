@@ -1,0 +1,61 @@
+{
+"ObjectType":"ServiceGroup",
+"Name":"APIs\\ComerciosApi\\v1\\APIComercio",
+"BasePath":"v1/comercios",
+"Mappings":
+[
+{
+"Verb":"POST",
+"PathRegexp":"compras",
+"Path":"compras",
+"Name":"recibircompra",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_recibircompra",
+"Implementation":"APIs\\ComerciosApi\\v1\\PGuardarSolicitudExterna"
+},
+{
+"Verb":"GET",
+"PathRegexp":"servicios",
+"Path":"servicios",
+"Name":"obtenertodosservicios",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenertodosservicios",
+"Implementation":"APIs\\ComerciosApi\\v1\\ObtenerTodosServicios"
+},
+{
+"Verb":"GET",
+"PathRegexp":"servicios/([^/]+)",
+"Path":"servicios/{sku}",
+"Name":"obtenerservicio",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerservicio",
+"Implementation":"APIs\\ComerciosApi\\v1\\ObtenerServicio"
+},
+{
+"Verb":"GET",
+"PathRegexp":"zonas",
+"Path":"zonas",
+"Name":"pobtenerzonas",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_pobtenerzonas",
+"Implementation":"APIs\\ComerciosApi\\v1\\PObtenerZonas"
+},
+{
+"Verb":"GET",
+"PathRegexp":"presupuesto",
+"Path":"presupuesto",
+"Name":"pobtenerpresupuesto",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_pobtenerpresupuesto",
+"Implementation":"APIs\\ComerciosApi\\v1\\PObtenerPresupuesto"
+}]}

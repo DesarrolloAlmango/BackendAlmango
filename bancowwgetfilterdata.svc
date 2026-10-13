@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "GeneXus.Programs.bancowwgetfilterdata_services,bancowwgetfilterdata" %>

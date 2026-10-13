@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "GeneXus.Programs.mudanzaloaddvcombo_services,amudanzaloaddvcombo" %>

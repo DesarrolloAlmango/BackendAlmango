@@ -1,0 +1,450 @@
+{
+"ObjectType":"ServiceGroup",
+"Name":"APIs\\APIProfesionales",
+"BasePath":"APIs/APIProfesionales",
+"Mappings":
+[
+{
+"Verb":"POST",
+"Name":"login",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_login",
+"Implementation":"APIs\\ObtenerLogin",
+"PathRegexp":"login",
+"Path":"login"
+
+},
+{
+"Verb":"POST",
+"Name":"logout",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_logout",
+"Implementation":"APIs\\ALogout",
+"PathRegexp":"logout",
+"Path":"logout"
+
+},
+{
+"Verb":"POST",
+"Name":"aincidenciaapi",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_aincidenciaapi",
+"Implementation":"APIs\\AIncidenciaApi",
+"PathRegexp":"aincidenciaapi",
+"Path":"aincidenciaapi"
+
+},
+{
+"Verb":"POST",
+"Name":"arubropendienteprof",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_arubropendienteprof",
+"Implementation":"APIs\\ARubroPendienteProf",
+"PathRegexp":"arubropendienteprof",
+"Path":"arubropendienteprof"
+
+},
+{
+"Verb":"POST",
+"Name":"arelacionsolprof",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_arelacionsolprof",
+"Implementation":"APIs\\ARelacionSolProf",
+"PathRegexp":"arelacionsolprof",
+"Path":"arelacionsolprof"
+
+},
+{
+"Verb":"POST",
+"Name":"arechazarsolprof",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_arechazarsolprof",
+"Implementation":"APIs\\ARechazarSolProf",
+"PathRegexp":"arechazarsolprof",
+"Path":"arechazarsolprof"
+
+},
+{
+"Verb":"POST",
+"Name":"afinalizarsolprof",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_afinalizarsolprof",
+"Implementation":"APIs\\AFinalizarSolProf",
+"PathRegexp":"afinalizarsolprof",
+"Path":"afinalizarsolprof"
+
+},
+{
+"Verb":"POST",
+"Name":"altausuario",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_altausuario",
+"Implementation":"APIs\\AUsuarioProfesional",
+"PathRegexp":"altausuario",
+"Path":"altausuario"
+
+},
+{
+"Verb":"POST",
+"Name":"modificarperfil",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_modificarperfil",
+"Implementation":"APIs\\SetPerfilProf",
+"PathRegexp":"modificarperfil",
+"Path":"modificarperfil"
+
+},
+{
+"Verb":"POST",
+"Name":"acontrasena",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_acontrasena",
+"Implementation":"APIs\\ANuevaContrasena",
+"PathRegexp":"acontrasena",
+"Path":"acontrasena"
+
+},
+{
+"Verb":"POST",
+"Name":"azonaprofesional",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_azonaprofesional",
+"Implementation":"APIs\\AZonaProfesional",
+"PathRegexp":"azonaprofesional",
+"Path":"azonaprofesional"
+
+},
+{
+"Verb":"POST",
+"Name":"altapostulacion",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_altapostulacion",
+"Implementation":"APIs\\APostularProf",
+"PathRegexp":"altapostulacion",
+"Path":"altapostulacion"
+
+},
+{
+"Name":"ozonaprofesional",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_ozonaprofesional",
+"Implementation":"APIs\\OZonaProfesional",
+"Verb":"GET",
+"PathRegexp":"ozonaprofesional",
+"Path":"ozonaprofesional"
+
+},
+{
+"Name":"osolbyid",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_osolbyid",
+"Implementation":"APIs\\OSolById",
+"Verb":"GET",
+"PathRegexp":"osolbyid",
+"Path":"osolbyid"
+
+},
+{
+"Name":"osoldatdisponibles",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_osoldatdisponibles",
+"Implementation":"APIs\\OSolDatDisponibles",
+"Verb":"GET",
+"PathRegexp":"osoldatdisponibles",
+"Path":"osoldatdisponibles"
+
+},
+{
+"Name":"odetalleitemssol",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_odetalleitemssol",
+"Implementation":"APIs\\ODetalleItemsSol",
+"Verb":"GET",
+"PathRegexp":"odetalleitemssol",
+"Path":"odetalleitemssol"
+
+},
+{
+"Name":"osoldatprofaceptadas",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_osoldatprofaceptadas",
+"Implementation":"APIs\\OSolDatProfAceptadas",
+"Verb":"GET",
+"PathRegexp":"osoldatprofaceptadas",
+"Path":"osoldatprofaceptadas"
+
+},
+{
+"Name":"oestadisticasprof",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_oestadisticasprof",
+"Implementation":"APIs\\OEstadisticasProf",
+"Verb":"GET",
+"PathRegexp":"oestadisticasprof",
+"Path":"oestadisticasprof"
+
+},
+{
+"Name":"oultsolcalificadasprof",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_oultsolcalificadasprof",
+"Implementation":"APIs\\OUltSolCalificadasProf",
+"Verb":"GET",
+"PathRegexp":"oultsolcalificadasprof",
+"Path":"oultsolcalificadasprof"
+
+},
+{
+"Name":"orubrospendientesprof",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_orubrospendientesprof",
+"Implementation":"APIs\\ORubrosPendientesProf",
+"Verb":"GET",
+"PathRegexp":"orubrospendientesprof",
+"Path":"orubrospendientesprof"
+
+},
+{
+"Name":"olistarubro",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_olistarubro",
+"Implementation":"APIs\\OListaRubro",
+"Verb":"GET",
+"PathRegexp":"olistarubro",
+"Path":"olistarubro"
+
+},
+{
+"Name":"operfilprof",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_operfilprof",
+"Implementation":"APIs\\OPerfilProf",
+"Verb":"GET",
+"PathRegexp":"operfilprof",
+"Path":"operfilprof"
+
+},
+{
+"Name":"obteneravatar",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obteneravatar",
+"Implementation":"APIs\\ObtenerAvatar",
+"Verb":"GET",
+"PathRegexp":"obteneravatar",
+"Path":"obteneravatar"
+
+},
+{
+"Verb":"POST",
+"Name":"modificaravatar",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_modificaravatar",
+"Implementation":"APIs\\ModificarAvatar",
+"PathRegexp":"modificaravatar",
+"Path":"modificaravatar"
+
+},
+{
+"Name":"obtenerjwt",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerjwt",
+"Implementation":"APIs\\ObtenerJwt",
+"Verb":"GET",
+"PathRegexp":"obtenerjwt",
+"Path":"obtenerjwt"
+
+},
+{
+"Name":"ometodopagos",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_ometodopagos",
+"Implementation":"APIs\\OMetodoPagos",
+"Verb":"GET",
+"PathRegexp":"ometodopagos",
+"Path":"ometodopagos"
+
+},
+{
+"Name":"omotivos",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_omotivos",
+"Implementation":"APIs\\OMotivos",
+"Verb":"GET",
+"PathRegexp":"omotivos",
+"Path":"omotivos"
+
+},
+{
+"Name":"opaises",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_opaises",
+"Implementation":"APIs\\OPaises",
+"Verb":"GET",
+"PathRegexp":"opaises",
+"Path":"opaises"
+
+},
+{
+"Name":"obancos",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obancos",
+"Implementation":"APIs\\OBancos",
+"Verb":"GET",
+"PathRegexp":"obancos",
+"Path":"obancos"
+
+},
+{
+"Name":"oparametro",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_oparametro",
+"Implementation":"APIs\\OParametro",
+"Verb":"GET",
+"PathRegexp":"oparametro",
+"Path":"oparametro"
+
+},
+{
+"Name":"odatosmudanza",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_odatosmudanza",
+"Implementation":"APIs\\ODatosMudanza",
+"Verb":"GET",
+"PathRegexp":"odatosmudanza",
+"Path":"odatosmudanza"
+
+},
+{
+"Name":"obtenersoldatos",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenersoldatos",
+"Implementation":"APIs\\ObtenerPostulacionSubWeb",
+"Verb":"GET",
+"PathRegexp":"obtenersoldatos",
+"Path":"obtenersoldatos"
+
+},
+{
+"Name":"obtenerreportedeconomico",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_obtenerreportedeconomico",
+"Implementation":"APIs\\ObtenerReporteDEconomico",
+"Verb":"GET",
+"PathRegexp":"obtenerreportedeconomico",
+"Path":"obtenerreportedeconomico"
+
+},
+{
+"Name":"oservicios",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_oservicios",
+"Implementation":"APIs\\OServicios",
+"Verb":"GET",
+"PathRegexp":"oservicios",
+"Path":"oservicios"
+
+},
+{
+"Name":"oserviciospendientesprof",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_oserviciospendientesprof",
+"Implementation":"APIs\\OServiciosPendientesProf",
+"Verb":"GET",
+"PathRegexp":"oserviciospendientesprof",
+"Path":"oserviciospendientesprof"
+
+},
+{
+"Name":"oserviciosprof",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_oserviciosprof",
+"Implementation":"APIs\\OServiciosProf",
+"Verb":"GET",
+"PathRegexp":"oserviciosprof",
+"Path":"oserviciosprof"
+
+},
+{
+"Verb":"POST",
+"Name":"aserviciopendienteprof",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_aserviciopendienteprof",
+"Implementation":"APIs\\AServicioPendienteProf",
+"PathRegexp":"aserviciopendienteprof",
+"Path":"aserviciopendienteprof"
+
+}]}

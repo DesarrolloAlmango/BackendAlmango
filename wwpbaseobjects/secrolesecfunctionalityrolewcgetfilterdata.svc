@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "GeneXus.Programs.wwpbaseobjects.secrolesecfunctionalityrolewcgetfilterdata_services,wwpbaseobjects.secrolesecfunctionalityrolewcgetfilterdata" %>

@@ -1,0 +1,702 @@
+openapi: 3.0.0
+info:
+  title: "APIMudanza"
+  description: "APIMudanza"
+  version: "20261005180337"
+servers:
+  - url: http://localhost/AlmangoXV1NETFramework/APIMudanza
+paths:
+  /ObtenerDirecciones:
+    get:
+      tags:
+        - APIMudanza
+      operationId: "APIMudanza.ObtenerDirecciones"
+      summary: "ObtenerDirecciones"
+      parameters:
+        - name: "Searchtxt"
+          in: query
+          required: false
+          schema:
+            type: "string"
+            
+
+        - name: "Coordenadas"
+          in: query
+          required: false
+          schema:
+            type: "string"
+            
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ObtenerDireccionesOutput"
+
+        404:
+          description: "Not found"
+
+  /ObtenerCoordenadas:
+    get:
+      tags:
+        - APIMudanza
+      operationId: "APIMudanza.ObtenerCoordenadas"
+      summary: "ObtenerCoordenadas"
+      parameters:
+        - name: "Mapbox_Id"
+          in: query
+          required: false
+          schema:
+            type: "string"
+            
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ObtenerCoordenadasOutput"
+
+        404:
+          description: "Not found"
+
+  /ObtenerURLMapa:
+    get:
+      tags:
+        - APIMudanza
+      operationId: "APIMudanza.ObtenerURLMapa"
+      summary: "ObtenerURLMapa"
+      parameters:
+        - name: "Origencoordenadas"
+          in: query
+          required: false
+          schema:
+            type: "string"
+            
+
+        - name: "Destinocoordenadas"
+          in: query
+          required: false
+          schema:
+            type: "string"
+            
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ObtenerURLMapaOutput"
+
+        404:
+          description: "Not found"
+
+  /RequestGooglePlace:
+    get:
+      tags:
+        - APIMudanza
+      operationId: "APIMudanza.RequestGooglePlace"
+      summary: "RequestGooglePlace"
+      parameters:
+        - name: "Textsearch"
+          in: query
+          required: false
+          schema:
+            type: "string"
+            
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RequestGooglePlaceOutput"
+
+        404:
+          description: "Not found"
+
+  /ObtenerIdByCoordenadas:
+    get:
+      tags:
+        - APIMudanza
+      operationId: "APIMudanza.ObtenerIdByCoordenadas"
+      summary: "ObtenerIdByCoordenadas"
+      parameters:
+        - name: "Latitud"
+          in: query
+          required: false
+          schema:
+            type: "string"
+            
+
+        - name: "Longitud"
+          in: query
+          required: false
+          schema:
+            type: "string"
+            
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ObtenerIdByCoordenadasOutput"
+
+        404:
+          description: "Not found"
+
+  /ObtenerParametrosMudanza:
+    get:
+      tags:
+        - APIMudanza
+      operationId: "APIMudanza.ObtenerParametrosMudanza"
+      summary: "ObtenerParametrosMudanza"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SDTCarga"
+
+        404:
+          description: "Not found"
+
+  /AltaMudanzaWeb:
+    get:
+      tags:
+        - APIMudanza
+      operationId: "APIMudanza.AltaMudanzaWeb"
+      summary: "AltaMudanzaWeb"
+      parameters:
+        - name: "Sdtmudanzajson"
+          in: query
+          required: false
+          schema:
+            type: "string"
+            
+
+        - name: "Sdtcargajson"
+          in: query
+          required: false
+          schema:
+            type: "string"
+            
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AltaMudanzaWebOutput"
+        404:
+          description: "Not found"
+
+  /UpdateMudanzaWeb:
+    get:
+      tags:
+        - APIMudanza
+      operationId: "APIMudanza.UpdateMudanzaWeb"
+      summary: "UpdateMudanzaWeb"
+      parameters:
+        - name: "Mudanzaid"
+          in: query
+          required: false
+          schema:
+            type: "integer"
+            format: "int64"
+
+        - name: "Sdtmudanzajson"
+          in: query
+          required: false
+          schema:
+            type: "string"
+            
+
+        - name: "Sdtcargajson"
+          in: query
+          required: false
+          schema:
+            type: "string"
+            
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UpdateMudanzaWebOutput"
+
+        404:
+          description: "Not found"
+
+  /ObtenerURLMP:
+    get:
+      tags:
+        - APIMudanza
+      operationId: "APIMudanza.ObtenerURLMP"
+      summary: "ObtenerURLMP"
+      parameters:
+        - name: "Mudanzaid"
+          in: query
+          required: false
+          schema:
+            type: "integer"
+            format: "int64"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ObtenerURLMPOutput"
+
+        404:
+          description: "Not found"
+
+  /ConsultarPago:
+    get:
+      tags:
+        - APIMudanza
+      operationId: "APIMudanza.ConsultarPago"
+      summary: "ConsultarPago"
+      parameters:
+        - name: "Mudanzaid"
+          in: query
+          required: false
+          schema:
+            type: "integer"
+            format: "int64"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ConsultarPagoOutput"
+        404:
+          description: "Not found"
+
+  /ObtenerDatosToUpdate:
+    get:
+      tags:
+        - APIMudanza
+      operationId: "APIMudanza.ObtenerDatosToUpdate"
+      summary: "ObtenerDatosToUpdate"
+      parameters:
+        - name: "Solicitudesid"
+          in: query
+          required: false
+          schema:
+            type: "integer"
+            format: "int64"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SDTMudanza"
+
+        404:
+          description: "Not found"
+
+  /ObtenerPermisoSolicitud:
+    get:
+      tags:
+        - APIMudanza
+      operationId: "APIMudanza.ObtenerPermisoSolicitud"
+      summary: "ObtenerPermisoSolicitud"
+      parameters:
+        - name: "Solicitudesid"
+          in: query
+          required: false
+          schema:
+            type: "integer"
+            format: "int64"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ObtenerPermisoSolicitudOutput"
+
+        404:
+          description: "Not found"
+
+components:
+  schemas:
+    ObtenerDireccionesOutput:
+      properties:
+        Result:
+          type: "string"
+
+    ObtenerCoordenadasOutput:
+      properties:
+        Result:
+          type: "string"
+
+    ObtenerURLMapaOutput:
+      properties:
+        URL:
+          type: "string"
+
+    RequestGooglePlaceOutput:
+      properties:
+        Result:
+          type: "string"
+
+    ObtenerIdByCoordenadasOutput:
+      properties:
+        Result:
+          type: "string"
+
+
+    AltaMudanzaWebOutput:
+      properties:
+        MudanzaId:
+          type: "integer"
+          format: "int64"
+        SolicitudId:
+          type: "integer"
+          format: "int64"
+        Mensaje:
+          type: "string"
+
+    UpdateMudanzaWebOutput:
+      properties:
+        Mensaje:
+          type: "string"
+
+    ObtenerURLMPOutput:
+      properties:
+        URL:
+          type: "string"
+
+    ConsultarPagoOutput:
+      properties:
+        SolicitudesId:
+          type: "integer"
+          format: "int64"
+        Pagado:
+          type: "string"
+
+
+    ObtenerPermisoSolicitudOutput:
+      properties:
+        Permiso:
+          type: "boolean"
+
+
+    SDTCarga:
+      properties:
+        SDTCarga:
+          type: array
+          items:
+            description: SDTCargaItem
+            $ref: "#/components/schemas/SDTCarga_SDTCargaItem"
+
+
+    SDTCarga_SDTCargaItem:
+      properties:
+        Id:
+          description: "Parametro Mudanza Id"
+          type: "integer"
+          format: "int32"
+        Tipo:
+          description: "Parametro Mudanza Tipo"
+          type: "string"
+        Titulo:
+          description: "Titulo"
+          type: "string"
+        Nombre:
+          description: "Parametro Mudanza Nombre"
+          type: "string"
+        Descripcion:
+          description: "Parametro Mudanza Descripcion"
+          type: "string"
+        Valor:
+          description: "Parametro Mudanza Valor"
+          type: "number"
+          format: "double"
+        Unidad:
+          description: "Parametro Mudanza Unidad"
+          type: "string"
+        Cantidad:
+          description: "Cantidad"
+          type: "integer"
+          format: "int32"
+        Imagen:
+          description: "Imagen"
+          type: "string"
+        Embalaje:
+          description: "Embalaje"
+          type: "boolean"
+        EmbalajeCant:
+          description: "Embalaje Cant"
+          type: "integer"
+          format: "int32"
+        Elevacion:
+          description: "Elevacion"
+          type: "boolean"
+        ElevacionCant:
+          description: "Elevacion Cant"
+          type: "integer"
+          format: "int32"
+        Activo:
+          description: "Activo"
+          type: "boolean"
+
+
+
+    SDTMudanza:
+      properties:
+        MudanzaId:
+          description: "Mudanza Id"
+          type: "integer"
+          format: "int64"
+        MudanzaAsesor:
+          description: "Mudanza Asesor"
+          type: "string"
+        MudanzaApellidoNombre:
+          description: "Mudanza Apellido Nombre"
+          type: "string"
+        MudanzaMail:
+          description: "Mudanza Mail"
+          type: "string"
+        MudanzaPhone:
+          description: "Mudanza Phone"
+          type: "string"
+        MudanzaFechaAlta:
+          description: "Mudanza Fecha Alta"
+          type: "string"
+          format: "date"
+        MudanzaFechaUpdate:
+          description: "Mudanza Fecha Update"
+          type: "string"
+          format: "date"
+        MudanzaFechaServicio:
+          description: "Mudanza Fecha Servicio"
+          type: "string"
+          format: "date"
+        MudanzaHoraServicio:
+          description: "Mudanza Hora Servicio"
+          type: "string"
+        MudanzaRgoHoraservicio:
+          description: "Mudanza Rgo Horaservicio"
+          type: "string"
+        MudanzaDireccionOrigen:
+          description: "Mudanza Direccion Origen"
+          type: "string"
+        MudanzaLocalidadOrigen:
+          description: "Mudanza Localidad Origen"
+          type: "string"
+        MudanzaPisoDptoOrigen:
+          description: "Mudanza Piso Dpto Origen"
+          type: "string"
+        MudanzaDireccionDestino:
+          description: "Mudanza Direccion Destino"
+          type: "string"
+        MudanzaLocalidadDestino:
+          description: "Mudanza Localidad Destino"
+          type: "string"
+        MudanzaPisoDptoDestino:
+          description: "Mudanza Piso Dpto Destino"
+          type: "string"
+        MudanzaCoordenadasOrigen:
+          description: "Mudanza Coordenada Origen"
+          type: "string"
+        MudanzaCoordenadasDestino:
+          description: "Mudanza Coordenada Destino"
+          type: "string"
+        MudanzaDistancia:
+          description: "Mudanza Distancia"
+          type: "number"
+          format: "double"
+        MudanzaVehiculoSugerido:
+          description: "Mudanza Vehiculo Sugerido"
+          type: "string"
+        MudanzaPrecioBasexHora:
+          description: "Mudanza Precio Basex Hora"
+          type: "number"
+          format: "double"
+        MudanzaPeajeCantidad:
+          description: "Mudanza Peaje Cantidad"
+          type: "integer"
+          format: "int32"
+        MudanzaComentario:
+          description: "Mudanza Comentario"
+          type: "string"
+        MudanzaPeajevalor:
+          description: "Mudanza Peajevalor"
+          type: "number"
+          format: "double"
+        TipoInmuebleOrigenId:
+          description: "Tipo Inmueble Origen Id"
+          type: "integer"
+          format: "int32"
+        TipoInmuebleOrigenNombre:
+          description: "Tipo Inmueble Origen Nombre"
+          type: "string"
+        TipoInmuebleOrigenValor:
+          description: "Tipo Inmueble Origen Valor"
+          type: "number"
+          format: "double"
+        MudanzaOrigenMetodo:
+          description: "Mudanza Origen Metodo"
+          type: "string"
+        TipoInmuebleDestinoId:
+          description: "Tipo Inmueble Destino Id"
+          type: "integer"
+          format: "int32"
+        TipoInmuebleDestinoNombre:
+          description: "Tipo Inmueble Destino Nombre"
+          type: "string"
+        TipoInmuebleDestinoValor:
+          description: "Tipo Inmueble Destino Valor"
+          type: "number"
+          format: "double"
+        TipoEstacionamOrigenId:
+          description: "Tipo Estacionam Origen Id"
+          type: "integer"
+          format: "int32"
+        TipoEstacionamOrigenNombre:
+          description: "Tipo Estacionam Origen Nombre"
+          type: "string"
+        TipoEstacionamOrigenValor:
+          description: "Tipo Estacionam Origen Valor"
+          type: "number"
+          format: "double"
+        TipoEstacionamDestinoId:
+          description: "Tipo Estacionam Destino Id"
+          type: "integer"
+          format: "int32"
+        TipoEstacionamDestinoNombre:
+          description: "Tipo Estacionam Destino Nombre"
+          type: "string"
+        MudanzaDestinoMetodo:
+          description: "Mudanza Destino Metodo"
+          type: "string"
+        TipoEstacionamDestinoValor:
+          description: "Tipo Estacionam Destino Valor"
+          type: "number"
+          format: "double"
+        MudanzaTiempoMaximo:
+          description: "Mudanza Tiempo Maximo"
+          type: "number"
+          format: "double"
+        MudanzaCargaVolumenEstimado:
+          description: "Mudanza Carga Volumen Estimado"
+          type: "number"
+          format: "double"
+        MudanzaAdicionalPrecio:
+          description: "Mudanza Adicional Precio"
+          type: "number"
+          format: "double"
+        MudanzaCantidadPeones:
+          description: "Mudanza Cantidad Peones"
+          type: "integer"
+          format: "int32"
+        MudanzaElevacion:
+          description: "Mudanza Elevacion"
+          type: "integer"
+          format: "int32"
+        MudanzaDescenso:
+          description: "Mudanza Descenso"
+          type: "integer"
+          format: "int32"
+        MudanzaEmbalaje:
+          description: "Mudanza Embalaje"
+          type: "integer"
+          format: "int32"
+        MudanzaPrecioFinal:
+          description: "Mudanza Precio Final"
+          type: "number"
+          format: "double"
+        MudanzaFormaPago:
+          description: "Mudanza Forma Pago"
+          type: "string"
+        MudanzaOperacionId:
+          description: "Mudanza Operacion Id"
+          type: "integer"
+          format: "int64"
+        MudanzaProveedorId:
+          description: "Mudanza Proveedor Id"
+          type: "integer"
+          format: "int64"
+        MudanzaSecUserId:
+          description: "Mudanza Sec User Id"
+          type: "integer"
+          format: "int64"
+
+        Carga:
+          type: array
+          items:
+            description: CargaItem
+            $ref: "#/components/schemas/SDTMudanza.Carga_CargaItem"
+
+        Adicional:
+          type: array
+          items:
+            description: AdicionalItem
+            $ref: "#/components/schemas/SDTMudanza.Adicional_AdicionalItem"
+
+
+    SDTMudanza.Carga_CargaItem:
+      properties:
+        ItemCargaId:
+          description: "Item Carga Id"
+          type: "integer"
+          format: "int32"
+        ItemCargaNombre:
+          description: "Item Carga Nombre"
+          type: "string"
+        ItemCargaDescripcion:
+          description: "Item Carga Descripcion"
+          type: "string"
+        ItemCargaCantidad:
+          description: "Item Carga Cantidad"
+          type: "integer"
+          format: "int32"
+        ItemCargaEmbCant:
+          description: "Item Carga Emb Cant"
+          type: "integer"
+          format: "int32"
+
+
+      x-gx-level: "SDTMudanza"
+
+
+    SDTMudanza.Adicional_AdicionalItem:
+      properties:
+        ItemAdicionalId:
+          description: "Item Adicional Id"
+          type: "integer"
+          format: "int32"
+        ItemAdicionalNombre:
+          description: "Item Adicional Nombre"
+          type: "string"
+        ItemAdicionalCantidad:
+          description: "Item Adicional Cantidad"
+          type: "integer"
+          format: "int32"
+
+
+      x-gx-level: "SDTMudanza"
+
+

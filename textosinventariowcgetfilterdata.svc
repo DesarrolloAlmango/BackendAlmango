@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "GeneXus.Programs.textosinventariowcgetfilterdata_services,textosinventariowcgetfilterdata" %>

@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "GeneXus.Programs.dashboard.dashboard1loaddvcombo_services,dashboard.dashboard1loaddvcombo" %>

@@ -1,0 +1,5285 @@
+openapi: 3.0.0
+info:
+  title: "Almango XV1"
+  version: "20261005180336"
+servers:
+  - url: http://localhost/AlmangoXV1NETFramework/rest
+paths:
+  /AltaSolicitudPostulacionSubastaWeb:
+    post:
+      tags:
+        - AltaSolicitudPostulacionSubastaWeb
+      operationId: "AltaSolicitudPostulacionSubastaWeb"
+      summary: "Alta Postulacion Subasta Web"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AltaSolicitudPostulacionSubastaWebInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AltaSolicitudPostulacionSubastaWebOutput"
+        404:
+          description: "Not found"
+  /BancoWWGetFilterData:
+    post:
+      tags:
+        - BancoWWGetFilterData
+      operationId: "BancoWWGetFilterData"
+      summary: "Banco WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BancoWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BancoWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /CantSolicitudes:
+    post:
+      tags:
+        - CantSolicitudes
+      operationId: "CantSolicitudes"
+      summary: "Cantidad de Solicitudes"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CantSolicitudesInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CantSolicitudesOutput"
+        404:
+          description: "Not found"
+  /CentroCostosDetallesWCGetFilterData:
+    post:
+      tags:
+        - CentroCostosDetallesWCGetFilterData
+      operationId: "CentroCostosDetallesWCGetFilterData"
+      summary: "Centro Costos Detalles WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CentroCostosDetallesWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CentroCostosDetallesWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /CentroCostosWWGetFilterData:
+    post:
+      tags:
+        - CentroCostosWWGetFilterData
+      operationId: "CentroCostosWWGetFilterData"
+      summary: "Centro Costos WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CentroCostosWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CentroCostosWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /CierresWWGetFilterData:
+    post:
+      tags:
+        - CierresWWGetFilterData
+      operationId: "CierresWWGetFilterData"
+      summary: "Cierres WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CierresWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CierresWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /CiudadWWGetFilterData:
+    post:
+      tags:
+        - CiudadWWGetFilterData
+      operationId: "CiudadWWGetFilterData"
+      summary: "Ciudad WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CiudadWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CiudadWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ClientesWWGetFilterData:
+    post:
+      tags:
+        - ClientesWWGetFilterData
+      operationId: "ClientesWWGetFilterData"
+      summary: "Clientes WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ClientesWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ClientesWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ComercioPrompt1GetFilterData:
+    post:
+      tags:
+        - ComercioPrompt1GetFilterData
+      operationId: "ComercioPrompt1GetFilterData"
+      summary: "Comercio Prompt1 Get Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ComercioPrompt1GetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ComercioPrompt1GetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ComercioWWGetFilterData:
+    post:
+      tags:
+        - ComercioWWGetFilterData
+      operationId: "ComercioWWGetFilterData"
+      summary: "Comercio WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ComercioWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ComercioWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ComisionesAgruparProfesionalesWCGetFilterData:
+    post:
+      tags:
+        - ComisionesAgruparProfesionalesWCGetFilterData
+      operationId: "ComisionesAgruparProfesionalesWCGetFilterData"
+      summary: "Comisiones Agrupar Profesionales WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ComisionesAgruparProfesionalesWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ComisionesAgruparProfesionalesWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ComisionesAgruparProveedoresWCGetFilterData:
+    post:
+      tags:
+        - ComisionesAgruparProveedoresWCGetFilterData
+      operationId: "ComisionesAgruparProveedoresWCGetFilterData"
+      summary: "Comisiones Agrupar Proveedores WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ComisionesAgruparProveedoresWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ComisionesAgruparProveedoresWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ComisionesAgruparWWGetFilterData:
+    post:
+      tags:
+        - ComisionesAgruparWWGetFilterData
+      operationId: "ComisionesAgruparWWGetFilterData"
+      summary: "Comisiones Agrupar WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ComisionesAgruparWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ComisionesAgruparWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ComisionesProfesionalesWCGetFilterData:
+    post:
+      tags:
+        - ComisionesProfesionalesWCGetFilterData
+      operationId: "ComisionesProfesionalesWCGetFilterData"
+      summary: "Comisiones Profesionales WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ComisionesProfesionalesWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ComisionesProfesionalesWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ComisionesProveedoresWCGetFilterData:
+    post:
+      tags:
+        - ComisionesProveedoresWCGetFilterData
+      operationId: "ComisionesProveedoresWCGetFilterData"
+      summary: "Comisiones Proveedores WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ComisionesProveedoresWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ComisionesProveedoresWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ComisionesRubrosWCGetFilterData:
+    post:
+      tags:
+        - ComisionesRubrosWCGetFilterData
+      operationId: "ComisionesRubrosWCGetFilterData"
+      summary: "Comisiones Rubros WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ComisionesRubrosWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ComisionesRubrosWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ComisionesWWGetFilterData:
+    post:
+      tags:
+        - ComisionesWWGetFilterData
+      operationId: "ComisionesWWGetFilterData"
+      summary: "Comisiones WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ComisionesWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ComisionesWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ConexionesWWGetFilterData:
+    post:
+      tags:
+        - ConexionesWWGetFilterData
+      operationId: "ConexionesWWGetFilterData"
+      summary: "Conexiones WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ConexionesWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ConexionesWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ConfigGenWWGetFilterData:
+    post:
+      tags:
+        - ConfigGenWWGetFilterData
+      operationId: "ConfigGenWWGetFilterData"
+      summary: "Config Gen WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ConfigGenWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ConfigGenWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /Dashboard/Dashboard1LoadDVCombo:
+    post:
+      tags:
+        - Dashboard
+      operationId: "Dashboard.Dashboard1LoadDVCombo"
+      summary: "Dashboard1 Load DVCombo"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Dashboard.Dashboard1LoadDVComboInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Dashboard.Dashboard1LoadDVComboOutput"
+        404:
+          description: "Not found"
+  /Dashboard12LoadDVCombo:
+    post:
+      tags:
+        - Dashboard12LoadDVCombo
+      operationId: "Dashboard12LoadDVCombo"
+      summary: "Dashboard12 Load DVCombo"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Dashboard12LoadDVComboInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Dashboard12LoadDVComboOutput"
+        404:
+          description: "Not found"
+  /DepartamentoMunicipioWCGetFilterData:
+    post:
+      tags:
+        - DepartamentoMunicipioWCGetFilterData
+      operationId: "DepartamentoMunicipioWCGetFilterData"
+      summary: "Departamento Municipio WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DepartamentoMunicipioWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DepartamentoMunicipioWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /DepartamentoWWGetFilterData:
+    post:
+      tags:
+        - DepartamentoWWGetFilterData
+      operationId: "DepartamentoWWGetFilterData"
+      summary: "Departamento WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DepartamentoWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DepartamentoWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /DocumentacionProveedorDashboardWCGetFilterData:
+    post:
+      tags:
+        - DocumentacionProveedorDashboardWCGetFilterData
+      operationId: "DocumentacionProveedorDashboardWCGetFilterData"
+      summary: "Documentacion Proveedor Dashboard WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DocumentacionProveedorDashboardWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DocumentacionProveedorDashboardWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /DocumentacionProveedorSolicitudesWCGetFilterData:
+    post:
+      tags:
+        - DocumentacionProveedorSolicitudesWCGetFilterData
+      operationId: "DocumentacionProveedorSolicitudesWCGetFilterData"
+      summary: "Documentacion Proveedor Solicitudes WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DocumentacionProveedorSolicitudesWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DocumentacionProveedorSolicitudesWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /DocumentacionProveedorWCGetFilterData:
+    post:
+      tags:
+        - DocumentacionProveedorWCGetFilterData
+      operationId: "DocumentacionProveedorWCGetFilterData"
+      summary: "Documentacion Proveedor WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DocumentacionProveedorWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DocumentacionProveedorWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /DocumentacionWWGetFilterData:
+    post:
+      tags:
+        - DocumentacionWWGetFilterData
+      operationId: "DocumentacionWWGetFilterData"
+      summary: "Documentacion WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DocumentacionWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DocumentacionWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /EstadosNotificacionWWGetFilterData:
+    post:
+      tags:
+        - EstadosNotificacionWWGetFilterData
+      operationId: "EstadosNotificacionWWGetFilterData"
+      summary: "Estados Notificacion WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/EstadosNotificacionWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EstadosNotificacionWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /EstadosWWGetFilterData:
+    post:
+      tags:
+        - EstadosWWGetFilterData
+      operationId: "EstadosWWGetFilterData"
+      summary: "Estados WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/EstadosWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EstadosWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /FeedBackWWGetFilterData:
+    post:
+      tags:
+        - FeedBackWWGetFilterData
+      operationId: "FeedBackWWGetFilterData"
+      summary: "Feed Back WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/FeedBackWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FeedBackWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /HistoricoRelacionesItemsWCGetFilterData:
+    post:
+      tags:
+        - HistoricoRelacionesItemsWCGetFilterData
+      operationId: "HistoricoRelacionesItemsWCGetFilterData"
+      summary: "Historico Relaciones Items WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/HistoricoRelacionesItemsWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HistoricoRelacionesItemsWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /HistoricoRelacionesRelacionesWCGetFilterData:
+    post:
+      tags:
+        - HistoricoRelacionesRelacionesWCGetFilterData
+      operationId: "HistoricoRelacionesRelacionesWCGetFilterData"
+      summary: "Historico Relaciones Relaciones WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/HistoricoRelacionesRelacionesWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HistoricoRelacionesRelacionesWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /HistoricoSolicitudesItemsWCGetFilterData:
+    post:
+      tags:
+        - HistoricoSolicitudesItemsWCGetFilterData
+      operationId: "HistoricoSolicitudesItemsWCGetFilterData"
+      summary: "Historico Solicitudes Items WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/HistoricoSolicitudesItemsWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HistoricoSolicitudesItemsWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /HistoricoSolicitudesRelacionesWCGetFilterData:
+    post:
+      tags:
+        - HistoricoSolicitudesRelacionesWCGetFilterData
+      operationId: "HistoricoSolicitudesRelacionesWCGetFilterData"
+      summary: "Historico Solicitudes Relaciones WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/HistoricoSolicitudesRelacionesWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HistoricoSolicitudesRelacionesWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /HistoricoSolicitudesWWGetFilterData:
+    post:
+      tags:
+        - HistoricoSolicitudesWWGetFilterData
+      operationId: "HistoricoSolicitudesWWGetFilterData"
+      summary: "Historico Solicitudes WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/HistoricoSolicitudesWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HistoricoSolicitudesWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /HIS_SolicitudesWWGetFilterData:
+    post:
+      tags:
+        - HIS_SolicitudesWWGetFilterData
+      operationId: "HIS_SolicitudesWWGetFilterData"
+      summary: "HIS_Solicitudes WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/HIS_SolicitudesWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HIS_SolicitudesWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /IncidenciaWWGetFilterData:
+    post:
+      tags:
+        - IncidenciaWWGetFilterData
+      operationId: "IncidenciaWWGetFilterData"
+      summary: "Incidencia WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/IncidenciaWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/IncidenciaWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /InventarioWWGetFilterData:
+    post:
+      tags:
+        - InventarioWWGetFilterData
+      operationId: "InventarioWWGetFilterData"
+      summary: "Inventario WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/InventarioWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/InventarioWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ListaAgrupacionWWGetFilterData:
+    post:
+      tags:
+        - ListaAgrupacionWWGetFilterData
+      operationId: "ListaAgrupacionWWGetFilterData"
+      summary: "Lista Agrupacion WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ListaAgrupacionWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ListaAgrupacionWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ListaCostosDetalles1WCGetFilterData:
+    post:
+      tags:
+        - ListaCostosDetalles1WCGetFilterData
+      operationId: "ListaCostosDetalles1WCGetFilterData"
+      summary: "Lista Costos Detalles1 WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ListaCostosDetalles1WCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ListaCostosDetalles1WCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ListaCostosDetallesWCGetFilterData:
+    post:
+      tags:
+        - ListaCostosDetallesWCGetFilterData
+      operationId: "ListaCostosDetallesWCGetFilterData"
+      summary: "Lista Costos Detalles WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ListaCostosDetallesWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ListaCostosDetallesWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ListaCostosWWGetFilterData:
+    post:
+      tags:
+        - ListaCostosWWGetFilterData
+      operationId: "ListaCostosWWGetFilterData"
+      summary: "Lista Costos WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ListaCostosWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ListaCostosWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ListaWWGetFilterData:
+    post:
+      tags:
+        - ListaWWGetFilterData
+      operationId: "ListaWWGetFilterData"
+      summary: "Lista WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ListaWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ListaWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /MailDesignWWGetFilterData:
+    post:
+      tags:
+        - MailDesignWWGetFilterData
+      operationId: "MailDesignWWGetFilterData"
+      summary: "Mail Design WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MailDesignWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MailDesignWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /MailSettingWWGetFilterData:
+    post:
+      tags:
+        - MailSettingWWGetFilterData
+      operationId: "MailSettingWWGetFilterData"
+      summary: "Mail Setting WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MailSettingWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MailSettingWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /MapeoWWGetFilterData:
+    post:
+      tags:
+        - MapeoWWGetFilterData
+      operationId: "MapeoWWGetFilterData"
+      summary: "Mapeo WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MapeoWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MapeoWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /MetodoPagosSolicitudesRelacionWCGetFilterData:
+    post:
+      tags:
+        - MetodoPagosSolicitudesRelacionWCGetFilterData
+      operationId: "MetodoPagosSolicitudesRelacionWCGetFilterData"
+      summary: "Metodo Pagos Solicitudes Relacion WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MetodoPagosSolicitudesRelacionWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MetodoPagosSolicitudesRelacionWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /MetodoPagosSolicitudesWCGetFilterData:
+    post:
+      tags:
+        - MetodoPagosSolicitudesWCGetFilterData
+      operationId: "MetodoPagosSolicitudesWCGetFilterData"
+      summary: "Metodo Pagos Solicitudes WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MetodoPagosSolicitudesWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MetodoPagosSolicitudesWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /MetodoPagosWWGetFilterData:
+    post:
+      tags:
+        - MetodoPagosWWGetFilterData
+      operationId: "MetodoPagosWWGetFilterData"
+      summary: "Metodo Pagos WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MetodoPagosWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MetodoPagosWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /MotivoWWGetFilterData:
+    post:
+      tags:
+        - MotivoWWGetFilterData
+      operationId: "MotivoWWGetFilterData"
+      summary: "Motivo WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MotivoWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MotivoWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /Mudanza1WWGetFilterData:
+    post:
+      tags:
+        - Mudanza1WWGetFilterData
+      operationId: "Mudanza1WWGetFilterData"
+      summary: "Mudanza1 WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Mudanza1WWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Mudanza1WWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /MudanzaLoadDVCombo:
+    post:
+      tags:
+        - MudanzaLoadDVCombo
+      operationId: "MudanzaLoadDVCombo"
+      summary: "Mudanza Load DVCombo"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MudanzaLoadDVComboInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MudanzaLoadDVComboOutput"
+        404:
+          description: "Not found"
+  /MudanzaWWGetFilterData:
+    post:
+      tags:
+        - MudanzaWWGetFilterData
+      operationId: "MudanzaWWGetFilterData"
+      summary: "Mudanza WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MudanzaWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MudanzaWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /OperacionesIdPromptGetFilterData:
+    post:
+      tags:
+        - OperacionesIdPromptGetFilterData
+      operationId: "OperacionesIdPromptGetFilterData"
+      summary: "Operaciones Id Prompt Get Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/OperacionesIdPromptGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OperacionesIdPromptGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /OperacionesWWGetFilterData:
+    post:
+      tags:
+        - OperacionesWWGetFilterData
+      operationId: "OperacionesWWGetFilterData"
+      summary: "Operaciones WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/OperacionesWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OperacionesWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /PaisWWGetFilterData:
+    post:
+      tags:
+        - PaisWWGetFilterData
+      operationId: "PaisWWGetFilterData"
+      summary: "Pais WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PaisWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PaisWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ParametroMudanzaWWGetFilterData:
+    post:
+      tags:
+        - ParametroMudanzaWWGetFilterData
+      operationId: "ParametroMudanzaWWGetFilterData"
+      summary: "Parametro Mudanza WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ParametroMudanzaWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ParametroMudanzaWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ParametrosWWGetFilterData:
+    post:
+      tags:
+        - ParametrosWWGetFilterData
+      operationId: "ParametrosWWGetFilterData"
+      summary: "Parametros WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ParametrosWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ParametrosWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /PostulacionesProfesionalesWCGetFilterData:
+    post:
+      tags:
+        - PostulacionesProfesionalesWCGetFilterData
+      operationId: "PostulacionesProfesionalesWCGetFilterData"
+      summary: "Postulaciones Profesionales WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PostulacionesProfesionalesWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PostulacionesProfesionalesWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /PostulacionesWWGetFilterData:
+    post:
+      tags:
+        - PostulacionesWWGetFilterData
+      operationId: "PostulacionesWWGetFilterData"
+      summary: "Postulaciones WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PostulacionesWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PostulacionesWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /PresupuestoMudanzaLoadDVCombo:
+    post:
+      tags:
+        - PresupuestoMudanzaLoadDVCombo
+      operationId: "PresupuestoMudanzaLoadDVCombo"
+      summary: "Presupuesto Mudanza Load DVCombo"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PresupuestoMudanzaLoadDVComboInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PresupuestoMudanzaLoadDVComboOutput"
+        404:
+          description: "Not found"
+  /ProfComisionesRubrosWCGetFilterData:
+    post:
+      tags:
+        - ProfComisionesRubrosWCGetFilterData
+      operationId: "ProfComisionesRubrosWCGetFilterData"
+      summary: "Prof Comisiones Rubros WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ProfComisionesRubrosWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProfComisionesRubrosWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ProfComisionesWWGetFilterData:
+    post:
+      tags:
+        - ProfComisionesWWGetFilterData
+      operationId: "ProfComisionesWWGetFilterData"
+      summary: "Prof Comisiones WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ProfComisionesWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProfComisionesWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ProfesionalesFullNamePromptGetFilterData:
+    post:
+      tags:
+        - ProfesionalesFullNamePromptGetFilterData
+      operationId: "ProfesionalesFullNamePromptGetFilterData"
+      summary: "Profesionales Full Name Prompt Get Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ProfesionalesFullNamePromptGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProfesionalesFullNamePromptGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ProfesionalesRestriccionWWGetFilterData:
+    post:
+      tags:
+        - ProfesionalesRestriccionWWGetFilterData
+      operationId: "ProfesionalesRestriccionWWGetFilterData"
+      summary: "Profesionales Restriccion WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ProfesionalesRestriccionWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProfesionalesRestriccionWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ProfesionalesWWGetFilterData:
+    post:
+      tags:
+        - ProfesionalesWWGetFilterData
+      operationId: "ProfesionalesWWGetFilterData"
+      summary: "Profesionales WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ProfesionalesWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProfesionalesWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ProveedorWWGetFilterData:
+    post:
+      tags:
+        - ProveedorWWGetFilterData
+      operationId: "ProveedorWWGetFilterData"
+      summary: "Proveedor WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ProveedorWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProveedorWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /RESTTestSVC:
+    post:
+      tags:
+        - RESTTestSVC
+      operationId: "RESTTestSVC"
+      summary: "RESTTest SVC"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RESTTestSVCOutput"
+        404:
+          description: "Not found"
+  /RubrosInventarioWCGetFilterData:
+    post:
+      tags:
+        - RubrosInventarioWCGetFilterData
+      operationId: "RubrosInventarioWCGetFilterData"
+      summary: "Rubros Inventario WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RubrosInventarioWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RubrosInventarioWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /RubrosMedidasMedidasWCGetFilterData:
+    post:
+      tags:
+        - RubrosMedidasMedidasWCGetFilterData
+      operationId: "RubrosMedidasMedidasWCGetFilterData"
+      summary: "Rubros Medidas Medidas WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RubrosMedidasMedidasWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RubrosMedidasMedidasWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /RubrosMedidasRubrosWCGetFilterData:
+    post:
+      tags:
+        - RubrosMedidasRubrosWCGetFilterData
+      operationId: "RubrosMedidasRubrosWCGetFilterData"
+      summary: "Rubros Medidas Rubros WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RubrosMedidasRubrosWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RubrosMedidasRubrosWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /RubrosMedidasWCGetFilterData:
+    post:
+      tags:
+        - RubrosMedidasWCGetFilterData
+      operationId: "RubrosMedidasWCGetFilterData"
+      summary: "Rubros Medidas WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RubrosMedidasWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RubrosMedidasWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /RubrosMedidasWWGetFilterData:
+    post:
+      tags:
+        - RubrosMedidasWWGetFilterData
+      operationId: "RubrosMedidasWWGetFilterData"
+      summary: "Rubros Medidas WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RubrosMedidasWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RubrosMedidasWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /RubrosRubrosWCGetFilterData:
+    post:
+      tags:
+        - RubrosRubrosWCGetFilterData
+      operationId: "RubrosRubrosWCGetFilterData"
+      summary: "Rubros Rubros WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RubrosRubrosWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RubrosRubrosWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /RubrosWWGetFilterData:
+    post:
+      tags:
+        - RubrosWWGetFilterData
+      operationId: "RubrosWWGetFilterData"
+      summary: "Rubros WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RubrosWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RubrosWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ServiciosWWGetFilterData:
+    post:
+      tags:
+        - ServiciosWWGetFilterData
+      operationId: "ServiciosWWGetFilterData"
+      summary: "Servicios WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ServiciosWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ServiciosWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /SolicitudesReporteWWGetFilterData:
+    post:
+      tags:
+        - SolicitudesReporteWWGetFilterData
+      operationId: "SolicitudesReporteWWGetFilterData"
+      summary: "Solicitudes Reporte WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SolicitudesReporteWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SolicitudesReporteWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /SolicitudesWWGetFilterData:
+    post:
+      tags:
+        - SolicitudesWWGetFilterData
+      operationId: "SolicitudesWWGetFilterData"
+      summary: "Solicitudes WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SolicitudesWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SolicitudesWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /TextosInventarioWCGetFilterData:
+    post:
+      tags:
+        - TextosInventarioWCGetFilterData
+      operationId: "TextosInventarioWCGetFilterData"
+      summary: "Textos Inventario WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TextosInventarioWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TextosInventarioWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /TextoslistaWCGetFilterData:
+    post:
+      tags:
+        - TextoslistaWCGetFilterData
+      operationId: "TextoslistaWCGetFilterData"
+      summary: "Textoslista WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TextoslistaWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TextoslistaWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /TextosMedidasWCGetFilterData:
+    post:
+      tags:
+        - TextosMedidasWCGetFilterData
+      operationId: "TextosMedidasWCGetFilterData"
+      summary: "Textos Medidas WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TextosMedidasWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TextosMedidasWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /TextosPromptGetFilterData:
+    post:
+      tags:
+        - TextosPromptGetFilterData
+      operationId: "TextosPromptGetFilterData"
+      summary: "Textos Prompt Get Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TextosPromptGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TextosPromptGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /TextosWWGetFilterData:
+    post:
+      tags:
+        - TextosWWGetFilterData
+      operationId: "TextosWWGetFilterData"
+      summary: "Textos WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TextosWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TextosWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /TipoCuentaWWGetFilterData:
+    post:
+      tags:
+        - TipoCuentaWWGetFilterData
+      operationId: "TipoCuentaWWGetFilterData"
+      summary: "Tipo Cuenta WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TipoCuentaWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TipoCuentaWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /usuariosWWGetFilterData:
+    post:
+      tags:
+        - usuariosWWGetFilterData
+      operationId: "usuariosWWGetFilterData"
+      summary: "usuarios WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/usuariosWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/usuariosWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /VincularTrnWWGetFilterData:
+    post:
+      tags:
+        - VincularTrnWWGetFilterData
+      operationId: "VincularTrnWWGetFilterData"
+      summary: "Vincular Trn WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/VincularTrnWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/VincularTrnWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /WalletPromptGetFilterData:
+    post:
+      tags:
+        - WalletPromptGetFilterData
+      operationId: "WalletPromptGetFilterData"
+      summary: "Wallet Prompt Get Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WalletPromptGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WalletPromptGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /WalletWWGetFilterData:
+    post:
+      tags:
+        - WalletWWGetFilterData
+      operationId: "WalletWWGetFilterData"
+      summary: "Wallet WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WalletWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WalletWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /WSOCSolisitudes:
+    post:
+      tags:
+        - WSOCSolisitudes
+      operationId: "WSOCSolisitudes"
+      summary: "Obtengo Cantidad de Solisitudes"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WSOCSolisitudesInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WSOCSolisitudesOutput"
+        404:
+          description: "Not found"
+  /WWPBaseObjects/Discussions/WWP_GetUsersForDiscussionMentions:
+    post:
+      tags:
+        - WWPBaseObjects.Discussions
+      operationId: "WWPBaseObjects.Discussions.WWP_GetUsersForDiscussionMentions"
+      summary: "WWP_Get Users For Discussion Mentions"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WWPBaseObjects.Discussions.WWP_GetUsersForDiscussionMentionsInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WWPBaseObjects.Discussions.WWP_GetUsersForDiscussionMentionsOutput"
+        404:
+          description: "Not found"
+  /WWPBaseObjects/SecFunctionalityFilterParentWWGetFilterData:
+    post:
+      tags:
+        - WWPBaseObjects
+      operationId: "WWPBaseObjects.SecFunctionalityFilterParentWWGetFilterData"
+      summary: "Sec Functionality Filter Parent WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WWPBaseObjects.SecFunctionalityFilterParentWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WWPBaseObjects.SecFunctionalityFilterParentWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /WWPBaseObjects/SecFunctionalitySecFunctionalityRoleWCGetFilterData:
+    post:
+      tags:
+        - WWPBaseObjects
+      operationId: "WWPBaseObjects.SecFunctionalitySecFunctionalityRoleWCGetFilterData"
+      summary: "Sec Functionality Sec Functionality Role WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WWPBaseObjects.SecFunctionalitySecFunctionalityRoleWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WWPBaseObjects.SecFunctionalitySecFunctionalityRoleWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /WWPBaseObjects/SecFunctionalityWWGetFilterData:
+    post:
+      tags:
+        - WWPBaseObjects
+      operationId: "WWPBaseObjects.SecFunctionalityWWGetFilterData"
+      summary: "Sec Functionality WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WWPBaseObjects.SecFunctionalityWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WWPBaseObjects.SecFunctionalityWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /WWPBaseObjects/SecRoleFunRoleAssociationWWGetFilterData:
+    post:
+      tags:
+        - WWPBaseObjects
+      operationId: "WWPBaseObjects.SecRoleFunRoleAssociationWWGetFilterData"
+      summary: "Sec Role Fun Role Association WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WWPBaseObjects.SecRoleFunRoleAssociationWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WWPBaseObjects.SecRoleFunRoleAssociationWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /WWPBaseObjects/SecRoleSecFunctionalityRoleWCGetFilterData:
+    post:
+      tags:
+        - WWPBaseObjects
+      operationId: "WWPBaseObjects.SecRoleSecFunctionalityRoleWCGetFilterData"
+      summary: "Sec Role Sec Functionality Role WCGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WWPBaseObjects.SecRoleSecFunctionalityRoleWCGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WWPBaseObjects.SecRoleSecFunctionalityRoleWCGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /WWPBaseObjects/SecRoleWWGetFilterData:
+    post:
+      tags:
+        - WWPBaseObjects
+      operationId: "WWPBaseObjects.SecRoleWWGetFilterData"
+      summary: "Sec Role WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WWPBaseObjects.SecRoleWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WWPBaseObjects.SecRoleWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /WWPBaseObjects/SecUserWWGetFilterData:
+    post:
+      tags:
+        - WWPBaseObjects
+      operationId: "WWPBaseObjects.SecUserWWGetFilterData"
+      summary: "Sec User WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WWPBaseObjects.SecUserWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WWPBaseObjects.SecUserWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ZonasWWGetFilterData:
+    post:
+      tags:
+        - ZonasWWGetFilterData
+      operationId: "ZonasWWGetFilterData"
+      summary: "Zonas WWGet Filter Data"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ZonasWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ZonasWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+components:
+  schemas:
+    AltaSolicitudPostulacionSubastaWebOutput:
+      properties:
+        SolicitudesId:
+          type: "integer"
+          format: "int64"
+        Mensaje:
+          type: "string"
+    BancoWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    CantSolicitudesOutput:
+      properties:
+        ResCode:
+          type: "integer"
+          format: "int64"
+        ResMessage:
+          type: "string"
+    CentroCostosDetallesWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    CentroCostosWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    CierresWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    CiudadWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ClientesWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ComercioPrompt1GetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ComercioWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ComisionesAgruparProfesionalesWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ComisionesAgruparProveedoresWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ComisionesAgruparWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ComisionesProfesionalesWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ComisionesProveedoresWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ComisionesRubrosWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ComisionesWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ConexionesWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ConfigGenWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    Dashboard.Dashboard1LoadDVComboOutput:
+      properties:
+        Combo_DataJson:
+          type: "string"
+    Dashboard12LoadDVComboOutput:
+      properties:
+        Combo_DataJson:
+          type: "string"
+    DepartamentoMunicipioWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    DepartamentoWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    DocumentacionProveedorDashboardWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    DocumentacionProveedorSolicitudesWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    DocumentacionProveedorWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    DocumentacionWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    EstadosNotificacionWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    EstadosWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    FeedBackWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    HistoricoRelacionesItemsWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    HistoricoRelacionesRelacionesWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    HistoricoSolicitudesItemsWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    HistoricoSolicitudesRelacionesWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    HistoricoSolicitudesWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    HIS_SolicitudesWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    IncidenciaWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    InventarioWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ListaAgrupacionWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ListaCostosDetalles1WCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ListaCostosDetallesWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ListaCostosWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ListaWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    MailDesignWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    MailSettingWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    MapeoWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    MetodoPagosSolicitudesRelacionWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    MetodoPagosSolicitudesWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    MetodoPagosWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    MotivoWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    Mudanza1WWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    MudanzaLoadDVComboOutput:
+      properties:
+        SelectedValue:
+          type: "string"
+        SelectedText:
+          type: "string"
+        Combo_DataJson:
+          type: "string"
+    MudanzaWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    OperacionesIdPromptGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    OperacionesWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    PaisWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ParametroMudanzaWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ParametrosWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    PostulacionesProfesionalesWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    PostulacionesWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    PresupuestoMudanzaLoadDVComboOutput:
+      properties:
+        Combo_DataJson:
+          type: "string"
+    ProfComisionesRubrosWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ProfComisionesWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ProfesionalesFullNamePromptGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ProfesionalesRestriccionWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ProfesionalesWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ProveedorWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    RESTTestSVCOutput:
+      properties:
+        response:
+          type: "string"
+    RubrosInventarioWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    RubrosMedidasMedidasWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    RubrosMedidasRubrosWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    RubrosMedidasWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    RubrosMedidasWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    RubrosRubrosWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    RubrosWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ServiciosWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    SolicitudesReporteWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    SolicitudesWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    TextosInventarioWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    TextoslistaWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    TextosMedidasWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    TextosPromptGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    TextosWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    TipoCuentaWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    usuariosWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    VincularTrnWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    WalletPromptGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    WalletWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    WSOCSolisitudesOutput:
+      properties:
+        ResCode:
+          type: "integer"
+          format: "int64"
+        ResMessage:
+          type: "string"
+    WWPBaseObjects.Discussions.WWP_GetUsersForDiscussionMentionsOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+    WWPBaseObjects.SecFunctionalityFilterParentWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    WWPBaseObjects.SecFunctionalitySecFunctionalityRoleWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    WWPBaseObjects.SecFunctionalityWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    WWPBaseObjects.SecRoleFunRoleAssociationWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    WWPBaseObjects.SecRoleSecFunctionalityRoleWCGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    WWPBaseObjects.SecRoleWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    WWPBaseObjects.SecUserWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ZonasWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    AltaSolicitudPostulacionSubastaWebInput:
+      properties:
+        SDTPostulacionesJson:
+          type: "string"
+    BancoWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    CantSolicitudesInput:
+      properties:
+        UserConect:
+          type: "string"
+        Key:
+          type: "string"
+    CentroCostosDetallesWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    CentroCostosWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    CierresWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    CiudadWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ClientesWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ComercioPrompt1GetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ComercioWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ComisionesAgruparProfesionalesWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ComisionesAgruparProveedoresWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ComisionesAgruparWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ComisionesProfesionalesWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ComisionesProveedoresWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ComisionesRubrosWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ComisionesWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ConexionesWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ConfigGenWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    Dashboard.Dashboard1LoadDVComboInput:
+      properties:
+        ComboName:
+          type: "string"
+        Cond_RubrosId:
+          type: "integer"
+          format: "int32"
+        SearchTxtParms:
+          type: "string"
+    Dashboard12LoadDVComboInput:
+      properties:
+        ComboName:
+          type: "string"
+        Cond_RubrosId:
+          type: "integer"
+          format: "int32"
+        SearchTxtParms:
+          type: "string"
+    DepartamentoMunicipioWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    DepartamentoWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    DocumentacionProveedorDashboardWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    DocumentacionProveedorSolicitudesWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    DocumentacionProveedorWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    DocumentacionWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    EstadosNotificacionWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    EstadosWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    FeedBackWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    HistoricoRelacionesItemsWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    HistoricoRelacionesRelacionesWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    HistoricoSolicitudesItemsWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    HistoricoSolicitudesRelacionesWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    HistoricoSolicitudesWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    HIS_SolicitudesWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    IncidenciaWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    InventarioWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ListaAgrupacionWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ListaCostosDetalles1WCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ListaCostosDetallesWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ListaCostosWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ListaWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    MailDesignWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    MailSettingWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    MapeoWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    MetodoPagosSolicitudesRelacionWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    MetodoPagosSolicitudesWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    MetodoPagosWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    MotivoWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    Mudanza1WWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    MudanzaLoadDVComboInput:
+      properties:
+        ComboName:
+          type: "string"
+        TrnMode:
+          type: "string"
+        IsDynamicCall:
+          type: "boolean"
+        MudanzaId:
+          type: "integer"
+          format: "int64"
+        SearchTxtParms:
+          type: "string"
+    MudanzaWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    OperacionesIdPromptGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    OperacionesWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    PaisWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ParametroMudanzaWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ParametrosWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    PostulacionesProfesionalesWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    PostulacionesWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    PresupuestoMudanzaLoadDVComboInput:
+      properties:
+        ComboName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+    ProfComisionesRubrosWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ProfComisionesWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ProfesionalesFullNamePromptGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ProfesionalesRestriccionWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ProfesionalesWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ProveedorWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    RubrosInventarioWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    RubrosMedidasMedidasWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    RubrosMedidasRubrosWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    RubrosMedidasWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    RubrosMedidasWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    RubrosRubrosWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    RubrosWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ServiciosWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    SolicitudesReporteWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    SolicitudesWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    TextosInventarioWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    TextoslistaWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    TextosMedidasWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    TextosPromptGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    TextosWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    TipoCuentaWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    usuariosWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    VincularTrnWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    WalletPromptGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    WalletWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    WSOCSolisitudesInput:
+      properties:
+        UserConect:
+          type: "string"
+        Key:
+          type: "string"
+    WWPBaseObjects.Discussions.WWP_GetUsersForDiscussionMentionsInput:
+      properties:
+        SearchTxt:
+          type: "string"
+    WWPBaseObjects.SecFunctionalityFilterParentWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    WWPBaseObjects.SecFunctionalitySecFunctionalityRoleWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    WWPBaseObjects.SecFunctionalityWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    WWPBaseObjects.SecRoleFunRoleAssociationWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    WWPBaseObjects.SecRoleSecFunctionalityRoleWCGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    WWPBaseObjects.SecRoleWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    WWPBaseObjects.SecUserWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ZonasWWGetFilterDataInput:
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    APIs.ComerciosApi.v1.SDT_ApiZonas.Departamentos:
+      properties:
+        Departamentos:
+          type: array
+          items:
+            description: DepartamentosItem
+            $ref: "#/components/schemas/APIs.ComerciosApi.v1.SDT_ApiZonas.Departamentos_DepartamentosItem"
+    APIs.ComerciosApi.v1.SDT_ApiZonas.Departamentos_DepartamentosItem:
+      properties:
+        Id:
+          description: "Id"
+          type: "integer"
+          format: "int64"
+        Nombre:
+          description: "Nombre"
+          type: "string"
+        Municipios:
+          type: array
+          items:
+            description: MunicipiosItem
+            $ref: "#/components/schemas/APIs.ComerciosApi.v1.SDT_ApiZonas.Departamentos.Municipios_MunicipiosItem"
+    APIs.ComerciosApi.v1.SDT_ApiZonas.Departamentos.Municipios_MunicipiosItem:
+      properties:
+        Id:
+          description: "Id"
+          type: "integer"
+          format: "int64"
+        Nombre:
+          description: "Nombre"
+          type: "string"
+        CostoAdicional:
+          description: "Departamento Municipio Costo"
+          type: "number"
+          format: "double"
+      x-gx-level: "SDT_ApiZonas.Departamentos"
+    APIs.ComerciosApi.v1.SDT_NuevaSolicitudExterna:
+      properties:
+        ComercioTicketId:
+          description: "Comercio Ticket Id unico"
+          type: "string"
+        FechaCompra:
+          description: "Fecha Compra"
+          type: "string"
+          format: "date"
+        SucursalId:
+          description: "Sucursal Id"
+          type: "integer"
+          format: "int64"
+        NotasAdicionales:
+          description: "Notas Adicionales"
+          type: "string"
+        Moneda:
+          description: "Moneda"
+          type: "string"
+        Cliente:
+          $ref: "#/components/schemas/APIs.ComerciosApi.v1.SDT_NuevaSolicitudExterna.Cliente"
+        Servicios:
+          type: array
+          items:
+            description: Item
+            $ref: "#/components/schemas/APIs.ComerciosApi.v1.SDT_NuevaSolicitudExterna.Servicios_Item"
+    APIs.ComerciosApi.v1.SDT_NuevaSolicitudExterna.Cliente:
+      properties:
+        Nombre:
+          description: "Nombre"
+          type: "string"
+        Email:
+          description: "Email"
+          type: "string"
+        Telefono:
+          description: "Telefono"
+          type: "string"
+        Direccion:
+          $ref: "#/components/schemas/APIs.ComerciosApi.v1.SDT_NuevaSolicitudExterna.Cliente.Direccion"
+      x-gx-level: "SDT_NuevaSolicitudExterna"
+    APIs.ComerciosApi.v1.SDT_NuevaSolicitudExterna.Cliente.Direccion:
+      properties:
+        CalleYNumero:
+          description: "Calle YNumero"
+          type: "string"
+        CodigoPais:
+          description: "Codigo Pais"
+          type: "string"
+        Departamento:
+          description: "Departamento"
+          type: "string"
+        Municipio:
+          description: "Municipio"
+          type: "string"
+      x-gx-level: "SDT_NuevaSolicitudExterna.Cliente"
+    APIs.ComerciosApi.v1.SDT_NuevaSolicitudExterna.Servicios_Item:
+      properties:
+        CodigoServicioComercio:
+          description: "Codigo Servicio Comercio"
+          type: "string"
+        CodigoServicioAlmango:
+          description: "Codigo Servicio Almango"
+          type: "string"
+        Cantidad:
+          description: "Cantidad"
+          type: "integer"
+          format: "int32"
+        ImagenServicioUrl:
+          description: "Imagen Servicio Url"
+          type: "string"
+        MontoAbonado:
+          description: "Monto Abonado"
+          type: "number"
+          format: "double"
+        SolicitudIdRef:
+          description: "Solicitudes Id"
+          type: "integer"
+          format: "int64"
+      x-gx-level: "SDT_NuevaSolicitudExterna"
+    APIs.ComerciosApi.v1.SDT_PresupuestoRespuesta:
+      properties:
+        SolicitudId:
+          description: "Solicitudes Id"
+          type: "integer"
+          format: "int64"
+        CostoPresupuesto:
+          description: "Solicitudes Costo Presupuesto"
+          type: "number"
+          format: "double"
+        Moneda:
+          description: "ISO"
+          type: "string"
+    APIs.ComerciosApi.v1.SDT_Servicio:
+      properties:
+        CodigoServicio:
+          description: "Codigo Servicio"
+          type: "string"
+        Nombre:
+          description: "Nombre"
+          type: "string"
+        Moneda:
+          description: "ISO"
+          type: "string"
+        Precio:
+          description: "Precio"
+          type: "number"
+          format: "double"
+        Estado:
+          description: "Estado"
+          type: "string"
+    APIs.SdtAltaPostulacion:
+      properties:
+        User:
+          description: "NickName"
+          type: "string"
+        ProfesionalesId:
+          description: "Identidad"
+          type: "string"
+        SolicitudesId:
+          description: "Solicitudes Id"
+          type: "integer"
+          format: "int64"
+        FechaTrabajo:
+          description: "Fecha Trabajo"
+          type: "string"
+          format: "date"
+        Turno:
+          description: "HoraServicio"
+          type: "string"
+        Precio:
+          description: "Precio"
+          type: "number"
+          format: "double"
+        PlazoEjecucion:
+          description: "Plazo Ejecucion"
+          type: "integer"
+          format: "int32"
+        PlazoEjecucionUnidad:
+          description: "Plazo Ejecucion Unidad"
+          type: "string"
+        PlazoGarantia:
+          description: "Plazo Garantia"
+          type: "integer"
+          format: "int32"
+        PlazoGarantiaUnidad:
+          description: "Plazo Garantia Unidad"
+          type: "string"
+        Aclaraciones:
+          description: "Aclaraciones"
+          type: "string"
+    APIs.SDTBanco:
+      properties:
+        BancoId:
+          description: "Nro"
+          type: "integer"
+          format: "int64"
+        BancoNombre:
+          description: "Nombre del Banco"
+          type: "string"
+    APIs.SDTCantSolRubro:
+      properties:
+        Cantidad:
+          description: "Cantidad"
+          type: "integer"
+          format: "int64"
+        RubrosId:
+          description: "Rubros Identificador "
+          type: "integer"
+          format: "int32"
+        RubrosNombre:
+          description: "Rubro"
+          type: "string"
+    APIs.SDTGoogleDriveApiResponse:
+      properties:
+        client_email:
+          description: "client_email"
+          type: "string"
+        private_key:
+          description: "private_key"
+          type: "string"
+        scope:
+          description: "256"
+          type: "string"
+        aud:
+          description: "aud"
+          type: "string"
+    APIs.SDTMetodoPagos:
+      properties:
+        MetodoPagosID:
+          description: "Id"
+          type: "integer"
+          format: "int64"
+        MetodoPagosNombre:
+          description: "Metodo"
+          type: "string"
+    APIs.SDTMotivo:
+      properties:
+        MotivoId:
+          description: "Motivo Id"
+          type: "integer"
+          format: "int64"
+        MotivoTipo:
+          description: "Motivo Tipo"
+          type: "string"
+        MotivoNombre:
+          description: "Motivo Nombre"
+          type: "string"
+    APIs.SDTPais:
+      properties:
+        PaisId:
+          description: "PaisId"
+          type: "string"
+        PaisNombre:
+          description: "Pais"
+          type: "string"
+    APIs.SDTPerfilProfesional:
+      properties:
+        ProfesionalesId:
+          description: "Identidad"
+          type: "string"
+        ProfesionalesPrimerNombre:
+          description: "Primer Nombre"
+          type: "string"
+        ProfesionalesApellidoPrimero:
+          description: "Primero Apellido "
+          type: "string"
+        ProfesionalesPhoto:
+          description: "Foto"
+          type: "string"
+        TrabajosFinalizados:
+          description: "Trabajos Finalizados"
+          type: "integer"
+          format: "int64"
+        Calificacion:
+          description: "Calificacion"
+          type: "number"
+          format: "double"
+        TrabajosCalificados:
+          description: "Trabajos Calificados"
+          type: "integer"
+          format: "int64"
+        ProfesionalesExperiencia:
+          description: "Experiencia"
+          type: "string"
+        FechaPropuesta:
+          description: "Fecha Propuesta"
+          type: "string"
+          format: "date"
+        TurnoPropuesto:
+          description: "Turno Propuesto"
+          type: "string"
+        EstadoPostulacion:
+          description: "Estado Postulacion"
+          type: "string"
+    APIs.SdtReporteDEconomico:
+      properties:
+        Cabezal:
+          $ref: "#/components/schemas/APIs.SdtReporteDEconomico.Cabezal"
+        Solicitudes:
+          type: array
+          items:
+            description: SolicitudesItem
+            $ref: "#/components/schemas/APIs.SdtReporteDEconomico.Solicitudes_SolicitudesItem"
+        Totales:
+          $ref: "#/components/schemas/APIs.SdtReporteDEconomico.Totales"
+    APIs.SdtReporteDEconomico.Cabezal:
+      properties:
+        RangoFechas:
+          description: "Rango Fechas"
+          type: "string"
+        FechaReporte:
+          description: "Fecha Reporte"
+          type: "string"
+          format: "date"
+      x-gx-level: "SdtReporteDEconomico"
+    APIs.SdtReporteDEconomico.Solicitudes_SolicitudesItem:
+      properties:
+        SolicitudesId:
+          description: "Solicitudes Id"
+          type: "integer"
+          format: "int64"
+        NombreCliente:
+          description: "Nombre Cliente"
+          type: "string"
+        Estado:
+          description: "Estados Sol Nombre"
+          type: "string"
+        ImporteCobrado:
+          description: "Importe Cobrado"
+          type: "number"
+          format: "double"
+        ComisionAlmango:
+          description: "Comision Almango"
+          type: "number"
+          format: "double"
+        PagoProfesional:
+          description: "Pago Profesional"
+          type: "number"
+          format: "double"
+        EsCobroDirecto:
+          description: "Es Cobro Directo"
+          type: "boolean"
+        OrigenPago:
+          description: "Origen Pago"
+          type: "string"
+      x-gx-level: "SdtReporteDEconomico"
+    APIs.SdtReporteDEconomico.Totales:
+      properties:
+        TotalCobrado:
+          description: "Total Cobrado"
+          type: "number"
+          format: "double"
+        TotalAlmango:
+          description: "Total Almango"
+          type: "number"
+          format: "double"
+        TotalProfesional:
+          description: "Total Profesional"
+          type: "number"
+          format: "double"
+        TotalProfNoCDirecto:
+          description: "Total Prof No CDirecto"
+          type: "number"
+          format: "double"
+        ResultadoNeto:
+          description: "Resultado Neto"
+          type: "number"
+          format: "double"
+      x-gx-level: "SdtReporteDEconomico"
+    APIs.SDTRubros:
+      properties:
+        RubrosId:
+          description: "Rubros Identificador "
+          type: "integer"
+          format: "int32"
+        RubrosNombre:
+          description: "Rubro"
+          type: "string"
+    APIs.SDTSolicitudesAceptadas:
+      properties:
+        Id:
+          description: "Solicitudes Id"
+          type: "integer"
+          format: "int64"
+        Cliente:
+          description: "Solicitudes Nombre"
+          type: "string"
+        Direccion:
+          description: "Dirección"
+          type: "string"
+        TurnoDsc:
+          description: "Turno Dsc"
+          type: "string"
+        Turno:
+          description: "HoraServicio"
+          type: "string"
+        RubroId:
+          description: "Rubros Identificador "
+          type: "integer"
+          format: "int32"
+        RubroNombre:
+          description: "Rubro"
+          type: "string"
+        FechaInstalacion:
+          description: "Fecha de instalación"
+          type: "string"
+          format: "date"
+    Nivel1SDTCollection:
+      properties:
+        id:
+          description: "id"
+          type: "integer"
+          format: "int64"
+        name:
+          description: "name"
+          type: "string"
+        monedaid:
+          description: "Moneda"
+          type: "integer"
+          format: "int32"
+        price:
+          description: "price"
+          type: "number"
+          format: "double"
+        image:
+          description: "image"
+          type: "string"
+        TextosId:
+          description: "Textos Id"
+          type: "integer"
+          format: "int64"
+    SDTASolicitudes:
+      properties:
+        Nombre:
+          description: "Nombre de la persona"
+          type: "string"
+        Telefono:
+          description: "Teléfono"
+          type: "string"
+        Mail:
+          description: "Solicitudes Mail"
+          type: "string"
+        PaisISO:
+          description: "PaisId"
+          type: "string"
+        DepartamentoId:
+          description: "Departamento"
+          type: "integer"
+          format: "int64"
+        MunicipioId:
+          description: "Identificador"
+          type: "integer"
+          format: "int64"
+        ZonasID:
+          description: "Código de la Zona"
+          type: "integer"
+          format: "int64"
+        Direccion:
+          description: "Dirección"
+          type: "string"
+        MetodoPagosID:
+          description: "Id"
+          type: "integer"
+          format: "int64"
+        SolicitudPagada:
+          description: "Solicitud Pagada"
+          type: "string"
+        SolicitaCotizacion:
+          description: "Solicita Cotización"
+          type: "string"
+        SolicitaOtroServicio:
+          description: "Solicita Otro Servicio"
+          type: "string"
+        OtroServicioDetalle:
+          description: "Otro Servicio Detalle"
+          type: "string"
+        FechaInstalacion:
+          description: "Fecha Instalacion"
+          type: "string"
+          format: "date"
+        TurnoInstalacion:
+          description: "Turno de Instalacion"
+          type: "integer"
+          format: "int32"
+        Comentario:
+          description: "Comentario"
+          type: "string"
+        ConfirmarCondicionesUso:
+          description: "Confirmar Condiciones de Uso"
+          type: "string"
+        ProveedorAuxiliar:
+          description: "Proveedor Auxiliar"
+          type: "string"
+        CostoXZona:
+          description: "Costo XZona"
+          type: "number"
+          format: "double"
+        Descuento:
+          description: "Descuento"
+          type: "number"
+          format: "double"
+        DescuentoCupon:
+          description: "Descuento Cupon"
+          type: "number"
+          format: "double"
+        CuponId:
+          description: "Cupon Id"
+          type: "integer"
+          format: "int64"
+        PaginaOne:
+          description: "Pagina One"
+          type: "string"
+        SolicitudIdCancelar:
+          description: "Solicitud Id Cancelar"
+          type: "integer"
+          format: "int64"
+        SolicitudesCotizacion:
+          description: "Cotización:"
+          type: "number"
+          format: "double"
+        UrlOrigen:
+          description: "Url Origen"
+          type: "string"
+        Level1:
+          type: array
+          items:
+            description: Items
+            $ref: "#/components/schemas/SDTASolicitudes.Level1_Items"
+        Archivo:
+          type: array
+          items:
+            description: ArchivoItem
+            $ref: "#/components/schemas/SDTASolicitudes.Archivo_ArchivoItem"
+    SDTASolicitudes.Level1_Items:
+      properties:
+        RubrosId:
+          description: "Numero de Item"
+          type: "integer"
+          format: "int32"
+        ProductoID:
+          description: "Producto ID"
+          type: "integer"
+          format: "int64"
+        DetalleID:
+          description: "Detalle ID"
+          type: "integer"
+          format: "int64"
+        Cantidad:
+          description: "Cantidad"
+          type: "integer"
+          format: "int64"
+        Precio:
+          description: "Precio"
+          type: "number"
+          format: "double"
+        SR:
+          description: "SR"
+          type: "string"
+        Comision:
+          description: "Comision"
+          type: "number"
+          format: "double"
+        ComisionTipo:
+          description: "Comision Tipo"
+          type: "string"
+        PrecioFinal:
+          description: "Precio Final"
+          type: "number"
+          format: "double"
+      x-gx-level: "SDTASolicitudes"
+    SDTASolicitudes.Archivo_ArchivoItem:
+      properties:
+        ArchivoId:
+          description: "Archivo Id"
+          type: "integer"
+          format: "int64"
+        ArchivoDireccion:
+          description: "Archivo Direccion"
+          type: "string"
+        ArchivoDescripcion:
+          description: "Archivo Descripcion"
+          type: "string"
+        ArchivoTipo:
+          description: "Archivo Tipo"
+          type: "string"
+      x-gx-level: "SDTASolicitudes"
+    SDTCarga:
+      properties:
+        SDTCarga:
+          type: array
+          items:
+            description: SDTCargaItem
+            $ref: "#/components/schemas/SDTCarga_SDTCargaItem"
+    SDTCarga_SDTCargaItem:
+      properties:
+        Id:
+          description: "Parametro Mudanza Id"
+          type: "integer"
+          format: "int32"
+        Tipo:
+          description: "Parametro Mudanza Tipo"
+          type: "string"
+        Titulo:
+          description: "Titulo"
+          type: "string"
+        Nombre:
+          description: "Parametro Mudanza Nombre"
+          type: "string"
+        Descripcion:
+          description: "Parametro Mudanza Descripcion"
+          type: "string"
+        Valor:
+          description: "Parametro Mudanza Valor"
+          type: "number"
+          format: "double"
+        Unidad:
+          description: "Parametro Mudanza Unidad"
+          type: "string"
+        Cantidad:
+          description: "Cantidad"
+          type: "integer"
+          format: "int32"
+        Imagen:
+          description: "Imagen"
+          type: "string"
+        Embalaje:
+          description: "Embalaje"
+          type: "boolean"
+        EmbalajeCant:
+          description: "Embalaje Cant"
+          type: "integer"
+          format: "int32"
+        Elevacion:
+          description: "Elevacion"
+          type: "boolean"
+        ElevacionCant:
+          description: "Elevacion Cant"
+          type: "integer"
+          format: "int32"
+        Activo:
+          description: "Activo"
+          type: "boolean"
+    SDTCatalogoProductos:
+      properties:
+        Rubros:
+          description: "SDTRubro"
+          type: array
+          items:
+            $ref: "#/components/schemas/SDTRubro"
+    SDTCategoria:
+      properties:
+        CategoriaId:
+          description: "Categoria Id"
+          type: "integer"
+          format: "int64"
+        CategoriaNombre:
+          description: "Categoria Nombre"
+          type: "string"
+        Productos:
+          description: "SDTProducto"
+          type: array
+          items:
+            $ref: "#/components/schemas/SDTProducto"
+    SDTCupon:
+      properties:
+        CuponId:
+          description: "Cupon Id"
+          type: "integer"
+          format: "int64"
+        CuponPercent:
+          description: "Cupon Percent"
+          type: "integer"
+          format: "int32"
+        CuponFechaVence:
+          description: "Cupon Fecha Vence"
+          type: "string"
+          format: "date"
+        CuponUsado:
+          description: "Cupon Usado"
+          type: "boolean"
+        CuponUser:
+          description: "Cupon User"
+          type: "integer"
+          format: "int64"
+    SDTDepartamento:
+      properties:
+        DepartamentoId:
+          description: "Departamento"
+          type: "integer"
+          format: "int64"
+        PaisID:
+          description: "PaisId"
+          type: "string"
+        DepartamentoDepartamento:
+          description: "Departamento"
+          type: "string"
+        DepartamentoAutEnuMuni:
+          description: "Departamento Aut Enu Muni"
+          type: "integer"
+          format: "int32"
+    SDTMudanza:
+      properties:
+        MudanzaId:
+          description: "Mudanza Id"
+          type: "integer"
+          format: "int64"
+        MudanzaAsesor:
+          description: "Mudanza Asesor"
+          type: "string"
+        MudanzaApellidoNombre:
+          description: "Mudanza Apellido Nombre"
+          type: "string"
+        MudanzaMail:
+          description: "Mudanza Mail"
+          type: "string"
+        MudanzaPhone:
+          description: "Mudanza Phone"
+          type: "string"
+        MudanzaFechaAlta:
+          description: "Mudanza Fecha Alta"
+          type: "string"
+          format: "date"
+        MudanzaFechaUpdate:
+          description: "Mudanza Fecha Update"
+          type: "string"
+          format: "date"
+        MudanzaFechaServicio:
+          description: "Mudanza Fecha Servicio"
+          type: "string"
+          format: "date"
+        MudanzaHoraServicio:
+          description: "Mudanza Hora Servicio"
+          type: "string"
+        MudanzaRgoHoraservicio:
+          description: "Mudanza Rgo Horaservicio"
+          type: "string"
+        MudanzaDireccionOrigen:
+          description: "Mudanza Direccion Origen"
+          type: "string"
+        MudanzaLocalidadOrigen:
+          description: "Mudanza Localidad Origen"
+          type: "string"
+        MudanzaPisoDptoOrigen:
+          description: "Mudanza Piso Dpto Origen"
+          type: "string"
+        MudanzaDireccionDestino:
+          description: "Mudanza Direccion Destino"
+          type: "string"
+        MudanzaLocalidadDestino:
+          description: "Mudanza Localidad Destino"
+          type: "string"
+        MudanzaPisoDptoDestino:
+          description: "Mudanza Piso Dpto Destino"
+          type: "string"
+        MudanzaCoordenadasOrigen:
+          description: "Mudanza Coordenada Origen"
+          type: "string"
+        MudanzaCoordenadasDestino:
+          description: "Mudanza Coordenada Destino"
+          type: "string"
+        MudanzaDistancia:
+          description: "Mudanza Distancia"
+          type: "number"
+          format: "double"
+        MudanzaVehiculoSugerido:
+          description: "Mudanza Vehiculo Sugerido"
+          type: "string"
+        MudanzaPrecioBasexHora:
+          description: "Mudanza Precio Basex Hora"
+          type: "number"
+          format: "double"
+        MudanzaPeajeCantidad:
+          description: "Mudanza Peaje Cantidad"
+          type: "integer"
+          format: "int32"
+        MudanzaComentario:
+          description: "Mudanza Comentario"
+          type: "string"
+        MudanzaPeajevalor:
+          description: "Mudanza Peajevalor"
+          type: "number"
+          format: "double"
+        TipoInmuebleOrigenId:
+          description: "Tipo Inmueble Origen Id"
+          type: "integer"
+          format: "int32"
+        TipoInmuebleOrigenNombre:
+          description: "Tipo Inmueble Origen Nombre"
+          type: "string"
+        TipoInmuebleOrigenValor:
+          description: "Tipo Inmueble Origen Valor"
+          type: "number"
+          format: "double"
+        MudanzaOrigenMetodo:
+          description: "Mudanza Origen Metodo"
+          type: "string"
+        TipoInmuebleDestinoId:
+          description: "Tipo Inmueble Destino Id"
+          type: "integer"
+          format: "int32"
+        TipoInmuebleDestinoNombre:
+          description: "Tipo Inmueble Destino Nombre"
+          type: "string"
+        TipoInmuebleDestinoValor:
+          description: "Tipo Inmueble Destino Valor"
+          type: "number"
+          format: "double"
+        TipoEstacionamOrigenId:
+          description: "Tipo Estacionam Origen Id"
+          type: "integer"
+          format: "int32"
+        TipoEstacionamOrigenNombre:
+          description: "Tipo Estacionam Origen Nombre"
+          type: "string"
+        TipoEstacionamOrigenValor:
+          description: "Tipo Estacionam Origen Valor"
+          type: "number"
+          format: "double"
+        TipoEstacionamDestinoId:
+          description: "Tipo Estacionam Destino Id"
+          type: "integer"
+          format: "int32"
+        TipoEstacionamDestinoNombre:
+          description: "Tipo Estacionam Destino Nombre"
+          type: "string"
+        MudanzaDestinoMetodo:
+          description: "Mudanza Destino Metodo"
+          type: "string"
+        TipoEstacionamDestinoValor:
+          description: "Tipo Estacionam Destino Valor"
+          type: "number"
+          format: "double"
+        MudanzaTiempoMaximo:
+          description: "Mudanza Tiempo Maximo"
+          type: "number"
+          format: "double"
+        MudanzaCargaVolumenEstimado:
+          description: "Mudanza Carga Volumen Estimado"
+          type: "number"
+          format: "double"
+        MudanzaAdicionalPrecio:
+          description: "Mudanza Adicional Precio"
+          type: "number"
+          format: "double"
+        MudanzaCantidadPeones:
+          description: "Mudanza Cantidad Peones"
+          type: "integer"
+          format: "int32"
+        MudanzaElevacion:
+          description: "Mudanza Elevacion"
+          type: "integer"
+          format: "int32"
+        MudanzaDescenso:
+          description: "Mudanza Descenso"
+          type: "integer"
+          format: "int32"
+        MudanzaEmbalaje:
+          description: "Mudanza Embalaje"
+          type: "integer"
+          format: "int32"
+        MudanzaPrecioFinal:
+          description: "Mudanza Precio Final"
+          type: "number"
+          format: "double"
+        MudanzaFormaPago:
+          description: "Mudanza Forma Pago"
+          type: "string"
+        MudanzaOperacionId:
+          description: "Mudanza Operacion Id"
+          type: "integer"
+          format: "int64"
+        MudanzaProveedorId:
+          description: "Mudanza Proveedor Id"
+          type: "integer"
+          format: "int64"
+        MudanzaSecUserId:
+          description: "Mudanza Sec User Id"
+          type: "integer"
+          format: "int64"
+        Carga:
+          type: array
+          items:
+            description: CargaItem
+            $ref: "#/components/schemas/SDTMudanza.Carga_CargaItem"
+        Adicional:
+          type: array
+          items:
+            description: AdicionalItem
+            $ref: "#/components/schemas/SDTMudanza.Adicional_AdicionalItem"
+    SDTMudanza.Carga_CargaItem:
+      properties:
+        ItemCargaId:
+          description: "Item Carga Id"
+          type: "integer"
+          format: "int32"
+        ItemCargaNombre:
+          description: "Item Carga Nombre"
+          type: "string"
+        ItemCargaDescripcion:
+          description: "Item Carga Descripcion"
+          type: "string"
+        ItemCargaCantidad:
+          description: "Item Carga Cantidad"
+          type: "integer"
+          format: "int32"
+        ItemCargaEmbCant:
+          description: "Item Carga Emb Cant"
+          type: "integer"
+          format: "int32"
+      x-gx-level: "SDTMudanza"
+    SDTMudanza.Adicional_AdicionalItem:
+      properties:
+        ItemAdicionalId:
+          description: "Item Adicional Id"
+          type: "integer"
+          format: "int32"
+        ItemAdicionalNombre:
+          description: "Item Adicional Nombre"
+          type: "string"
+        ItemAdicionalCantidad:
+          description: "Item Adicional Cantidad"
+          type: "integer"
+          format: "int32"
+      x-gx-level: "SDTMudanza"
+    SDTMunicipio:
+      properties:
+        DepartamentoMunicipioId:
+          description: "Identificador"
+          type: "integer"
+          format: "int64"
+        DepartamentoMunicipioNombre:
+          description: "Municipio"
+          type: "string"
+        ZonaCostoAdicional:
+          description: "Zona Costo Adicional"
+          type: "number"
+          format: "double"
+    SDTPaisMoneda:
+      properties:
+        SDTPaisMoneda:
+          type: array
+          items:
+            description: SDTPaisMonedaItem
+            $ref: "#/components/schemas/SDTPaisMoneda_SDTPaisMonedaItem"
+    SDTPaisMoneda_SDTPaisMonedaItem:
+      properties:
+        PaisId:
+          description: "PaisId"
+          type: "string"
+        PaisNombre:
+          description: "Pais"
+          type: "string"
+        MonedaId:
+          description: "Moneda"
+          type: "integer"
+          format: "int32"
+        MonedaNombre:
+          description: "Moneda"
+          type: "string"
+    SDTPostulaciones:
+      properties:
+        PostulacionesId:
+          description: "Postulaciones Id"
+          type: "integer"
+          format: "int64"
+        ServiciosId:
+          description: "Servicios Id"
+          type: "integer"
+          format: "int64"
+        ServiciosNombre:
+          description: "Servicios Nombre"
+          type: "string"
+        PostulacionesProveedorId:
+          description: "Postulaciones Proveedor Id"
+          type: "integer"
+          format: "int64"
+        PostulacionesProvNombreAux:
+          description: "Postulaciones Prov Nombre Aux"
+          type: "string"
+        PostulacionesPrecio:
+          description: "Postulaciones Precio"
+          type: "number"
+          format: "double"
+        PostulacionesDescripcion:
+          description: "Postulaciones Descripcion"
+          type: "string"
+        PostulacionesReqSuministros:
+          description: "Postulaciones Req Suministros"
+          type: "boolean"
+        PostulacionesSuministrosDescripcion:
+          description: "Postulaciones Suministros Descripcion"
+          type: "string"
+        PostulacionesFechaTrabajo:
+          description: "Postulaciones Fecha Trabajo"
+          type: "string"
+          format: "date"
+        PostulacionesFechaCierre:
+          description: "Postulaciones Fecha Cierre"
+          type: "string"
+          format: "date"
+        PostulacionesHoraCierre:
+          description: "Postulaciones Hora Cierre"
+          type: "string"
+        PostulacionesTipoFecha:
+          description: "Postulaciones Tipo Fecha"
+          type: "string"
+        PostulacionesRgoHoraservicio:
+          description: "Postulaciones Rgo Horaservicio"
+          type: "string"
+        PostulacionesApellidoNombre:
+          description: "Postulaciones Apellido Nombre"
+          type: "string"
+        PostulacionesMail:
+          description: "Postulaciones Mail"
+          type: "string"
+        PostulacionesTelefono:
+          description: "Postulaciones Telefono"
+          type: "string"
+        PostulacionesDepartamentoId:
+          description: "Postulaciones Departamento Id"
+          type: "integer"
+          format: "int32"
+        PostulacionesDepartamentoMunicipioId:
+          description: "Postulaciones Departamento Municipio Id"
+          type: "integer"
+          format: "int32"
+        PostulacionesZonasID:
+          description: "Postulaciones Zonas ID"
+          type: "integer"
+          format: "int32"
+        PostulacionesDireccion:
+          description: "Postulaciones Direccion"
+          type: "string"
+        PostulacionesFechaAlta:
+          description: "Fecha"
+          type: "string"
+          format: "date-time"
+        PostulacionesEstado:
+          description: "Estado"
+          type: "string"
+        PostulacionesSecUserId:
+          description: "Postulaciones Sec User Id"
+          type: "integer"
+          format: "int64"
+        Categorias:
+          type: array
+          items:
+            description: CategoriasItem
+            $ref: "#/components/schemas/SDTPostulaciones.Categorias_CategoriasItem"
+        Multimedia:
+          type: array
+          items:
+            description: MultimediaItem
+            $ref: "#/components/schemas/SDTPostulaciones.Multimedia_MultimediaItem"
+        Profesionales:
+          type: array
+          items:
+            description: ProfesionalesItem
+            $ref: "#/components/schemas/SDTPostulaciones.Profesionales_ProfesionalesItem"
+    SDTPostulaciones.Categorias_CategoriasItem:
+      properties:
+        CategoriasId:
+          description: "Categorias Id"
+          type: "integer"
+          format: "int64"
+        CategoriasNombre:
+          description: "Categorias Nombre"
+          type: "string"
+      x-gx-level: "SDTPostulaciones"
+    SDTPostulaciones.Multimedia_MultimediaItem:
+      properties:
+        MultimediaId:
+          description: "Multimedia Id"
+          type: "integer"
+          format: "int64"
+        MultimediaDireccion:
+          description: "Multimedia Direccion"
+          type: "string"
+        MultimediaDescripcion:
+          description: "Multimedia Descripcion"
+          type: "string"
+        MultimediaTipo:
+          description: "Multimedia Tipo"
+          type: "string"
+      x-gx-level: "SDTPostulaciones"
+    SDTPostulaciones.Profesionales_ProfesionalesItem:
+      properties:
+        ProfesionalesId:
+          description: "Identidad"
+          type: "string"
+      x-gx-level: "SDTPostulaciones"
+    SDTProducto:
+      properties:
+        ProductoId:
+          description: "Producto Id"
+          type: "integer"
+          format: "int64"
+        ProductoNombre:
+          description: "Producto Nombre"
+          type: "string"
+        ProductoPrecio:
+          description: "Producto Precio"
+          type: "number"
+          format: "double"
+        MonedaId:
+          description: "Moneda"
+          type: "integer"
+          format: "int32"
+        TextosId:
+          description: "Textos Id"
+          type: "integer"
+          format: "int64"
+        Activo:
+          description: "Activo"
+          type: "string"
+    SDTProductosActivos:
+      properties:
+        SDTProductosActivos:
+          type: array
+          items:
+            description: SDTProductosActivosItem
+            $ref: "#/components/schemas/SDTProductosActivos_SDTProductosActivosItem"
+    SDTProductosActivos_SDTProductosActivosItem:
+      properties:
+        CategoriaId:
+          description: "Categoria Id"
+          type: "integer"
+          format: "int64"
+        ProductoId:
+          description: "Producto Id"
+          type: "integer"
+          format: "int64"
+        Activo:
+          description: "Activo"
+          type: "boolean"
+    SDTProfesionales:
+      properties:
+        DocIdentidad:
+          description: "Doc Identidad"
+          type: "string"
+        EsRUT:
+          description: "Es RUT"
+          type: "boolean"
+        PrimerNombre:
+          description: "Primer Nombre"
+          type: "string"
+        SegundoNombre:
+          description: "Segundo Nombre"
+          type: "string"
+        ApellidoPrimero:
+          description: "Primero Apellido "
+          type: "string"
+        ApellidoSegundo:
+          description: "Segundo Apellido "
+          type: "string"
+        ImagenBase64:
+          description: "Imagen"
+          type: "string"
+        Telefono:
+          description: "Teléfono"
+          type: "string"
+        Email:
+          description: "Email"
+          type: "string"
+        Direccion:
+          description: "Dirección"
+          type: "string"
+        PaisISO2:
+          description: "Pais ISO2"
+          type: "string"
+        Ciudad:
+          description: "Ciudad"
+          type: "string"
+        AceptoTerminos:
+          description: "Acepto Terminos"
+          type: "boolean"
+        DeclaroDatosV:
+          description: "Declaro Datos son Verdaderos"
+          type: "boolean"
+        CuentaBancaria:
+          description: "Cuenta Bancaria"
+          type: "string"
+        BancoId:
+          description: "Nro"
+          type: "integer"
+          format: "int64"
+        Experiencia:
+          description: "Experiencia"
+          type: "string"
+        FechaNacimiento:
+          description: "Fecha Nacimiento"
+          type: "string"
+          format: "date"
+        RUTEmpresa:
+          description: "RUTEmpresa"
+          type: "string"
+        TipoEmpresa:
+          description: "Tipo Empresa"
+          type: "integer"
+          format: "int32"
+    SDTProveedor:
+      properties:
+        ProveedorID:
+          description: "Código del Proveedor"
+          type: "integer"
+          format: "int64"
+        ProveedorNombre:
+          description: "Nombre"
+          type: "string"
+        ProveedorLogo:
+          description: "Logo"
+          type: "string"
+        ProveedorUsoInterno:
+          description: "¿Es de Uso Interno?"
+          type: "string"
+    SDTRoles:
+      properties:
+        SecUserId:
+          description: "User Id"
+          type: "integer"
+          format: "int64"
+        usuariosNombre:
+          description: "Nombre"
+          type: "string"
+        Roles:
+          type: array
+          items:
+            description: Id
+            $ref: "#/components/schemas/SDTRoles.Roles_Id"
+    SDTRoles.Roles_Id:
+      properties:
+        SecRoleId:
+          description: "Role Id"
+          type: "integer"
+          format: "int32"
+        SecRoleName:
+          description: "Role Name"
+          type: "string"
+      x-gx-level: "SDTRoles"
+    SDTRubro:
+      properties:
+        RubroId:
+          description: "Rubro Id"
+          type: "integer"
+          format: "int64"
+        RubroNombre:
+          description: "Rubro Nombre"
+          type: "string"
+        Categorias:
+          description: "SDTCategoria"
+          type: array
+          items:
+            $ref: "#/components/schemas/SDTCategoria"
+    SDTServicios:
+      properties:
+        SDTServicios:
+          type: array
+          items:
+            description: Item
+            $ref: "#/components/schemas/SDTServicios_Item"
+    SDTServicios_Item:
+      properties:
+        ServiciosId:
+          description: "Identificador "
+          type: "integer"
+          format: "int64"
+        ServiciosNombre:
+          description: "Servicios"
+          type: "string"
+        Imagen:
+          description: "Imagen"
+          type: "string"
+    SDTSolicitudes.Items:
+      properties:
+        Items:
+          type: array
+          items:
+            description: Items
+            $ref: "#/components/schemas/SDTSolicitudes.Items_Items"
+    SDTSolicitudes.Items_Items:
+      properties:
+        SolicitudesItemsID:
+          description: "No."
+          type: "integer"
+          format: "int32"
+        RubrosId:
+          description: "Rubros Identificador "
+          type: "integer"
+          format: "int32"
+        RubrosImagen:
+          description: ""
+          type: "string"
+        MedidasNombre:
+          description: "Nombre de la Característica"
+          type: "string"
+        RubrosNombre:
+          description: "Rubro"
+          type: "string"
+        MedidasID:
+          description: "Medidas ID"
+          type: "integer"
+          format: "int64"
+        InventarioId:
+          description: "Producto"
+          type: "integer"
+          format: "int64"
+        InventarioNombre:
+          description: ""
+          type: "string"
+        InventarioImagen:
+          description: ""
+          type: "string"
+        InventarioPrecioFinal:
+          description: "Armado"
+          type: "number"
+          format: "double"
+        SolicitudesItemsCantidad:
+          description: "Cantidad"
+          type: "integer"
+          format: "int32"
+        SolicitudesItemsPrecioInstalacion:
+          description: "Instalación"
+          type: "number"
+          format: "double"
+        TextosId:
+          description: "Textos Id"
+          type: "integer"
+          format: "int64"
+        TextosTitulo:
+          description: "Titulo"
+          type: "string"
+        TextosDescripcion:
+          description: "Textos Descripcion"
+          type: "string"
+        InventarioTextosId:
+          description: "Textos Id"
+          type: "integer"
+          format: "int64"
+        InventarioTextosDescripcion:
+          description: "Inventario Textos Descripcion"
+          type: "string"
+        InventarioTextosTitulo:
+          description: "Titulo"
+          type: "string"
+        MonedaId:
+          description: "Moneda"
+          type: "integer"
+          format: "int32"
+        MonedaISOSimbolo:
+          description: "Simbolo ISO"
+          type: "string"
+    SDTSolicitudes:
+      properties:
+        SolicitudesID:
+          description: "Solicitud No:"
+          type: "integer"
+          format: "int64"
+        SolicitudesNombre:
+          description: "Nombre de la persona"
+          type: "string"
+        ProveedorNombre:
+          description: "Proveedor Nombre"
+          type: "string"
+        SolicitudesTelefono:
+          description: "Teléfono"
+          type: "string"
+        SolicitudesMail:
+          description: "Solicitudes Mail"
+          type: "string"
+        PaisID:
+          description: "PaisId"
+          type: "string"
+        DepartamentoId:
+          description: "Departamento"
+          type: "integer"
+          format: "int64"
+        DepartamentoNombre:
+          description: "Departamento"
+          type: "string"
+        DepartamentoMunicipioId:
+          description: "Identificador"
+          type: "integer"
+          format: "int64"
+        MunicipioNombre:
+          description: "Municipio"
+          type: "string"
+        ZonasID:
+          description: "Código de la Zona"
+          type: "integer"
+          format: "int64"
+        SolicitudesDireccion:
+          description: "Dirección"
+          type: "string"
+        SolicitudesAutoEnumerar:
+          description: "Solicitudes Auto Enumerar"
+          type: "integer"
+          format: "int32"
+        ProfesionalPostulado:
+          description: "Profesional Postulado"
+          type: "boolean"
+        PostulacionFechaCierre:
+          description: "Postulacion Fecha Cierre"
+          type: "string"
+          format: "date"
+        PostulacionHoraCierre:
+          description: "Postulacion Hora Cierre"
+          type: "string"
+        PostulacionTipoFecha:
+          description: "Postulaciones Tipo Fecha"
+          type: "string"
+        ServiciosNombre:
+          description: "Servicios Nombre"
+          type: "string"
+        SolicitudesNotificacion:
+          description: "¿Se notifico al cliente?"
+          type: "string"
+        SolicitudesNota:
+          description: "NOTA:"
+          type: "string"
+        MetodoPagosNombre:
+          description: "Metodo"
+          type: "string"
+        MetodoPagosID:
+          description: "Id"
+          type: "integer"
+          format: "int64"
+        SolicitudesComentario:
+          description: "Comentario"
+          type: "string"
+        SolicitudesHoraInstalacion:
+          description: "Hora"
+          type: "string"
+        SolicitudesFechaInstalacion:
+          description: "Programar la instalación para la fecha"
+          type: "string"
+          format: "date"
+        SolicitudesFechaActualizacion:
+          description: "Actualizado"
+          type: "string"
+          format: "date-time"
+        SolicitudesFechaAlta:
+          description: "Fecha de Alta"
+          type: "string"
+          format: "date"
+        SolicitudesOtros3:
+          description: "Otros"
+          type: "string"
+        SolicitudesOtros2:
+          description: "Solicitar:"
+          type: "string"
+        SolicitudesOtros1:
+          description: "Solicitudes Otros1"
+          type: "string"
+        EstadosSolNombre:
+          description: "Estados Sol Nombre"
+          type: "string"
+        EstadosSolId:
+          description: "Estados Sol Id"
+          type: "integer"
+          format: "int64"
+        EstadosSolTipo:
+          description: "Estados Sol Tipo"
+          type: "string"
+        SolicitudServicioPFinal:
+          description: "Precio Final"
+          type: "number"
+          format: "double"
+        SolicitudServicioSolCoti:
+          description: "Solicitar cotización "
+          type: "string"
+        SolicitudesTotal:
+          description: "Total"
+          type: "number"
+          format: "double"
+        SolicitudesCotizacion:
+          description: "Cotización:"
+          type: "number"
+          format: "double"
+        ModoPago:
+          description: "Modo Pago"
+          type: "string"
+        Ganancia:
+          description: "Ganancia"
+          type: "string"
+        Deduccion:
+          description: "Deduccion"
+          type: "string"
+        FeedBackId:
+          description: "Feed Back Id"
+          type: "integer"
+          format: "int64"
+        FeedBackNum:
+          description: "Feed Back Num"
+          type: "integer"
+          format: "int64"
+        FeedBackComentario:
+          description: "Comentario"
+          type: "string"
+        FeedBackFechaAlta:
+          description: "Feed Back Fecha Alta"
+          type: "string"
+          format: "date"
+        SolicitudesSubTipo:
+          description: "Sub Tipo"
+          type: "string"
+        SolicitudesSubTipoDesc:
+          description: "Solicitudes Sub Tipo Descipcion"
+          type: "string"
+        MudanzaId:
+          description: "Mudanza Id"
+          type: "integer"
+          format: "int64"
+        SolicitudServicioOrigenPago:
+          description: "Origen del Pago"
+          type: "string"
+        STComerciosNombre:
+          description: "STComercios Nombre"
+          type: "string"
+        SolicitudesComisionMetodoPago:
+          description: "Comisión del Metodo de Pago"
+          type: "number"
+          format: "double"
+        Items:
+          type: array
+          items:
+            description: Items
+            $ref: "#/components/schemas/SDTSolicitudes.Items_Items"
+        Archivo:
+          type: array
+          items:
+            description: ArchivoItem
+            $ref: "#/components/schemas/SDTSolicitudes.Archivo_ArchivoItem"
+    SDTSolicitudes.Items_Items:
+      properties:
+        SolicitudesItemsID:
+          description: "No."
+          type: "integer"
+          format: "int32"
+        RubrosId:
+          description: "Rubros Identificador "
+          type: "integer"
+          format: "int32"
+        RubrosImagen:
+          description: ""
+          type: "string"
+        MedidasNombre:
+          description: "Nombre de la Característica"
+          type: "string"
+        RubrosNombre:
+          description: "Rubro"
+          type: "string"
+        MedidasID:
+          description: "Medidas ID"
+          type: "integer"
+          format: "int64"
+        InventarioId:
+          description: "Producto"
+          type: "integer"
+          format: "int64"
+        InventarioNombre:
+          description: ""
+          type: "string"
+        InventarioImagen:
+          description: ""
+          type: "string"
+        InventarioPrecioFinal:
+          description: "Armado"
+          type: "number"
+          format: "double"
+        SolicitudesItemsCantidad:
+          description: "Cantidad"
+          type: "integer"
+          format: "int32"
+        SolicitudesItemsPrecioInstalacion:
+          description: "Instalación"
+          type: "number"
+          format: "double"
+        TextosId:
+          description: "Textos Id"
+          type: "integer"
+          format: "int64"
+        TextosTitulo:
+          description: "Titulo"
+          type: "string"
+        TextosDescripcion:
+          description: "Textos Descripcion"
+          type: "string"
+        InventarioTextosId:
+          description: "Textos Id"
+          type: "integer"
+          format: "int64"
+        InventarioTextosDescripcion:
+          description: "Inventario Textos Descripcion"
+          type: "string"
+        InventarioTextosTitulo:
+          description: "Titulo"
+          type: "string"
+        MonedaId:
+          description: "Moneda"
+          type: "integer"
+          format: "int32"
+        MonedaISOSimbolo:
+          description: "Simbolo ISO"
+          type: "string"
+      x-gx-level: "SDTSolicitudes"
+    SDTSolicitudes.Archivo_ArchivoItem:
+      properties:
+        ArchivoId:
+          description: "Archivo Id"
+          type: "integer"
+          format: "int64"
+        ArchivoTipo:
+          description: "Archivo Tipo"
+          type: "string"
+        ArchivoDireccion:
+          description: "Archivo Direccion"
+          type: "string"
+        ArchivoDescripcion:
+          description: "Archivo Descripcion"
+          type: "string"
+      x-gx-level: "SDTSolicitudes"
+    SDTUser:
+      properties:
+        UsuariosID:
+          description: "NickName"
+          type: "string"
+        UsuariosPassw:
+          description: "Usuarios Passw"
+          type: "string"
+        usuariosNombre:
+          description: "Nombre"
+          type: "string"
+        PaisId:
+          description: "PaisId"
+          type: "string"
+        tipoUsuario:
+          description: "tipo Usuario"
+          type: "string"
+        ProfesionalesId:
+          description: "Identidad"
+          type: "string"
+        usuariosCorreo:
+          description: "Correo"
+          type: "string"
+        usuariosDireccion:
+          description: "usuarios Direccion"
+          type: "string"
+        usuariosCPostal:
+          description: "Codigo Postal"
+          type: "integer"
+          format: "int64"
+        usuariosTelefono:
+          description: "usuarios Telefono"
+          type: "string"
+        usuariosImagen:
+          description: "Imagen"
+          type: "string"
+        usuariosUrl:
+          description: "usuarios Url"
+          type: "string"
+        usuariosEstado:
+          description: "usuarios Estado"
+          type: "string"
+        SdtRoles:
+          description: "SDTRoles"
+          $ref: "#/components/schemas/SDTRoles"
+        secUserId:
+          description: "Usuario Nro."
+          type: "integer"
+          format: "int64"
+        UsuarioTieneRubro:
+          description: "Usuario Tiene Rubro"
+          type: "boolean"
+        NotificarPostulacion:
+          description: "Notificar Postulacion enestado asignada"
+          type: "boolean"
+    SDTZona:
+      properties:
+        DepartamentoId:
+          description: "Departamento"
+          type: "integer"
+          format: "int64"
+        DepartamentoMunicipioId:
+          description: "Identificador"
+          type: "integer"
+          format: "int64"
+        ZonasID:
+          description: "Código de la Zona"
+          type: "integer"
+          format: "int64"
+        ZonasNombre:
+          description: "Zona"
+          type: "string"
+        ZonasEstado:
+          description: "Estado"
+          type: "string"
+        ZonasHabilitarEcommerce:
+          description: "Zonas Habilitar Ecommerce"
+          type: "boolean"

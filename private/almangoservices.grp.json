@@ -1,0 +1,30 @@
+{
+"ObjectType":"ServiceGroup",
+"Name":"AlmangoServices",
+"BasePath":"AlmangoServices",
+"Mappings":
+[
+{
+"Verb":"GET",
+"Name":"getcantsol",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_getcantsol",
+"Implementation":"CantSolicitudes",
+"PathRegexp":"getcantsol",
+"Path":"getcantsol"
+
+},
+{
+"Verb":"GET",
+"Name":"getallservices",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_getallservices",
+"Implementation":"WSOServiciosDetALL",
+"PathRegexp":"getallservices",
+"Path":"getallservices"
+
+}]}

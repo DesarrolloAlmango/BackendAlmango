@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "GeneXus.Programs.walletpromptgetfilterdata_services,walletpromptgetfilterdata" %>

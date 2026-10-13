@@ -1,0 +1,1622 @@
+{
+"openapi": "3.0.0",
+ "info": {
+  "title": "WebAPI",
+  "description": "Web API",
+  "version": "20261005180336"
+  },
+"servers":[
+    {
+        "url": "http://localhost/AlmangoXV1NETFramework/WebAPI"
+	}
+],
+"paths":{
+    "/GetTarjetasServicios": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.GetTarjetasServicios",
+      "summary": "GetTarjetasServicios",
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "$ref": "#/components/schemas/GetTarjetasServiciosOutput"
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/GetTarjetasServicios2": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.GetTarjetasServicios2",
+      "summary": "GetTarjetasServicios2",
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "$ref": "#/components/schemas/GetTarjetasServicios2Output"
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerCatalogo": {
+    "post": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.ObtenerCatalogo",
+      "summary": "Obtener catálogo de productos",
+      "requestBody":{
+        "required": false,
+        "content":{
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/ObtenerCatalogoInput"
+        	  }
+        	}
+          }
+        },
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "$ref": "#/components/schemas/SDTCatalogoProductos"  
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerImagenProducto": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.ObtenerImagenProducto",
+      "summary": "ObtenerImagenProducto",
+      "parameters":[
+        { "name": "Rubroid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Categoriaid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Productoid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "$ref": "#/components/schemas/ObtenerImagenProductoOutput"
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerNivel1": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.ObtenerNivel1",
+      "summary": "ObtenerNivel1",
+      "parameters":[
+        { "name": "Nivel0",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "type": "array",
+          		  "items": {
+          		    "$ref": "#/components/schemas/Nivel1SDTCollection"
+          			}  
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerNivel2": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.ObtenerNivel2",
+      "summary": "ObtenerNivel2",
+      "parameters":[
+        { "name": "Nivel0",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Nivel1",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "type": "array",
+          		  "items": {
+          		    "$ref": "#/components/schemas/Nivel1SDTCollection"
+          			}  
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerDepto": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.ObtenerDepto",
+      "summary": "ObtenerDepto",
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "type": "array",
+          		  "items": {
+          		    "$ref": "#/components/schemas/SDTDepartamento"
+          			}  
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerProveedor": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.ObtenerProveedor",
+      "summary": "ObtenerProveedor",
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "type": "array",
+          		  "items": {
+          		    "$ref": "#/components/schemas/SDTProveedor"
+          			}  
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerProveedorTodos": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.ObtenerProveedorTodos",
+      "summary": "ObtenerProveedorTodos",
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "type": "array",
+          		  "items": {
+          		    "$ref": "#/components/schemas/SDTProveedor"
+          			}  
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerProveedorPagoDefault": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.ObtenerProveedorPagoDefault",
+      "summary": "ObtenerProveedorPagoDefault",
+      "parameters":[
+        { "name": "Proveedorid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "$ref": "#/components/schemas/ObtenerProveedorPagoDefaultOutput"
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerMunicipio": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.ObtenerMunicipio",
+      "summary": "ObtenerMunicipio",
+      "parameters":[
+        { "name": "Departamentoid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "type": "array",
+          		  "items": {
+          		    "$ref": "#/components/schemas/SDTMunicipio"
+          			}  
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerZonas": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.ObtenerZonas",
+      "summary": "ObtenerZonas",
+      "parameters":[
+        { "name": "Departamentoid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Municipioid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "type": "array",
+          		  "items": {
+          		    "$ref": "#/components/schemas/SDTZona"
+          			}  
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerPrecio": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.ObtenerPrecio",
+      "summary": "ObtenerPrecio",
+      "parameters":[
+        { "name": "Proveedorid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Nivel0",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Nivel1",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Nivel2",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "$ref": "#/components/schemas/ObtenerPrecioOutput"
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/AltaSolicitud": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.AltaSolicitud",
+      "summary": "AltaSolicitud",
+      "parameters":[
+        { "name": "Userconect",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Key",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Proveedorid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Usuarioid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Jsonsolicitud",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "$ref": "#/components/schemas/AltaSolicitudOutput"
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/AltaSolicitudPost": {
+    "post": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.AltaSolicitudPost",
+      "summary": "Alta de Solicitudes",
+      "requestBody":{
+        "required": false,
+        "content":{
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/AltaSolicitudPostInput"
+        	  }
+        	}
+          }
+        },
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "$ref": "#/components/schemas/AltaSolicitudPostOutput"
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/AltaSolicitudGet": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.AltaSolicitudGet",
+      "summary": "AltaSolicitudGet",
+      "parameters":[
+        { "name": "Userconect",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Key",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Proveedorid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Usuarioid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Jsonsolicitud",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "$ref": "#/components/schemas/AltaSolicitudGetOutput"
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerDatosCupon": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.ObtenerDatosCupon",
+      "summary": "ObtenerDatosCupon",
+      "parameters":[
+        { "name": "Cuponid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "$ref": "#/components/schemas/SDTCupon"  
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerTyCProductos": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.ObtenerTyCProductos",
+      "summary": "ObtenerTyCProductos",
+      "parameters":[
+        { "name": "Textosid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "$ref": "#/components/schemas/ObtenerTyCProductosOutput"
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ConsultarPagoPendiente": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.ConsultarPagoPendiente",
+      "summary": "ConsultarPagoPendiente",
+      "parameters":[
+        { "name": "Solicitudesid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "$ref": "#/components/schemas/ConsultarPagoPendienteOutput"
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/InsertarFeedBack": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.InsertarFeedBack",
+      "summary": "InsertarFeedBack",
+      "parameters":[
+        { "name": "Solicitudid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Feedback",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation"
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerNroServicio": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.ObtenerNroServicio",
+      "summary": "ObtenerNroServicio",
+      
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "$ref": "#/components/schemas/ObtenerNroServicioOutput"
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/OrganizarMail": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.OrganizarMail",
+      "summary": "OrganizarMail",
+      "parameters":[
+        { "name": "Maildesignid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int32"
+      	}
+        },
+        { "name": "Maildesigntipo",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Email",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Nombre",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Urladjunto",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        },
+        { "name": "Htmltext",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "string"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrganizarMailOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ORubroItemActivo": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.ORubroItemActivo",
+      "summary": "ORubroItemActivo",
+      "parameters":[
+        { "name": "Comercioid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Nivel0",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Nivel1",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Nivel2",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "$ref": "#/components/schemas/ORubroItemActivoOutput"
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ORubroItemActivoBatch": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.ORubroItemActivoBatch",
+      "summary": "ORubroItemActivoBatch",
+      "parameters":[
+        { "name": "Comercioid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        },
+        { "name": "Rubroid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "$ref": "#/components/schemas/SDTProductosActivos"  
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ObtenerDatosToUpdateSol": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.ObtenerDatosToUpdateSol",
+      "summary": "ObtenerDatosToUpdateSol",
+      "parameters":[
+        { "name": "Solicitudid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content":{
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ObtenerDatosToUpdateSolOutput"
+          	  }
+          	}
+            }
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  },
+    "/ComercioConvenioCIU": {"get": {"tags": [
+      	"WebAPI"
+         ] ,
+      "operationId": "WebAPI.ComercioConvenioCIU",
+      "summary": "ComercioConvenioCIU",
+      "parameters":[
+        { "name": "Proveedorid",
+          "in": "query",
+          "required": false,
+          "schema": {
+      	"type": "integer",
+          "format": "int64"
+      	}
+        }
+      ]
+      ,  
+      "responses": {
+        "200": {
+          "description": "Successful operation",
+          "content": {
+            "application/json": { 
+              "schema": {
+          		  "$ref": "#/components/schemas/ComercioConvenioCIUOutput"
+          	}
+            }
+          }
+
+      	},
+        "404": {
+          "description": "Not found"
+      	}
+        } 
+     }
+   
+  } 
+  },
+"components":{
+  "schemas": {
+    "GetTarjetasServiciosOutput": {
+      "properties": {
+           "SDTTarjetasServiciosJson": {
+             "type": "string"}	 
+        }
+      }
+      ,
+    "GetTarjetasServicios2Output": {
+      "properties": {
+           "SDTTarjetasServiciosJson": {
+             "type": "string"}	 
+        }
+      }
+      ,
+    "ObtenerImagenProductoOutput": {
+      "properties": {
+           "ImageBase64": {
+             "type": "string"}	 
+        }
+      }
+      ,
+    "ObtenerProveedorPagoDefaultOutput": {
+      "properties": {
+           "Boolean": {
+             "type": "boolean"}	 
+        }
+      }
+      ,
+    "ObtenerPrecioOutput": {
+      "properties": {
+           "Precio": {
+             "type": "number",
+             "format": "double"}	 
+        }
+      }
+      ,
+    "AltaSolicitudOutput": {
+      "properties": {
+           "SolicitudesID": {
+             "type": "integer",
+             "format": "int64"}	 
+        }
+      }
+      ,
+    "AltaSolicitudPostOutput": {
+      "properties": {
+           "SolicitudesID": {
+             "type": "integer",
+             "format": "int64"}	 
+        }
+      }
+      ,
+    "AltaSolicitudGetOutput": {
+      "properties": {
+           "SolicitudesID": {
+             "type": "integer",
+             "format": "int64"}	 
+        }
+      }
+      ,
+    "ObtenerTyCProductosOutput": {
+      "properties": {
+           "Texto": {
+             "type": "string"}	 
+        }
+      }
+      ,
+    "ConsultarPagoPendienteOutput": {
+      "properties": {
+           "Pagado": {
+             "type": "string"}	 
+        }
+      }
+      ,
+    "ObtenerNroServicioOutput": {
+      "properties": {
+           "Numero": {
+             "type": "integer",
+             "format": "int64"}	 
+        }
+      }
+      ,
+    "OrganizarMailOutput": {
+      "properties": {
+           "Nombre": {
+             "type": "string"}	 ,
+           "HTMLText": {
+             "type": "string"}	 ,
+           "Ok": {
+             "type": "string"}	 ,
+           "ErrorDescription": {
+             "type": "string"}	 
+        }
+      }
+      ,
+    "ORubroItemActivoOutput": {
+      "properties": {
+           "Permiso": {
+             "type": "boolean"}	 
+        }
+      }
+      ,
+    "ObtenerDatosToUpdateSolOutput": {
+      "properties": {
+           "ProveedorID": {
+             "type": "integer",
+             "format": "int64"}	 ,
+           "SolicitudesDatos": {
+             "description": "SDTASolicitudes",
+             "$ref": "#/components/schemas/SDTASolicitudes"
+         	}	 
+        }
+      }
+      ,
+    "ComercioConvenioCIUOutput": {
+      "properties": {
+           "ProveedorCIU": {
+             "type": "boolean"}	 
+        }
+      }
+      
+    ,
+
+    "ObtenerCatalogoInput": {
+      "properties": {
+         "ProveedorID": {
+            "type": "integer",
+            "format": "int64"}	  
+       }
+     },
+    "AltaSolicitudPostInput": {
+      "properties": {
+         "UserConect": {
+            "type": "string"}	 ,
+         "Key": {
+            "type": "string"}	 ,
+         "ProveedorID": {
+            "type": "integer",
+            "format": "int64"}	 ,
+         "UsuarioID": {
+            "type": "string"}	 ,
+         "JsonSolicitud": {
+            "type": "string"}	  
+       }
+     },
+
+    "SDTCatalogoProductos": {
+
+      "properties": {
+          "Rubros": {
+            "description": "SDTRubro",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SDTRubro"
+        	}
+        	}	  
+      }
+    ,"x-gx-sdt-type":"SDTCatalogoProductos" }
+     ,"Nivel1SDTCollection": {
+
+      "properties": {
+          "id": {
+            "description": "id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "name": {
+            "description": "name",
+            "type": "string"}	  ,
+          "monedaid": {
+            "description": "Moneda",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "price": {
+            "description": "price",
+            "type": "number",
+            "format": "double"}	  ,
+          "image": {
+            "description": "image",
+            "type": "string"}	  ,
+          "TextosId": {
+            "description": "Textos Id",
+            "type": "integer",
+            "format": "int64"}	  
+      }
+    ,"x-gx-sdt-type":"Nivel1SDTCollection" }
+     ,"SDTDepartamento": {
+
+      "properties": {
+          "DepartamentoId": {
+            "description": "Departamento",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "PaisID": {
+            "description": "PaisId",
+            "type": "string"}	  ,
+          "DepartamentoDepartamento": {
+            "description": "Departamento",
+            "type": "string"}	  ,
+          "DepartamentoAutEnuMuni": {
+            "description": "Departamento Aut Enu Muni",
+            "type": "integer",
+            "format": "int32"}	  
+      }
+    ,"x-gx-sdt-type":"SDTDepartamento" }
+     ,"SDTProveedor": {
+
+      "properties": {
+          "ProveedorID": {
+            "description": "Código del Proveedor",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "ProveedorNombre": {
+            "description": "Nombre",
+            "type": "string"}	  ,
+          "ProveedorLogo": {
+            "description": "Logo",
+            "type": "string"}	  ,
+          "ProveedorUsoInterno": {
+            "description": "¿Es de Uso Interno?",
+            "type": "string"}	  
+      }
+    ,"x-gx-sdt-type":"SDTProveedor" }
+     ,"SDTMunicipio": {
+
+      "properties": {
+          "DepartamentoMunicipioId": {
+            "description": "Identificador",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "DepartamentoMunicipioNombre": {
+            "description": "Municipio",
+            "type": "string"}	  ,
+          "ZonaCostoAdicional": {
+            "description": "Zona Costo Adicional",
+            "type": "number",
+            "format": "double"}	  
+      }
+    ,"x-gx-sdt-type":"SDTMunicipio" }
+     ,"SDTZona": {
+
+      "properties": {
+          "DepartamentoId": {
+            "description": "Departamento",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "DepartamentoMunicipioId": {
+            "description": "Identificador",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "ZonasID": {
+            "description": "Código de la Zona",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "ZonasNombre": {
+            "description": "Zona",
+            "type": "string"}	  ,
+          "ZonasEstado": {
+            "description": "Estado",
+            "type": "string"}	  ,
+          "ZonasHabilitarEcommerce": {
+            "description": "Zonas Habilitar Ecommerce",
+            "type": "boolean"}	  
+      }
+    ,"x-gx-sdt-type":"SDTZona" }
+     ,"SDTCupon": {
+
+      "properties": {
+          "CuponId": {
+            "description": "Cupon Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "CuponPercent": {
+            "description": "Cupon Percent",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "CuponFechaVence": {
+            "description": "Cupon Fecha Vence",
+            "type": "string",
+            "format": "date"}	  ,
+          "CuponUsado": {
+            "description": "Cupon Usado",
+            "type": "boolean"}	  ,
+          "CuponUser": {
+            "description": "Cupon User",
+            "type": "integer",
+            "format": "int64"}	  
+      }
+    ,"x-gx-sdt-type":"SDTCupon" }
+     ,"SDTProductosActivos": {
+
+      "properties": {
+          "SDTProductosActivos": {
+            "type": "array",
+            "items": {
+              "description": "SDTProductosActivosItem",
+              "$ref": "#/components/schemas/SDTProductosActivos_SDTProductosActivosItem"
+        	  } 
+        	}  
+      }
+    ,"x-gx-sdt-type":"SDTProductosActivos" }
+    ,
+    "SDTProductosActivos_SDTProductosActivosItem": {
+
+      "properties": {
+          "CategoriaId": {
+            "description": "Categoria Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "ProductoId": {
+            "description": "Producto Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "Activo": {
+            "description": "Activo",
+            "type": "boolean"}	  
+      }
+    ,"x-gx-sdt-type":"SDTProductosActivos" }
+     
+     ,"SDTASolicitudes": {
+
+      "properties": {
+          "Nombre": {
+            "description": "Nombre de la persona",
+            "type": "string"}	  ,
+          "Telefono": {
+            "description": "Teléfono",
+            "type": "string"}	  ,
+          "Mail": {
+            "description": "Solicitudes Mail",
+            "type": "string"}	  ,
+          "PaisISO": {
+            "description": "PaisId",
+            "type": "string"}	  ,
+          "DepartamentoId": {
+            "description": "Departamento",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "MunicipioId": {
+            "description": "Identificador",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "ZonasID": {
+            "description": "Código de la Zona",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "Direccion": {
+            "description": "Dirección",
+            "type": "string"}	  ,
+          "MetodoPagosID": {
+            "description": "Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "SolicitudPagada": {
+            "description": "Solicitud Pagada",
+            "type": "string"}	  ,
+          "SolicitaCotizacion": {
+            "description": "Solicita Cotización",
+            "type": "string"}	  ,
+          "SolicitaOtroServicio": {
+            "description": "Solicita Otro Servicio",
+            "type": "string"}	  ,
+          "OtroServicioDetalle": {
+            "description": "Otro Servicio Detalle",
+            "type": "string"}	  ,
+          "FechaInstalacion": {
+            "description": "Fecha Instalacion",
+            "type": "string",
+            "format": "date"}	  ,
+          "TurnoInstalacion": {
+            "description": "Turno de Instalacion",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "Comentario": {
+            "description": "Comentario",
+            "type": "string"}	  ,
+          "ConfirmarCondicionesUso": {
+            "description": "Confirmar Condiciones de Uso",
+            "type": "string"}	  ,
+          "ProveedorAuxiliar": {
+            "description": "Proveedor Auxiliar",
+            "type": "string"}	  ,
+          "CostoXZona": {
+            "description": "Costo XZona",
+            "type": "number",
+            "format": "double"}	  ,
+          "Descuento": {
+            "description": "Descuento",
+            "type": "number",
+            "format": "double"}	  ,
+          "DescuentoCupon": {
+            "description": "Descuento Cupon",
+            "type": "number",
+            "format": "double"}	  ,
+          "CuponId": {
+            "description": "Cupon Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "PaginaOne": {
+            "description": "Pagina One",
+            "type": "string"}	  ,
+          "SolicitudIdCancelar": {
+            "description": "Solicitud Id Cancelar",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "SolicitudesCotizacion": {
+            "description": "Cotización:",
+            "type": "number",
+            "format": "double"}	  ,
+          "UrlOrigen": {
+            "description": "Url Origen",
+            "type": "string"}	  ,
+          "Level1": {
+            "type": "array",
+            "items": {
+              "description": "Items",
+              "$ref": "#/components/schemas/SDTASolicitudes.Level1_Items"
+        	  } 
+        	}  ,
+          "Archivo": {
+            "type": "array",
+            "items": {
+              "description": "ArchivoItem",
+              "$ref": "#/components/schemas/SDTASolicitudes.Archivo_ArchivoItem"
+        	  } 
+        	}  
+      }
+    ,"x-gx-sdt-type":"SDTASolicitudes" }
+    ,
+    "SDTASolicitudes.Level1_Items": {
+
+      "properties": {
+          "RubrosId": {
+            "description": "Numero de Item",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "ProductoID": {
+            "description": "Producto ID",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "DetalleID": {
+            "description": "Detalle ID",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "Cantidad": {
+            "description": "Cantidad",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "Precio": {
+            "description": "Precio",
+            "type": "number",
+            "format": "double"}	  ,
+          "SR": {
+            "description": "SR",
+            "type": "string"}	  ,
+          "Comision": {
+            "description": "Comision",
+            "type": "number",
+            "format": "double"}	  ,
+          "ComisionTipo": {
+            "description": "Comision Tipo",
+            "type": "string"}	  ,
+          "PrecioFinal": {
+            "description": "Precio Final",
+            "type": "number",
+            "format": "double"}	  
+      }
+    ,"x-gx-level": "SDTASolicitudes","x-gx-sdt-type":"SDTASolicitudes" }
+     },
+    ,
+    "SDTASolicitudes.Archivo_ArchivoItem": {
+
+      "properties": {
+          "ArchivoId": {
+            "description": "Archivo Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "ArchivoDireccion": {
+            "description": "Archivo Direccion",
+            "type": "string"}	  ,
+          "ArchivoDescripcion": {
+            "description": "Archivo Descripcion",
+            "type": "string"}	  ,
+          "ArchivoTipo": {
+            "description": "Archivo Tipo",
+            "type": "string"}	  
+      }
+    ,"x-gx-level": "SDTASolicitudes","x-gx-sdt-type":"SDTASolicitudes" }
+     
+     ,"SDTCategoria": {
+
+      "properties": {
+          "CategoriaId": {
+            "description": "Categoria Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "CategoriaNombre": {
+            "description": "Categoria Nombre",
+            "type": "string"}	  ,
+          "Productos": {
+            "description": "SDTProducto",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SDTProducto"
+        	}
+        	}	  
+      }
+    ,"x-gx-sdt-type":"SDTCategoria" }
+     ,"SDTProducto": {
+
+      "properties": {
+          "ProductoId": {
+            "description": "Producto Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "ProductoNombre": {
+            "description": "Producto Nombre",
+            "type": "string"}	  ,
+          "ProductoPrecio": {
+            "description": "Producto Precio",
+            "type": "number",
+            "format": "double"}	  ,
+          "MonedaId": {
+            "description": "Moneda",
+            "type": "integer",
+            "format": "int32"}	  ,
+          "TextosId": {
+            "description": "Textos Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "Activo": {
+            "description": "Activo",
+            "type": "string"}	  
+      }
+    ,"x-gx-sdt-type":"SDTProducto" }
+     ,"SDTRubro": {
+
+      "properties": {
+          "RubroId": {
+            "description": "Rubro Id",
+            "type": "integer",
+            "format": "int64"}	  ,
+          "RubroNombre": {
+            "description": "Rubro Nombre",
+            "type": "string"}	  ,
+          "Categorias": {
+            "description": "SDTCategoria",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SDTCategoria"
+        	}
+        	}	  
+      }
+    ,"x-gx-sdt-type":"SDTRubro" }
+     
+	}
+  }
+}

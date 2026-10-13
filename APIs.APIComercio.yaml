@@ -1,0 +1,857 @@
+openapi: 3.0.0
+info:
+  title: "APIComercio"
+  description: "APIComercio"
+  version: "20261005180337"
+servers:
+  - url: http://localhost/AlmangoXV1NETFramework/APIs/APIComercio
+paths:
+  /APIs/APIComercio/gxobject:
+    post:
+      tags:
+        - APIs
+      operationId: "UploadAPIs.APIComercio"
+      summary: "Upload a binary for APIComercio"
+      responses:
+        200:
+          description: "Successful operation"
+        400:
+          description: "Bad request"
+        500:
+          description: "Internal Server Error"
+
+  /ObtenerLogin:
+    get:
+      tags:
+        - APIs
+      operationId: "APIs.APIComercio.ObtenerLogin"
+      summary: "ObtenerLogin"
+      parameters:
+        - name: "Usuario"
+          in: query
+          required: false
+          schema:
+            type: "string"
+            
+
+        - name: "Password"
+          in: query
+          required: false
+          schema:
+            type: "string"
+            
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ObtenerLoginOutput"
+        404:
+          description: "Not found"
+
+  /ObtenerComercioDatos:
+    get:
+      tags:
+        - APIs
+      operationId: "APIs.APIComercio.ObtenerComercioDatos"
+      summary: "ObtenerComercioDatos"
+      parameters:
+        - name: "Proveedorid"
+          in: query
+          required: false
+          schema:
+            type: "integer"
+            format: "int64"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ObtenerComercioDatosOutput"
+
+        404:
+          description: "Not found"
+
+  /ObtenerComercioForanea:
+    get:
+      tags:
+        - APIs
+      operationId: "APIs.APIComercio.ObtenerComercioForanea"
+      summary: "ObtenerComercioForanea"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ObtenerComercioForaneaOutput"
+
+        404:
+          description: "Not found"
+
+  /InsertarComercio:
+    get:
+      tags:
+        - APIs
+      operationId: "APIs.APIComercio.InsertarComercio"
+      summary: "InsertarComercio"
+      parameters:
+        - name: "Comerciodatos"
+          in: query
+          required: false
+          schema:
+            type: "string"
+            
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/InsertarComercioOutput"
+
+        404:
+          description: "Not found"
+
+  /ObtenerSolicitudEcommerce:
+    get:
+      tags:
+        - APIs
+      operationId: "APIs.APIComercio.ObtenerSolicitudEcommerce"
+      summary: "ObtenerSolicitudEcommerce"
+      parameters:
+        - name: "Solicitudesid"
+          in: query
+          required: false
+          schema:
+            type: "integer"
+            format: "int64"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ObtenerSolicitudEcommerceOutput"
+        404:
+          description: "Not found"
+
+  /ObtenerDptosEcommerce:
+    get:
+      tags:
+        - APIs
+      operationId: "APIs.APIComercio.ObtenerDptosEcommerce"
+      summary: "ObtenerDptosEcommerce"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ObtenerDptosEcommerceOutput"
+        404:
+          description: "Not found"
+
+  /ObtenerMuniEcommerce:
+    get:
+      tags:
+        - APIs
+      operationId: "APIs.APIComercio.ObtenerMuniEcommerce"
+      summary: "ObtenerMuniEcommerce"
+      parameters:
+        - name: "Departamentoid"
+          in: query
+          required: false
+          schema:
+            type: "integer"
+            format: "int64"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/SDTMunicipio"  
+
+        404:
+          description: "Not found"
+
+  /ObtenerPostulados:
+    get:
+      tags:
+        - APIs
+      operationId: "APIs.APIComercio.ObtenerPostulados"
+      summary: "Lista de postulados con el perfil para form web de clientes ecommerce"
+      parameters:
+        - name: "Solicitudesid"
+          in: query
+          required: false
+          schema:
+            type: "integer"
+            format: "int64"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ObtenerPostuladosOutput"
+        404:
+          description: "Not found"
+
+  /ActualizarSolicitudEcommerce:
+    post:
+      tags:
+        - APIs
+      operationId: "APIs.APIComercio.ActualizarSolicitudEcommerce"
+      summary: "Actualiza datos de solicitud para dejarla disponible. Se llama desde form web de clientes ecommerce"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ActualizarSolicitudEcommerceInput"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ActualizarSolicitudEcommerceOutput"
+        404:
+          description: "Not found"
+
+  /AsignarPostulacion:
+    post:
+      tags:
+        - APIs
+      operationId: "APIs.APIComercio.AsignarPostulacion"
+      summary: "Vincula el profesional seleccionado para solicitud desde ecommerce"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AsignarPostulacionInput"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AsignarPostulacionOutput"
+        404:
+          description: "Not found"
+
+  /AFeedback:
+    post:
+      tags:
+        - APIs
+      operationId: "APIs.APIComercio.AFeedback"
+      summary: "Feedback de solicitudes"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AFeedbackInput"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AFeedbackOutput"
+        404:
+          description: "Not found"
+
+components:
+  schemas:
+    ObtenerLoginOutput:
+      properties:
+        mensaje:
+          type: "string"
+        LogInSuccessful:
+          type: "boolean"
+        SdtUser:
+          description: "SDTUser"
+          $ref: "#/components/schemas/SDTUser"
+        Auth:
+          type: "string"
+
+    ObtenerComercioDatosOutput:
+      properties:
+        ComercioDatos:
+          type: "string"
+
+    ObtenerComercioForaneaOutput:
+      properties:
+        ComercioForanea:
+          type: "string"
+
+    InsertarComercioOutput:
+      properties:
+        mensaje:
+          type: "string"
+
+    ObtenerSolicitudEcommerceOutput:
+      properties:
+        SDTOut:
+          description: "SDTSolicitudes"
+          $ref: "#/components/schemas/SDTSolicitudes"
+        RestCode:
+          type: "integer"
+          format: "int32"
+        RestMessage:
+          type: "string"
+
+    ObtenerDptosEcommerceOutput:
+      properties:
+        SdtDepartamentos:
+          description: "SDTDepartamento"
+          type: array
+          items:
+            $ref: "#/components/schemas/SDTDepartamento"
+        RestCode:
+          type: "integer"
+          format: "int32"
+
+
+    ObtenerPostuladosOutput:
+      properties:
+        SDTPerfilProfesional:
+          description: "SDTPerfil Profesional"
+          type: array
+          items:
+            $ref: "#/components/schemas/APIs.SDTPerfilProfesional"
+        RestMessage:
+          type: "string"
+        RestCode:
+          type: "integer"
+          format: "int32"
+
+    ActualizarSolicitudEcommerceOutput:
+      properties:
+        RestMessage:
+          type: "string"
+        RestCode:
+          type: "integer"
+          format: "int32"
+
+    AsignarPostulacionOutput:
+      properties:
+        RestMessage:
+          type: "string"
+        RestCode:
+          type: "integer"
+          format: "int32"
+
+    AFeedbackOutput:
+      properties:
+        RestCode:
+          type: "integer"
+          format: "int32"
+        RestMessage:
+          type: "string"
+
+    ActualizarSolicitudEcommerceInput:
+      properties:
+        Solicitud:
+          description: "SDTSolicitudes"
+          $ref: "#/components/schemas/SDTSolicitudes"
+        SolicitudesEmail:
+          type: "string"
+
+    AsignarPostulacionInput:
+      properties:
+        SolicitudesID:
+          type: "integer"
+          format: "int64"
+        ProfesionalesId:
+          type: "string"
+        SolicitudesEmail:
+          type: "string"
+
+    AFeedbackInput:
+      properties:
+        SolicitudesID:
+          type: "integer"
+          format: "int64"
+        FeedbackId:
+          type: "integer"
+          format: "int64"
+        ProfesionalesId:
+          type: "string"
+        ClientesId:
+          type: "integer"
+          format: "int64"
+        Comentario:
+          type: "string"
+        Calificacion:
+          type: "integer"
+          format: "int64"
+        SolicitudesEmail:
+          type: "string"
+
+    SDTUser:
+      properties:
+        UsuariosID:
+          description: "NickName"
+          type: "string"
+        UsuariosPassw:
+          description: "Usuarios Passw"
+          type: "string"
+        usuariosNombre:
+          description: "Nombre"
+          type: "string"
+        PaisId:
+          description: "PaisId"
+          type: "string"
+        tipoUsuario:
+          description: "tipo Usuario"
+          type: "string"
+        ProfesionalesId:
+          description: "Identidad"
+          type: "string"
+        usuariosCorreo:
+          description: "Correo"
+          type: "string"
+        usuariosDireccion:
+          description: "usuarios Direccion"
+          type: "string"
+        usuariosCPostal:
+          description: "Codigo Postal"
+          type: "integer"
+          format: "int64"
+        usuariosTelefono:
+          description: "usuarios Telefono"
+          type: "string"
+        usuariosImagen:
+          description: "Imagen"
+          type: "string"
+        usuariosUrl:
+          description: "usuarios Url"
+          type: "string"
+        usuariosEstado:
+          description: "usuarios Estado"
+          type: "string"
+        SdtRoles:
+          description: "SDTRoles"
+          $ref: "#/components/schemas/SDTRoles"
+        secUserId:
+          description: "Usuario Nro."
+          type: "integer"
+          format: "int64"
+        UsuarioTieneRubro:
+          description: "Usuario Tiene Rubro"
+          type: "boolean"
+        NotificarPostulacion:
+          description: "Notificar Postulacion enestado asignada"
+          type: "boolean"
+
+
+
+    SDTSolicitudes:
+      properties:
+        SolicitudesID:
+          description: "Solicitud No:"
+          type: "integer"
+          format: "int64"
+        SolicitudesNombre:
+          description: "Nombre de la persona"
+          type: "string"
+        ProveedorNombre:
+          description: "Proveedor Nombre"
+          type: "string"
+        SolicitudesTelefono:
+          description: "Teléfono"
+          type: "string"
+        SolicitudesMail:
+          description: "Solicitudes Mail"
+          type: "string"
+        PaisID:
+          description: "PaisId"
+          type: "string"
+        DepartamentoId:
+          description: "Departamento"
+          type: "integer"
+          format: "int64"
+        DepartamentoNombre:
+          description: "Departamento"
+          type: "string"
+        DepartamentoMunicipioId:
+          description: "Identificador"
+          type: "integer"
+          format: "int64"
+        MunicipioNombre:
+          description: "Municipio"
+          type: "string"
+        ZonasID:
+          description: "Código de la Zona"
+          type: "integer"
+          format: "int64"
+        SolicitudesDireccion:
+          description: "Dirección"
+          type: "string"
+        SolicitudesAutoEnumerar:
+          description: "Solicitudes Auto Enumerar"
+          type: "integer"
+          format: "int32"
+        ProfesionalPostulado:
+          description: "Profesional Postulado"
+          type: "boolean"
+        PostulacionFechaCierre:
+          description: "Postulacion Fecha Cierre"
+          type: "string"
+          format: "date"
+        PostulacionHoraCierre:
+          description: "Postulacion Hora Cierre"
+          type: "string"
+        PostulacionTipoFecha:
+          description: "Postulaciones Tipo Fecha"
+          type: "string"
+        ServiciosNombre:
+          description: "Servicios Nombre"
+          type: "string"
+        SolicitudesNotificacion:
+          description: "¿Se notifico al cliente?"
+          type: "string"
+        SolicitudesNota:
+          description: "NOTA:"
+          type: "string"
+        MetodoPagosNombre:
+          description: "Metodo"
+          type: "string"
+        MetodoPagosID:
+          description: "Id"
+          type: "integer"
+          format: "int64"
+        SolicitudesComentario:
+          description: "Comentario"
+          type: "string"
+        SolicitudesHoraInstalacion:
+          description: "Hora"
+          type: "string"
+        SolicitudesFechaInstalacion:
+          description: "Programar la instalación para la fecha"
+          type: "string"
+          format: "date"
+        SolicitudesFechaActualizacion:
+          description: "Actualizado"
+          type: "string"
+          format: "date-time"
+        SolicitudesFechaAlta:
+          description: "Fecha de Alta"
+          type: "string"
+          format: "date"
+        SolicitudesOtros3:
+          description: "Otros"
+          type: "string"
+        SolicitudesOtros2:
+          description: "Solicitar:"
+          type: "string"
+        SolicitudesOtros1:
+          description: "Solicitudes Otros1"
+          type: "string"
+        EstadosSolNombre:
+          description: "Estados Sol Nombre"
+          type: "string"
+        EstadosSolId:
+          description: "Estados Sol Id"
+          type: "integer"
+          format: "int64"
+        EstadosSolTipo:
+          description: "Estados Sol Tipo"
+          type: "string"
+        SolicitudServicioPFinal:
+          description: "Precio Final"
+          type: "number"
+          format: "double"
+        SolicitudServicioSolCoti:
+          description: "Solicitar cotización "
+          type: "string"
+        SolicitudesTotal:
+          description: "Total"
+          type: "number"
+          format: "double"
+        SolicitudesCotizacion:
+          description: "Cotización:"
+          type: "number"
+          format: "double"
+        ModoPago:
+          description: "Modo Pago"
+          type: "string"
+        Ganancia:
+          description: "Ganancia"
+          type: "string"
+        Deduccion:
+          description: "Deduccion"
+          type: "string"
+        FeedBackId:
+          description: "Feed Back Id"
+          type: "integer"
+          format: "int64"
+        FeedBackNum:
+          description: "Feed Back Num"
+          type: "integer"
+          format: "int64"
+        FeedBackComentario:
+          description: "Comentario"
+          type: "string"
+        FeedBackFechaAlta:
+          description: "Feed Back Fecha Alta"
+          type: "string"
+          format: "date"
+        SolicitudesSubTipo:
+          description: "Sub Tipo"
+          type: "string"
+        SolicitudesSubTipoDesc:
+          description: "Solicitudes Sub Tipo Descipcion"
+          type: "string"
+        MudanzaId:
+          description: "Mudanza Id"
+          type: "integer"
+          format: "int64"
+        SolicitudServicioOrigenPago:
+          description: "Origen del Pago"
+          type: "string"
+        STComerciosNombre:
+          description: "STComercios Nombre"
+          type: "string"
+        SolicitudesComisionMetodoPago:
+          description: "Comisión del Metodo de Pago"
+          type: "number"
+          format: "double"
+
+        Items:
+          type: array
+          items:
+            description: Items
+            $ref: "#/components/schemas/SDTSolicitudes.Items_Items"
+
+        Archivo:
+          type: array
+          items:
+            description: ArchivoItem
+            $ref: "#/components/schemas/SDTSolicitudes.Archivo_ArchivoItem"
+
+
+    SDTSolicitudes.Items_Items:
+      properties:
+        SolicitudesItemsID:
+          description: "No."
+          type: "integer"
+          format: "int32"
+        RubrosId:
+          description: "Rubros Identificador "
+          type: "integer"
+          format: "int32"
+        RubrosImagen:
+          description: ""
+          type: "string"
+        MedidasNombre:
+          description: "Nombre de la Característica"
+          type: "string"
+        RubrosNombre:
+          description: "Rubro"
+          type: "string"
+        MedidasID:
+          description: "Medidas ID"
+          type: "integer"
+          format: "int64"
+        InventarioId:
+          description: "Producto"
+          type: "integer"
+          format: "int64"
+        InventarioNombre:
+          description: ""
+          type: "string"
+        InventarioImagen:
+          description: ""
+          type: "string"
+        InventarioPrecioFinal:
+          description: "Armado"
+          type: "number"
+          format: "double"
+        SolicitudesItemsCantidad:
+          description: "Cantidad"
+          type: "integer"
+          format: "int32"
+        SolicitudesItemsPrecioInstalacion:
+          description: "Instalación"
+          type: "number"
+          format: "double"
+        TextosId:
+          description: "Textos Id"
+          type: "integer"
+          format: "int64"
+        TextosTitulo:
+          description: "Titulo"
+          type: "string"
+        TextosDescripcion:
+          description: "Textos Descripcion"
+          type: "string"
+        InventarioTextosId:
+          description: "Textos Id"
+          type: "integer"
+          format: "int64"
+        InventarioTextosDescripcion:
+          description: "Inventario Textos Descripcion"
+          type: "string"
+        InventarioTextosTitulo:
+          description: "Titulo"
+          type: "string"
+        MonedaId:
+          description: "Moneda"
+          type: "integer"
+          format: "int32"
+        MonedaISOSimbolo:
+          description: "Simbolo ISO"
+          type: "string"
+
+
+      x-gx-level: "SDTSolicitudes"
+
+
+    SDTSolicitudes.Archivo_ArchivoItem:
+      properties:
+        ArchivoId:
+          description: "Archivo Id"
+          type: "integer"
+          format: "int64"
+        ArchivoTipo:
+          description: "Archivo Tipo"
+          type: "string"
+        ArchivoDireccion:
+          description: "Archivo Direccion"
+          type: "string"
+        ArchivoDescripcion:
+          description: "Archivo Descripcion"
+          type: "string"
+
+
+      x-gx-level: "SDTSolicitudes"
+
+    SDTDepartamento:
+      properties:
+        DepartamentoId:
+          description: "Departamento"
+          type: "integer"
+          format: "int64"
+        PaisID:
+          description: "PaisId"
+          type: "string"
+        DepartamentoDepartamento:
+          description: "Departamento"
+          type: "string"
+        DepartamentoAutEnuMuni:
+          description: "Departamento Aut Enu Muni"
+          type: "integer"
+          format: "int32"
+
+
+
+    SDTMunicipio:
+      properties:
+        DepartamentoMunicipioId:
+          description: "Identificador"
+          type: "integer"
+          format: "int64"
+        DepartamentoMunicipioNombre:
+          description: "Municipio"
+          type: "string"
+        ZonaCostoAdicional:
+          description: "Zona Costo Adicional"
+          type: "number"
+          format: "double"
+
+
+
+    APIs.SDTPerfilProfesional:
+      properties:
+        ProfesionalesId:
+          description: "Identidad"
+          type: "string"
+        ProfesionalesPrimerNombre:
+          description: "Primer Nombre"
+          type: "string"
+        ProfesionalesApellidoPrimero:
+          description: "Primero Apellido "
+          type: "string"
+        ProfesionalesPhoto:
+          description: "Foto"
+          type: "string"
+        TrabajosFinalizados:
+          description: "Trabajos Finalizados"
+          type: "integer"
+          format: "int64"
+        Calificacion:
+          description: "Calificacion"
+          type: "number"
+          format: "double"
+        TrabajosCalificados:
+          description: "Trabajos Calificados"
+          type: "integer"
+          format: "int64"
+        ProfesionalesExperiencia:
+          description: "Experiencia"
+          type: "string"
+        FechaPropuesta:
+          description: "Fecha Propuesta"
+          type: "string"
+          format: "date"
+        TurnoPropuesto:
+          description: "Turno Propuesto"
+          type: "string"
+        EstadoPostulacion:
+          description: "Estado Postulacion"
+          type: "string"
+
+
+
+    SDTRoles:
+      properties:
+        SecUserId:
+          description: "User Id"
+          type: "integer"
+          format: "int64"
+        usuariosNombre:
+          description: "Nombre"
+          type: "string"
+
+        Roles:
+          type: array
+          items:
+            description: Id
+            $ref: "#/components/schemas/SDTRoles.Roles_Id"
+
+
+    SDTRoles.Roles_Id:
+      properties:
+        SecRoleId:
+          description: "Role Id"
+          type: "integer"
+          format: "int32"
+        SecRoleName:
+          description: "Role Name"
+          type: "string"
+
+
+      x-gx-level: "SDTRoles"
+
+

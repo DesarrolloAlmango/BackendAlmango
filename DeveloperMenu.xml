@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="prgs.xsl"?>
+<Objects>
+   <Charset>UTF-8</Charset>
+   <Path>file:///C:/Program Files (x86)/GeneXus/GeneXus18/</Path>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>WWPBaseObjects.WWP_UserExtended</ObjName>
+      <ObjDesc>WWPBaseObjects.Extended User from GAMUser</ObjDesc>
+      <ObjLink>wwpbaseobjects.wwp_userextended.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>WWPBaseObjects.SecFunctionalityRole</ObjName>
+      <ObjDesc>WWPBaseObjects.Functionality - Role</ObjDesc>
+      <ObjLink>wwpbaseobjects.secfunctionalityrole.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>WWPBaseObjects.SecObject</ObjName>
+      <ObjDesc>WWPBaseObjects.Sec Object</ObjDesc>
+      <ObjLink>wwpbaseobjects.secobject.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>WWPBaseObjects.SecUserRole</ObjName>
+      <ObjDesc>WWPBaseObjects.Sec User Role</ObjDesc>
+      <ObjLink>wwpbaseobjects.secuserrole.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>WWPBaseObjects.WWP_Entity</ObjName>
+      <ObjDesc>WWPBaseObjects.WWP_Entity</ObjDesc>
+      <ObjLink>wwpbaseobjects.wwp_entity.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>WWPBaseObjects.Subscriptions.WWP_Subscription</ObjName>
+      <ObjDesc>WWPBaseObjects.Subscriptions.WWP_Subscription</ObjDesc>
+      <ObjLink>wwpbaseobjects.subscriptions.wwp_subscription.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>WWPBaseObjects.SMS.WWP_SMS</ObjName>
+      <ObjDesc>WWPBaseObjects.SMS.WWP_SMS</ObjDesc>
+      <ObjLink>wwpbaseobjects.sms.wwp_sms.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>WWPBaseObjects.Notifications.Web.WWP_WebNotification</ObjName>
+      <ObjDesc>WWPBaseObjects.Notifications.Web.WWP_Web Notification</ObjDesc>
+      <ObjLink>wwpbaseobjects.notifications.web.wwp_webnotification.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>WWPBaseObjects.Notifications.Web.WWP_WebClient</ObjName>
+      <ObjDesc>WWPBaseObjects.Notifications.Web.WWP_Web Client</ObjDesc>
+      <ObjLink>wwpbaseobjects.notifications.web.wwp_webclient.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>WWPBaseObjects.Notifications.Common.WWP_NotificationDefinition</ObjName>
+      <ObjDesc>WWPBaseObjects.Notifications.Common.Notification Definition</ObjDesc>
+      <ObjLink>wwpbaseobjects.notifications.common.wwp_notificationdefinition.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>WWPBaseObjects.Notifications.Common.WWP_Notification</ObjName>
+      <ObjDesc>WWPBaseObjects.Notifications.Common.Notification</ObjDesc>
+      <ObjLink>wwpbaseobjects.notifications.common.wwp_notification.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>WWPBaseObjects.Mail.WWP_MailTemplate</ObjName>
+      <ObjDesc>WWPBaseObjects.Mail.Mail Template</ObjDesc>
+      <ObjLink>wwpbaseobjects.mail.wwp_mailtemplate.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>WWPBaseObjects.Mail.WWP_Mail</ObjName>
+      <ObjDesc>WWPBaseObjects.Mail.Mail</ObjDesc>
+      <ObjLink>wwpbaseobjects.mail.wwp_mail.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>WWPBaseObjects.UserCustomizations</ObjName>
+      <ObjDesc>WWPBaseObjects.User Custom</ObjDesc>
+      <ObjLink>wwpbaseobjects.usercustomizations.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>Moneda</ObjName>
+      <ObjDesc>Moneda</ObjDesc>
+      <ObjLink>moneda.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>ProveedoresTipo</ObjName>
+      <ObjDesc>Tipo de Proveedores</ObjDesc>
+      <ObjLink>proveedorestipo.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>Actualizaciones</ObjName>
+      <ObjDesc>Actualizaciones</ObjDesc>
+      <ObjLink>actualizaciones.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>Resumen</ObjName>
+      <ObjDesc>Resumen</ObjDesc>
+      <ObjLink>resumen.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>Publicaciones</ObjName>
+      <ObjDesc>Publicaciones</ObjDesc>
+      <ObjLink>publicaciones.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>Mensajes</ObjName>
+      <ObjDesc>Mensajes</ObjDesc>
+      <ObjLink>mensajes.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>Post</ObjName>
+      <ObjDesc>Post</ObjDesc>
+      <ObjLink>post.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>ClientesDatos</ObjName>
+      <ObjDesc>Clientes Datos</ObjDesc>
+      <ObjLink>clientesdatos.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>ProveedorSolicitudes</ObjName>
+      <ObjDesc>Proveedor Solicitudes</ObjDesc>
+      <ObjLink>proveedorsolicitudes.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>WWPBaseObjects.Discussions.WWP_DiscussionMessage</ObjName>
+      <ObjDesc>WWPBaseObjects.Discussions.Discussion Message</ObjDesc>
+      <ObjLink>wwpbaseobjects.discussions.wwp_discussionmessage.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>WWPBaseObjects.Discussions.WWP_DiscussionMessageMention</ObjName>
+      <ObjDesc>WWPBaseObjects.Discussions.Discussion Message Mention</ObjDesc>
+      <ObjLink>wwpbaseobjects.discussions.wwp_discussionmessagemention.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>Plog</ObjName>
+      <ObjDesc>Plog</ObjDesc>
+      <ObjLink>plog.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>CapacidadProductiva</ObjName>
+      <ObjDesc>Capacidad Productiva</ObjDesc>
+      <ObjLink>capacidadproductiva.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>CapacidadProductivaAux</ObjName>
+      <ObjDesc>Capacidad Productiva Aux</ObjDesc>
+      <ObjLink>capacidadproductivaaux.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>TablaAux</ObjName>
+      <ObjDesc>Tabla Aux</ObjDesc>
+      <ObjLink>tablaaux.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>APIs.Token</ObjName>
+      <ObjDesc>APIs.Token</ObjDesc>
+      <ObjLink>apis.token.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>CancelacionTipificacion</ObjName>
+      <ObjDesc>Cancelacion Tipificacion</ObjDesc>
+      <ObjLink>cancelaciontipificacion.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>Ticket</ObjName>
+      <ObjDesc>Ticket</ObjDesc>
+      <ObjLink>ticket.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>TicketMotivo</ObjName>
+      <ObjDesc>Ticket Motivo</ObjDesc>
+      <ObjLink>ticketmotivo.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>Home</ObjName>
+      <ObjDesc>WWP_HomeTitle</ObjDesc>
+      <ObjLink>home.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWPBaseObjects.SecFunctionalityWW</ObjName>
+      <ObjDesc>WWPBaseObjects. Functionality</ObjDesc>
+      <ObjLink>wwpbaseobjects.secfunctionalityww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWPBaseObjects.SecRoleWW</ObjName>
+      <ObjDesc>WWPBaseObjects. Role</ObjDesc>
+      <ObjLink>wwpbaseobjects.secroleww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWPBaseObjects.SecUserWW</ObjName>
+      <ObjDesc>WWPBaseObjects. User</ObjDesc>
+      <ObjLink>wwpbaseobjects.secuserww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWPBaseObjects.LogIn</ObjName>
+      <ObjDesc>WWPBaseObjects.Log In</ObjDesc>
+      <ObjLink>wwpbaseobjects.login.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWPBaseObjects.SecChangePassword</ObjName>
+      <ObjDesc>WWPBaseObjects.Change password</ObjDesc>
+      <ObjLink>wwpbaseobjects.secchangepassword.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWPBaseObjects.Subscriptions.WWP_SubscriptionsSettings</ObjName>
+      <ObjDesc>WWPBaseObjects.Subscriptions.Manage my Subscriptions</ObjDesc>
+      <ObjLink>wwpbaseobjects.subscriptions.wwp_subscriptionssettings.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWPBaseObjects.Notifications.Common.WWP_VisualizeAllNotifications</ObjName>
+      <ObjDesc>WWPBaseObjects.Notifications.Common.Visualize all notifications</ObjDesc>
+      <ObjLink>wwpbaseobjects.notifications.common.wwp_visualizeallnotifications.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>PaisWW</ObjName>
+      <ObjDesc> Pais</ObjDesc>
+      <ObjLink>paisww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>DepartamentoWW</ObjName>
+      <ObjDesc>Departamentoes</ObjDesc>
+      <ObjLink>departamentoww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>InventarioWW</ObjName>
+      <ObjDesc> Inventario</ObjDesc>
+      <ObjLink>inventarioww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>RubrosWW</ObjName>
+      <ObjDesc>Rubros</ObjDesc>
+      <ObjLink>rubrosww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>RubrosMedidasWW</ObjName>
+      <ObjDesc>Rubros Medidas y Precios</ObjDesc>
+      <ObjLink>rubrosmedidasww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>MetodoPagosWW</ObjName>
+      <ObjDesc>Metodo Pagoss</ObjDesc>
+      <ObjLink>metodopagosww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>HistoricoSolicitudesWW</ObjName>
+      <ObjDesc>Historico Solicitudes</ObjDesc>
+      <ObjLink>historicosolicitudesww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>TextosWW</ObjName>
+      <ObjDesc>Textos</ObjDesc>
+      <ObjLink>textosww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ClientesWW</ObjName>
+      <ObjDesc>Clientes</ObjDesc>
+      <ObjLink>clientesww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ProfComisionesWW</ObjName>
+      <ObjDesc>Comisiones para Profesionales</ObjDesc>
+      <ObjLink>profcomisionesww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>CentroCostosWW</ObjName>
+      <ObjDesc>Centro de Costoss</ObjDesc>
+      <ObjLink>centrocostosww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ListaCostosWW</ObjName>
+      <ObjDesc>Lista de Costoss</ObjDesc>
+      <ObjLink>listacostosww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>DocumentacionWW</ObjName>
+      <ObjDesc>Documentacions</ObjDesc>
+      <ObjLink>documentacionww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>VincularTrnWW</ObjName>
+      <ObjDesc>Vincular Trns</ObjDesc>
+      <ObjLink>vinculartrnww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ComisionesWW</ObjName>
+      <ObjDesc>Comisiones</ObjDesc>
+      <ObjLink>comisionesww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ComisionesAgruparWW</ObjName>
+      <ObjDesc>Agrupación de Comisiones</ObjDesc>
+      <ObjLink>comisionesagruparww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>FeedBackWW</ObjName>
+      <ObjDesc> Feed Back</ObjDesc>
+      <ObjLink>feedbackww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ProveedorWW</ObjName>
+      <ObjDesc>Comercios</ObjDesc>
+      <ObjLink>proveedorww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>SolicitudesRelacionWW</ObjName>
+      <ObjDesc> Solicitudes Relacion</ObjDesc>
+      <ObjLink>solicitudesrelacionww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ConfigGenWW</ObjName>
+      <ObjDesc> Configuración General</ObjDesc>
+      <ObjLink>configgenww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ConexionesWW</ObjName>
+      <ObjDesc> Conexiones</ObjDesc>
+      <ObjLink>conexionesww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>OperacionesWW</ObjName>
+      <ObjDesc> Operaciones</ObjDesc>
+      <ObjLink>operacionesww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ListaWW</ObjName>
+      <ObjDesc> Lista</ObjDesc>
+      <ObjLink>listaww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ZonasWW</ObjName>
+      <ObjDesc> Zonas</ObjDesc>
+      <ObjLink>zonasww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ProfesionalesWW</ObjName>
+      <ObjDesc> Profesionales</ObjDesc>
+      <ObjLink>profesionalesww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ListaAgrUserWW</ObjName>
+      <ObjDesc> Agrupar Comercios</ObjDesc>
+      <ObjLink>listaagruserww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ListaAgrupacionWW</ObjName>
+      <ObjDesc> Lista Agrupacion</ObjDesc>
+      <ObjLink>listaagrupacionww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>CiudadWW</ObjName>
+      <ObjDesc> Ciudad</ObjDesc>
+      <ObjLink>ciudadww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ReportesProfesionales</ObjName>
+      <ObjDesc>Reportes Profesionales</ObjDesc>
+      <ObjLink>reportesprofesionales.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ReporteProveedores</ObjName>
+      <ObjDesc>Reporte de Proveedores</ObjDesc>
+      <ObjLink>reporteproveedores.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ReporteSolicitudesWP</ObjName>
+      <ObjDesc>Reporte Solicitudes</ObjDesc>
+      <ObjLink>reportesolicitudeswp.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWPBaseObjects.Reportes</ObjName>
+      <ObjDesc>WWPBaseObjects.Reportes</ObjDesc>
+      <ObjLink>wwpbaseobjects.reportes.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>MotivoWW</ObjName>
+      <ObjDesc> Motivo</ObjDesc>
+      <ObjLink>motivoww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>IncidenciaWW</ObjName>
+      <ObjDesc> Incidencia</ObjDesc>
+      <ObjLink>incidenciaww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ParametrosWW</ObjName>
+      <ObjDesc> Parametros</ObjDesc>
+      <ObjLink>parametrosww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WalletWW</ObjName>
+      <ObjDesc> Saldos y Cuentas</ObjDesc>
+      <ObjLink>walletww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ComercioWW</ObjName>
+      <ObjDesc> Datos Generales del Comercio</ObjDesc>
+      <ObjLink>comercioww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>Comercios.ListaSolicitudes</ObjName>
+      <ObjDesc>Comercios.Lista Solicitudes</ObjDesc>
+      <ObjLink>comercios.listasolicitudes.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>MailDesignWW</ObjName>
+      <ObjDesc> Mail Design</ObjDesc>
+      <ObjLink>maildesignww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>IncidenciasLista</ObjName>
+      <ObjDesc>Lista de Incidencias</ObjDesc>
+      <ObjLink>incidenciaslista.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>BancoWW</ObjName>
+      <ObjDesc> Bancos</ObjDesc>
+      <ObjLink>bancoww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>test</ObjName>
+      <ObjDesc>test</ObjDesc>
+      <ObjLink>test.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>Comercios.ListaNegraCOM</ObjName>
+      <ObjDesc>Comercios.Lista Negra del Comercio</ObjDesc>
+      <ObjLink>comercios.listanegracom.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>usuariosWW</ObjName>
+      <ObjDesc> usuarios</ObjDesc>
+      <ObjLink>usuariosww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>MailSettingWW</ObjName>
+      <ObjDesc> Mail Setting</ObjDesc>
+      <ObjLink>mailsettingww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>Comercios.ReporteCOM</ObjName>
+      <ObjDesc>Comercios.Reporte del comercio</ObjDesc>
+      <ObjLink>comercios.reportecom.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>EstadosWW</ObjName>
+      <ObjDesc> Estados</ObjDesc>
+      <ObjLink>estadosww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>EstadosNotificacionWW</ObjName>
+      <ObjDesc> Estados Notificacion</ObjDesc>
+      <ObjLink>estadosnotificacionww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ADMNuevoRegistros</ObjName>
+      <ObjDesc>Administrar Nuevos Registros</ObjDesc>
+      <ObjLink>admnuevoregistros.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>TipoCuentaWW</ObjName>
+      <ObjDesc> Tipo Cuenta</ObjDesc>
+      <ObjLink>tipocuentaww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>MudanzaWW</ObjName>
+      <ObjDesc> Mudanza</ObjDesc>
+      <ObjLink>mudanzaww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ParametroMudanzaWW</ObjName>
+      <ObjDesc> Parametro Mudanza</ObjDesc>
+      <ObjLink>parametromudanzaww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WebPanel1</ObjName>
+      <ObjDesc>Web Panel1</ObjDesc>
+      <ObjLink>webpanel1.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>Mudanza1WW</ObjName>
+      <ObjDesc>Mudanza1 WW</ObjDesc>
+      <ObjLink>mudanza1ww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>Dashboard.Dashboard1</ObjName>
+      <ObjDesc>Dashboard.Panel de Control</ObjDesc>
+      <ObjLink>dashboard.dashboard1.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>CierresWW</ObjName>
+      <ObjDesc> Cierres</ObjDesc>
+      <ObjLink>cierresww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>HIS_SolicitudesWW</ObjName>
+      <ObjDesc> HIS_Solicitudes</ObjDesc>
+      <ObjLink>his_solicitudesww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>MapeoWW</ObjName>
+      <ObjDesc> Mapeo</ObjDesc>
+      <ObjLink>mapeoww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>SolicitudesProfesionalesExport</ObjName>
+      <ObjDesc>Solicitudes Profesionales Export</ObjDesc>
+      <ObjLink>solicitudesprofesionalesexport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>SolicitudesReporteWW</ObjName>
+      <ObjDesc> Solicitudes Reporte</ObjDesc>
+      <ObjLink>solicitudesreporteww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ServiciosWW</ObjName>
+      <ObjDesc> Servicios</ObjDesc>
+      <ObjLink>serviciosww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>PostulacionesWW</ObjName>
+      <ObjDesc> Postulaciones</ObjDesc>
+      <ObjLink>postulacionesww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WP_TestIntegracionFenicio</ObjName>
+      <ObjDesc>WP_Test Integracion Fenicio</ObjDesc>
+      <ObjLink>wp_testintegracionfenicio.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ProfesionalesRestriccionWW</ObjName>
+      <ObjDesc> Lista Profesionales Restriccion</ObjDesc>
+      <ObjLink>profesionalesrestriccionww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WPLiquidacionCentro</ObjName>
+      <ObjDesc>Centro de Liquidacion</ObjDesc>
+      <ObjLink>wpliquidacioncentro.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>CuponWW</ObjName>
+      <ObjDesc> Cupon</ObjDesc>
+      <ObjLink>cuponww.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>WWPBaseObjects.WWP_DownloadReport</ObjName>
+      <ObjDesc>WWPBaseObjects.Download Report</ObjDesc>
+      <ObjLink>wwpbaseobjects.wwp_downloadreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>wwpbaseobjects.SecFunctionalityFilterParentWWExportReport</ObjName>
+      <ObjDesc>WWPBaseObjects.Sec Functionality Filter Parent WWExport Report</ObjDesc>
+      <ObjLink>wwpbaseobjects.asecfunctionalityfilterparentwwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>wwpbaseobjects.SecFunctionalityWWExportReport</ObjName>
+      <ObjDesc>WWPBaseObjects.Sec Functionality WWExport Report</ObjDesc>
+      <ObjLink>wwpbaseobjects.asecfunctionalitywwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>wwpbaseobjects.SecRoleWWExportReport</ObjName>
+      <ObjDesc>WWPBaseObjects.Sec Role WWExport Report</ObjDesc>
+      <ObjLink>wwpbaseobjects.asecrolewwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>wwpbaseobjects.SecUserWWExportReport</ObjName>
+      <ObjDesc>WWPBaseObjects.Sec User WWExport Report</ObjDesc>
+      <ObjLink>wwpbaseobjects.asecuserwwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>PaisWWExportReport</ObjName>
+      <ObjDesc>Pais WWExport Report</ObjDesc>
+      <ObjLink>paiswwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>DepartamentoWWExportReport</ObjName>
+      <ObjDesc>Departamento WWExport Report</ObjDesc>
+      <ObjLink>departamentowwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>InventarioWWExportReport</ObjName>
+      <ObjDesc>Inventario WWExport Report</ObjDesc>
+      <ObjLink>inventariowwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>RubrosWWExportReport</ObjName>
+      <ObjDesc>Rubros WWExport Report</ObjDesc>
+      <ObjLink>rubroswwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>RubrosMedidasWWExportReport</ObjName>
+      <ObjDesc>Rubros Medidas WWExport Report</ObjDesc>
+      <ObjLink>rubrosmedidaswwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>MetodoPagosWWExportReport</ObjName>
+      <ObjDesc>Metodo Pagos WWExport Report</ObjDesc>
+      <ObjLink>metodopagoswwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>HistoricoSolicitudesWWExportReport</ObjName>
+      <ObjDesc>Historico Solicitudes WWExport Report</ObjDesc>
+      <ObjLink>historicosolicitudeswwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>TextosWWExportReport</ObjName>
+      <ObjDesc>Textos WWExport Report</ObjDesc>
+      <ObjLink>textoswwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>ClientesWWExportReport</ObjName>
+      <ObjDesc>Clientes WWExport Report</ObjDesc>
+      <ObjLink>clienteswwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>ProfComisionesWWExportReport</ObjName>
+      <ObjDesc>Prof Comisiones WWExport Report</ObjDesc>
+      <ObjLink>profcomisioneswwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>CentroCostosWWExportReport</ObjName>
+      <ObjDesc>Centro Costos WWExport Report</ObjDesc>
+      <ObjLink>centrocostoswwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>ListaCostosWWExportReport</ObjName>
+      <ObjDesc>Lista Costos WWExport Report</ObjDesc>
+      <ObjLink>listacostoswwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>DocumentacionWWExportReport</ObjName>
+      <ObjDesc>Documentacion WWExport Report</ObjDesc>
+      <ObjLink>documentacionwwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>VincularTrnWWExportReport</ObjName>
+      <ObjDesc>Vincular Trn WWExport Report</ObjDesc>
+      <ObjLink>vinculartrnwwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>ComisionesWWExportReport</ObjName>
+      <ObjDesc>Comisiones WWExport Report</ObjDesc>
+      <ObjLink>comisioneswwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>ComisionesAgruparWWExportReport</ObjName>
+      <ObjDesc>Comisiones Agrupar WWExport Report</ObjDesc>
+      <ObjLink>comisionesagruparwwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>ProveedorWWExportReport</ObjName>
+      <ObjDesc>Proveedor WWExport Report</ObjDesc>
+      <ObjLink>proveedorwwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>ConfigGenWWExportReport</ObjName>
+      <ObjDesc>Config Gen WWExport Report</ObjDesc>
+      <ObjLink>configgenwwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>ConexionesWWExportReport</ObjName>
+      <ObjDesc>Conexiones WWExport Report</ObjDesc>
+      <ObjLink>conexioneswwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>OperacionesWWExportReport</ObjName>
+      <ObjDesc>Operaciones WWExport Report</ObjDesc>
+      <ObjLink>operacioneswwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>ListaWWExportReport</ObjName>
+      <ObjDesc>Lista WWExport Report</ObjDesc>
+      <ObjLink>listawwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>ZonasWWExportReport</ObjName>
+      <ObjDesc>Zonas WWExport Report</ObjDesc>
+      <ObjLink>zonaswwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>ListaAgrUserWWExportReport</ObjName>
+      <ObjDesc>Lista Agr User WWExport Report</ObjDesc>
+      <ObjLink>listaagruserwwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>ListaAgrupacionWWExportReport</ObjName>
+      <ObjDesc>Lista Agrupacion WWExport Report</ObjDesc>
+      <ObjLink>listaagrupacionwwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>CiudadWWExportReport</ObjName>
+      <ObjDesc>Ciudad WWExport Report</ObjDesc>
+      <ObjLink>ciudadwwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>SolicitudesWWExportReport</ObjName>
+      <ObjDesc>Solicitudes WWExport Report</ObjDesc>
+      <ObjLink>solicitudeswwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>ProfesionalesWWExportReport</ObjName>
+      <ObjDesc>Profesionales WWExport Report</ObjDesc>
+      <ObjLink>profesionaleswwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>MotivoWWExportReport</ObjName>
+      <ObjDesc>Motivo WWExport Report</ObjDesc>
+      <ObjLink>motivowwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>IncidenciaWWExportReport</ObjName>
+      <ObjDesc>Incidencia WWExport Report</ObjDesc>
+      <ObjLink>incidenciawwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>WalletWWExportReport</ObjName>
+      <ObjDesc>Wallet WWExport Report</ObjDesc>
+      <ObjLink>walletwwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>MailDesignWWExportReport</ObjName>
+      <ObjDesc>Mail Design WWExport Report</ObjDesc>
+      <ObjLink>maildesignwwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>BancoWWExportReport</ObjName>
+      <ObjDesc>Banco WWExport Report</ObjDesc>
+      <ObjLink>bancowwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>MailSettingWWExportReport</ObjName>
+      <ObjDesc>Mail Setting WWExport Report</ObjDesc>
+      <ObjLink>mailsettingwwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>EstadosWWExportReport</ObjName>
+      <ObjDesc>Estados WWExport Report</ObjDesc>
+      <ObjLink>estadoswwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>EstadosNotificacionWWExportReport</ObjName>
+      <ObjDesc>Estados Notificacion WWExport Report</ObjDesc>
+      <ObjLink>estadosnotificacionwwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>TipoCuentaWWExportReport</ObjName>
+      <ObjDesc>Tipo Cuenta WWExport Report</ObjDesc>
+      <ObjLink>tipocuentawwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>MudanzaWWExportReport</ObjName>
+      <ObjDesc>Mudanza WWExport Report</ObjDesc>
+      <ObjLink>mudanzawwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>ParametroMudanzaWWExportReport</ObjName>
+      <ObjDesc>Parametro Mudanza WWExport Report</ObjDesc>
+      <ObjLink>parametromudanzawwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>Mudanza1WWExportReport</ObjName>
+      <ObjDesc>Mudanza1 WWExport Report</ObjDesc>
+      <ObjLink>mudanza1wwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>RESTTesterTool</ObjName>
+      <ObjDesc>RESTTester Tool</ObjDesc>
+      <ObjLink>aresttestertool.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>CierresWWExportReport</ObjName>
+      <ObjDesc>Cierres WWExport Report</ObjDesc>
+      <ObjLink>cierreswwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>HIS_SolicitudesWWExportReport</ObjName>
+      <ObjDesc>HIS_Solicitudes WWExport Report</ObjDesc>
+      <ObjLink>his_solicitudeswwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>MapeoWWExportReport</ObjName>
+      <ObjDesc>Mapeo WWExport Report</ObjDesc>
+      <ObjLink>mapeowwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>PostulacionesWWExportReport</ObjName>
+      <ObjDesc>Postulaciones WWExport Report</ObjDesc>
+      <ObjLink>postulacioneswwexportreport.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>ProfesionalesRestriccionWWExportReport</ObjName>
+      <ObjDesc>Profesionales Restriccion WWExport Report</ObjDesc>
+      <ObjLink>profesionalesrestriccionwwexportreport.aspx</ObjLink>
+   </Object>
+</Objects>
