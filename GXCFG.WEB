@@ -69,7 +69,7 @@
       <add  key="EXPOSE_METADATA" value="0"/>
       <add  key="SMART_CACHING" value="0"/>
       <add  key="wcf:serviceHostingEnvironment:useClassicReadEntityBodyMode" value="true"/>
-      <add  key="CACHE_INVALIDATION_TOKEN" value="20261061523845"/>
+      <add  key="CACHE_INVALIDATION_TOKEN" value="202610142034371"/>
       <add  key="CORS_ALLOW_ORIGIN" value=""/>
    </appSettings>
    <languages >

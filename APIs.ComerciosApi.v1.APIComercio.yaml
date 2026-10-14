@@ -2,7 +2,7 @@ openapi: 3.0.0
 info:
   title: "APIComercio"
   description: "APIComercio integracion externa"
-  version: "20261005180337"
+  version: "20261014183502"
 servers:
   - url: http://localhost/AlmangoXV1NETFramework/v1/comercios
 paths:

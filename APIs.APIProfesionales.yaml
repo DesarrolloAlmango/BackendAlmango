@@ -2,7 +2,7 @@ openapi: 3.0.0
 info:
   title: "APIProfesionales"
   description: "APIProfesionales"
-  version: "20261005180337"
+  version: "20261014183502"
 servers:
   - url: http://localhost/AlmangoXV1NETFramework/APIs/APIProfesionales
 paths:
@@ -52,6 +52,29 @@ paths:
         404:
           description: "Not found"
 
+  /RecuperarPassword:
+    post:
+      tags:
+        - APIs
+      operationId: "APIs.APIProfesionales.RecuperarPassword"
+      summary: "RecuperarPassword"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RecuperarPasswordInput"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RecuperarPasswordOutput"
+        404:
+          description: "Not found"
+
   /AIncidenciaApi:
     post:
       tags:
@@ -95,6 +118,29 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ARubroPendienteProfOutput"
+        404:
+          description: "Not found"
+
+  /ARubroPendienteProf_V2:
+    post:
+      tags:
+        - APIs
+      operationId: "APIs.APIProfesionales.ARubroPendienteProf_V2"
+      summary: "Crea una solicitud de habilitacion de rubro para el profesional en estado inicial pendiente"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ARubroPendienteProf_V2Input"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ARubroPendienteProf_V2Output"
         404:
           description: "Not found"
 
@@ -187,6 +233,29 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/AltaUsuarioOutput"
+        404:
+          description: "Not found"
+
+  /AltaUsuario_V2:
+    post:
+      tags:
+        - APIs
+      operationId: "APIs.APIProfesionales.AltaUsuario_V2"
+      summary: "Alta de usuario y cuenta de pfofesional con rubros y servicios"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AltaUsuario_V2Input"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AltaUsuario_V2Output"
         404:
           description: "Not found"
 
@@ -414,6 +483,13 @@ paths:
             type: "integer"
             format: "int64"
 
+        - name: "Zonaid"
+          in: query
+          required: false
+          schema:
+            type: "integer"
+            format: "int64"
+
         - name: "Filtrorubro"
           in: query
           required: false
@@ -593,6 +669,20 @@ paths:
           schema:
             type: "string"
             
+
+        - name: "Currentpage"
+          in: query
+          required: false
+          schema:
+            type: "integer"
+            format: "int32"
+
+        - name: "Pagesize"
+          in: query
+          required: false
+          schema:
+            type: "integer"
+            format: "int32"
       
       responses:
         200:
@@ -663,6 +753,37 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/OListaRubroOutput"
+        404:
+          description: "Not found"
+
+  /OListaRubro_V2:
+    get:
+      tags:
+        - APIs
+      operationId: "APIs.APIProfesionales.OListaRubro_V2"
+      summary: "Obtengo listado de rubros con estado de relacion para un profesional o general"
+      parameters:
+        - name: "User"
+          in: query
+          required: false
+          schema:
+            type: "string"
+            
+
+        - name: "Profesionalesid"
+          in: query
+          required: false
+          schema:
+            type: "string"
+            
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OListaRubro_V2Output"
         404:
           description: "Not found"
 
@@ -1127,6 +1248,37 @@ paths:
         404:
           description: "Not found"
 
+  /OServiciosProf_V2:
+    get:
+      tags:
+        - APIs
+      operationId: "APIs.APIProfesionales.OServiciosProf_V2"
+      summary: "Obtiene servicios de trabajo habilitados para un profesional con estado del vinculo"
+      parameters:
+        - name: "User"
+          in: query
+          required: false
+          schema:
+            type: "string"
+            
+
+        - name: "Profesionalesid"
+          in: query
+          required: false
+          schema:
+            type: "string"
+            
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OServiciosProf_V2Output"
+        404:
+          description: "Not found"
+
   /AServicioPendienteProf:
     post:
       tags:
@@ -1147,6 +1299,67 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/AServicioPendienteProfOutput"
+        404:
+          description: "Not found"
+
+  /AServicioPendienteProf_V2:
+    post:
+      tags:
+        - APIs
+      operationId: "APIs.APIProfesionales.AServicioPendienteProf_V2"
+      summary: "Activa servicio de trabajo con estado pendiente para un profesional analizando bloqueados"
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AServicioPendienteProf_V2Input"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AServicioPendienteProf_V2Output"
+        404:
+          description: "Not found"
+
+  /ORubrosPublicos:
+    get:
+      tags:
+        - APIs
+      operationId: "APIs.APIProfesionales.ORubrosPublicos"
+      summary: "Obtiene servicios de trabajo habilitados para un profesional"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/APIs.SDTRubros"  
+
+        404:
+          description: "Not found"
+
+  /OServiciosPublicos:
+    get:
+      tags:
+        - APIs
+      operationId: "APIs.APIProfesionales.OServiciosPublicos"
+      summary: "Obtiene servicios de trabajo habilitados para un profesional"
+      
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SDTServicios"
+
         404:
           description: "Not found"
 
@@ -1172,6 +1385,14 @@ components:
           type: "integer"
           format: "int32"
 
+    RecuperarPasswordOutput:
+      properties:
+        RestMessage:
+          type: "string"
+        RestCode:
+          type: "integer"
+          format: "int32"
+
     AIncidenciaApiOutput:
       properties:
         RestMessage:
@@ -1181,6 +1402,16 @@ components:
           format: "int32"
 
     ARubroPendienteProfOutput:
+      properties:
+        IsOk:
+          type: "boolean"
+        RestCode:
+          type: "integer"
+          format: "int32"
+        RestMessage:
+          type: "string"
+
+    ARubroPendienteProf_V2Output:
       properties:
         IsOk:
           type: "boolean"
@@ -1215,6 +1446,16 @@ components:
           format: "int32"
 
     AltaUsuarioOutput:
+      properties:
+        ok:
+          type: "boolean"
+        RestMessage:
+          type: "string"
+        RestCode:
+          type: "integer"
+          format: "int32"
+
+    AltaUsuario_V2Output:
       properties:
         ok:
           type: "boolean"
@@ -1401,6 +1642,19 @@ components:
         RestMessage:
           type: "string"
 
+    OListaRubro_V2Output:
+      properties:
+        SDTRubros:
+          description: "SDTRubros"
+          type: array
+          items:
+            $ref: "#/components/schemas/APIs.SDTRubros"
+        RestCode:
+          type: "integer"
+          format: "int32"
+        RestMessage:
+          type: "string"
+
     OPerfilProfOutput:
       properties:
         SDTProfesionales:
@@ -1549,6 +1803,17 @@ components:
         RestMessage:
           type: "string"
 
+    OServiciosProf_V2Output:
+      properties:
+        SdtServicios:
+          description: "SDTServicios"
+          $ref: "#/components/schemas/SDTServicios_Item"
+        RestCode:
+          type: "integer"
+          format: "int32"
+        RestMessage:
+          type: "string"
+
     AServicioPendienteProfOutput:
       properties:
         RestCode:
@@ -1556,6 +1821,16 @@ components:
           format: "int32"
         RestMessage:
           type: "string"
+
+    AServicioPendienteProf_V2Output:
+      properties:
+        RestCode:
+          type: "integer"
+          format: "int32"
+        RestMessage:
+          type: "string"
+
+
 
     LoginInput:
       properties:
@@ -1569,6 +1844,13 @@ components:
         usuariosId:
           type: "string"
         ProfesionalesId:
+          type: "string"
+
+    RecuperarPasswordInput:
+      properties:
+        usuario:
+          type: "string"
+        Correo:
           type: "string"
 
     AIncidenciaApiInput:
@@ -1588,6 +1870,16 @@ components:
           type: "string"
 
     ARubroPendienteProfInput:
+      properties:
+        User:
+          type: "string"
+        ProfesionalesId:
+          type: "string"
+        RubroIdSolicitado:
+          type: "integer"
+          format: "int32"
+
+    ARubroPendienteProf_V2Input:
       properties:
         User:
           type: "string"
@@ -1631,6 +1923,18 @@ components:
           format: "int64"
 
     AltaUsuarioInput:
+      properties:
+        usuariosId:
+          type: "string"
+        Password:
+          type: "string"
+        usuariosTipo:
+          type: "string"
+        SdtProfesionalesRegistro:
+          description: "SDTProfesionales"
+          $ref: "#/components/schemas/SDTProfesionales"
+
+    AltaUsuario_V2Input:
       properties:
         usuariosId:
           type: "string"
@@ -1694,6 +1998,7 @@ components:
 
 
 
+
     ModificarAvatarInput:
       properties:
         User:
@@ -1702,6 +2007,7 @@ components:
           type: "string"
         AvatarStr:
           type: "string"
+
 
 
 
@@ -1724,6 +2030,18 @@ components:
         ServicioIdSolicitado:
           type: "integer"
           format: "int64"
+
+    AServicioPendienteProf_V2Input:
+      properties:
+        User:
+          type: "string"
+        ProfesionalesId:
+          type: "string"
+        ServicioIdSolicitado:
+          type: "integer"
+          format: "int64"
+
+
 
     SDTUser:
       properties:
@@ -1849,7 +2167,25 @@ components:
           type: "integer"
           format: "int32"
 
+        Especialidades:
+          type: array
+          items:
+            description: EspecialidadesItem
+            $ref: "#/components/schemas/SDTProfesionales.Especialidades_EspecialidadesItem"
 
+
+    SDTProfesionales.Especialidades_EspecialidadesItem:
+      properties:
+        Id:
+          description: "Id"
+          type: "integer"
+          format: "int32"
+        Tipo:
+          description: "Tipo"
+          type: "string"
+
+
+      x-gx-level: "SDTProfesionales"
 
     SDTDepartamento:
       properties:
@@ -2251,6 +2587,10 @@ components:
         RubrosNombre:
           description: "Rubro"
           type: "string"
+        RubroEstadoId:
+          description: "Estados"
+          type: "integer"
+          format: "int64"
 
 
 
@@ -2812,11 +3152,42 @@ components:
         ServiciosNombre:
           description: "Servicios"
           type: "string"
+        ServiciosEstado:
+          description: "Servicios Estado"
+          type: "string"
         Imagen:
           description: "Imagen"
           type: "string"
 
+        Categorias:
+          type: array
+          items:
+            description: CategoriasItem
+            $ref: "#/components/schemas/SDTServicios.Categorias_CategoriasItem"
 
+
+    SDTServicios.Categorias_CategoriasItem:
+      properties:
+        CategoriasId:
+          description: "Categorias Id"
+          type: "integer"
+          format: "int64"
+        CategoriasNombre:
+          description: "Categorias Nombre"
+          type: "string"
+        CategoriasHorasEstimadas:
+          description: "Categorias Horas Estimadas"
+          type: "integer"
+          format: "int32"
+        CategoriasUnidadMedida:
+          description: "Categorias Unidad Medida"
+          type: "string"
+        CategoriasActivo:
+          description: "Categorias Activo"
+          type: "boolean"
+
+
+      x-gx-level: "SDTServicios"
 
     SDTRoles:
       properties:

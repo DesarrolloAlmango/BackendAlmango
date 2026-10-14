@@ -2,7 +2,7 @@ openapi: 3.0.0
 info:
   title: "APIPostulacionSubasta"
   description: "APIPostulacion Subasta"
-  version: "20261005180337"
+  version: "20261014183502"
 servers:
   - url: http://localhost/AlmangoXV1NETFramework/APIPostulacionSubasta
 paths:

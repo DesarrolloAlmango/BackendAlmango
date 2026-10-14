@@ -30,6 +30,18 @@
 },
 {
 "Verb":"POST",
+"Name":"recuperarpassword",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_recuperarpassword",
+"Implementation":"APIs\\RecuperarPassword",
+"PathRegexp":"recuperarpassword",
+"Path":"recuperarpassword"
+
+},
+{
+"Verb":"POST",
 "Name":"aincidenciaapi",
 "Bodystyle":"Wrapped",
 "HeaderVariables": [],
@@ -50,6 +62,18 @@
 "Implementation":"APIs\\ARubroPendienteProf",
 "PathRegexp":"arubropendienteprof",
 "Path":"arubropendienteprof"
+
+},
+{
+"Verb":"POST",
+"Name":"arubropendienteprof_v2",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_arubropendienteprof_v2",
+"Implementation":"APIs\\ARubroPendienteProf_V2",
+"PathRegexp":"arubropendienteprof_v2",
+"Path":"arubropendienteprof_v2"
 
 },
 {
@@ -98,6 +122,18 @@
 "Implementation":"APIs\\AUsuarioProfesional",
 "PathRegexp":"altausuario",
 "Path":"altausuario"
+
+},
+{
+"Verb":"POST",
+"Name":"altausuario_v2",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_altausuario_v2",
+"Implementation":"APIs\\AUsuarioProfesional_V2",
+"PathRegexp":"altausuario_v2",
+"Path":"altausuario_v2"
 
 },
 {
@@ -254,6 +290,18 @@
 "Verb":"GET",
 "PathRegexp":"olistarubro",
 "Path":"olistarubro"
+
+},
+{
+"Name":"olistarubro_v2",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_olistarubro_v2",
+"Implementation":"APIs\\OListaRubro_V2",
+"Verb":"GET",
+"PathRegexp":"olistarubro_v2",
+"Path":"olistarubro_v2"
 
 },
 {
@@ -437,6 +485,18 @@
 
 },
 {
+"Name":"oserviciosprof_v2",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_oserviciosprof_v2",
+"Implementation":"APIs\\OServiciosProf_V2",
+"Verb":"GET",
+"PathRegexp":"oserviciosprof_v2",
+"Path":"oserviciosprof_v2"
+
+},
+{
 "Verb":"POST",
 "Name":"aserviciopendienteprof",
 "Bodystyle":"Wrapped",
@@ -446,5 +506,41 @@
 "Implementation":"APIs\\AServicioPendienteProf",
 "PathRegexp":"aserviciopendienteprof",
 "Path":"aserviciopendienteprof"
+
+},
+{
+"Verb":"POST",
+"Name":"aserviciopendienteprof_v2",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_aserviciopendienteprof_v2",
+"Implementation":"APIs\\AServicioPendienteProf_V2",
+"PathRegexp":"aserviciopendienteprof_v2",
+"Path":"aserviciopendienteprof_v2"
+
+},
+{
+"Verb":"GET",
+"Name":"orubrospublicos",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_orubrospublicos",
+"Implementation":"APIs\\ORubrosPublicos",
+"PathRegexp":"orubrospublicos",
+"Path":"orubrospublicos"
+
+},
+{
+"Verb":"GET",
+"Name":"oserviciospublicos",
+"Bodystyle":"Wrapped",
+"HeaderVariables": [],
+"VariableAlias": [],
+"ServiceMethod":"gxep_oserviciospublicos",
+"Implementation":"APIs\\OServiciosPublicos",
+"PathRegexp":"oserviciospublicos",
+"Path":"oserviciospublicos"
 
 }]}

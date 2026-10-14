@@ -97,6 +97,7 @@
  	<Compile Include="$(WebDirectory)\type_SdtSDTProducto.cs" />
  	<Compile Include="$(WebDirectory)\type_SdtSDTProductosActivos_SDTProductosActivosItem.cs" />
  	<Compile Include="$(WebDirectory)\type_SdtSDTProfesionales.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtSDTProfesionales_EspecialidadesItem.cs" />
  	<Compile Include="$(WebDirectory)\type_SdtSDTProveedor.cs" />
  	<Compile Include="$(WebDirectory)\type_SdtSDTProveedores_Item.cs" />
  	<Compile Include="$(WebDirectory)\type_SdtSDTPublicaciones.cs" />
@@ -115,6 +116,7 @@
  	<Compile Include="$(WebDirectory)\type_SdtSDTServicioDetalle_Item.cs" />
  	<Compile Include="$(WebDirectory)\type_SdtSDTServicioDetalle_Item_DetalleItem.cs" />
  	<Compile Include="$(WebDirectory)\type_SdtSDTServicios_Item.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtSDTServicios_Item_CategoriasItem.cs" />
  	<Compile Include="$(WebDirectory)\type_SdtSDTServiciosAll_Item.cs" />
  	<Compile Include="$(WebDirectory)\type_SdtSDTServiciosAll_Item_ProductoItem.cs" />
  	<Compile Include="$(WebDirectory)\type_SdtSDTServiciosAll_Item_ProductoItem_DetallesItem.cs" />

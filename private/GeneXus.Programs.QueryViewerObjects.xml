@@ -51,4 +51,10 @@
   <Object name="WWPBaseObjects.MenuOptionsComercio" id="17" type="DataProvider" xmlns="qv">
     <DefaultOutput type="OutputTypePivotTable" xmlns="qv" />
   </Object>
+  <Object name="APIs.DPRubrosActivos" id="24" type="DataProvider" xmlns="qv">
+    <DefaultOutput type="OutputTypePivotTable" xmlns="qv" />
+  </Object>
+  <Object name="APIs.DPServiciosActivos" id="25" type="DataProvider" xmlns="qv">
+    <DefaultOutput type="OutputTypePivotTable" xmlns="qv" />
+  </Object>
 </Objects>

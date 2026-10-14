@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: "Almango XV1"
-  version: "20261005180336"
+  version: "20261014183502"
 servers:
   - url: http://localhost/AlmangoXV1NETFramework/rest
 paths:
@@ -3962,6 +3962,10 @@ components:
         RubrosNombre:
           description: "Rubro"
           type: "string"
+        RubroEstadoId:
+          description: "Estados"
+          type: "integer"
+          format: "int64"
     APIs.SDTSolicitudesAceptadas:
       properties:
         Id:
@@ -4784,6 +4788,21 @@ components:
           description: "Tipo Empresa"
           type: "integer"
           format: "int32"
+        Especialidades:
+          type: array
+          items:
+            description: EspecialidadesItem
+            $ref: "#/components/schemas/SDTProfesionales.Especialidades_EspecialidadesItem"
+    SDTProfesionales.Especialidades_EspecialidadesItem:
+      properties:
+        Id:
+          description: "Id"
+          type: "integer"
+          format: "int32"
+        Tipo:
+          description: "Tipo"
+          type: "string"
+      x-gx-level: "SDTProfesionales"
     SDTProveedor:
       properties:
         ProveedorID:
@@ -4853,9 +4872,37 @@ components:
         ServiciosNombre:
           description: "Servicios"
           type: "string"
+        ServiciosEstado:
+          description: "Servicios Estado"
+          type: "string"
         Imagen:
           description: "Imagen"
           type: "string"
+        Categorias:
+          type: array
+          items:
+            description: CategoriasItem
+            $ref: "#/components/schemas/SDTServicios.Categorias_CategoriasItem"
+    SDTServicios.Categorias_CategoriasItem:
+      properties:
+        CategoriasId:
+          description: "Categorias Id"
+          type: "integer"
+          format: "int64"
+        CategoriasNombre:
+          description: "Categorias Nombre"
+          type: "string"
+        CategoriasHorasEstimadas:
+          description: "Categorias Horas Estimadas"
+          type: "integer"
+          format: "int32"
+        CategoriasUnidadMedida:
+          description: "Categorias Unidad Medida"
+          type: "string"
+        CategoriasActivo:
+          description: "Categorias Activo"
+          type: "boolean"
+      x-gx-level: "SDTServicios"
     SDTSolicitudes.Items:
       properties:
         Items:
