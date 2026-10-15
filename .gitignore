@@ -1,32 +1,57 @@
-# Archivos de configuración ignorados
+# ==========================================
+# Archivos de configuración
+# ==========================================
 web.config
 location.xml
 
+# ==========================================
 # Archivos generados por GeneXus
+# ==========================================
 *.cs
 *.svc
+*.rsp
+bld*.txt
+bld*.cs
+bld*.log
 
-# Archivos de compilación y binarios
-bin/
+# ==========================================
+# Compilación y temporales
+# (bin/, *.dll y *.exe se incluyen en el repositorio)
+# ==========================================
 obj/
-*.exe
-*.dll
 *.pdb
-*.user
-*.suo
 *.cache
 
+# ==========================================
 # Logs
+# ==========================================
 *.log
 client.log
 
+# ==========================================
 # Carpetas temporales y recursos de GeneXus
+# ==========================================
 PrivateTempStorage/
 PublicTempStorage/
 CKEditor/
 Resources/
 gxCompressInfo.data
 
-# Visual Studio
+# ==========================================
+# Entornos de desarrollo e IDEs (VS, VS Code)
+# ==========================================
 .vs/
+.vscode/
 *.user
+*.suo
+*.userosv
+*.sln.docstates
+
+# ==========================================
+# Archivos del Sistema Operativo
+# ==========================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
